@@ -6,7 +6,6 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 import robertImage from '../../assets/board/rob.png';
 import tonyaUpdatedImage from '../../assets/board/Tonya.webp';
 
-import DanielleOrtegaImage from '../../assets/DanielleOrtega.jpeg';
 import wajidUpdatedImage from '../../assets/board/wajid.jpeg';
 
 import DianeJonesImage from '../../assets/testimonials/Diane Jones.png';
