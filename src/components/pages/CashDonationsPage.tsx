@@ -8,8 +8,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { DollarSign, CreditCard, Building2, Smartphone, User, Mail, Phone, MapPin, Calendar, Lock } from "lucide-react";
 import { useTranslation } from "../TranslationContext";
 import { useState } from "react";
-import { toast } from "sonner@2.0.3";
-import wamLogo from "figma:asset/40ba164eeb1ae5b84915550983abfb0f4b5437ab.png";
+import { toast } from "sonner";
+
+import wamLogo from "assets/logo/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png";
 
 export function CashDonationsPage() {
   const { translations } = useTranslation();

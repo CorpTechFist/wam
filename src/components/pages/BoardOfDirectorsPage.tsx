@@ -2,11 +2,11 @@ import { useTranslation } from "../TranslationContext";
 import { Button } from "../ui/button";
 import { User, ImageIcon } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import userImage from 'figma:asset/1dc98c73519fbd07816b3a4784aec51ea1c7ea13.png';
-import robertImage from 'figma:asset/7a0ce832720ec017b12e704d8d2080af5d0b8c9d.png';
-import tonyaNewImage from 'figma:asset/1df2b9e0ca623c0b3d5d2e8d61ff2f3a9c1e7b4f.png';
-import tonyaUpdatedImage from 'figma:asset/8a50976fa65aaf2545d6f3a0b74e28d96cb624ec.png';
-import wajidUpdatedImage from 'figma:asset/356e5f5c7f6a1e29e9f97eea9bc2aa8f1fdc52e8.png';
+
+import robertImage from '../rob.png';
+
+import tonyaUpdatedImage from '../assets/Tonya.webp';
+import wajidUpdatedImage from '../../assets/wajid.png';
 import DianeJonesImage from '../../assets/Diane Jones.png';
 import DanielleOrtegaImage from '../../assets/DanielleOrtega.jpeg';
 

@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { Menu, X, ChevronDown, Phone, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
-import logoImage from "figma:asset/65bfb095e75bd23de2bc46678001aa892cb609c7.png";
+import logoImage from "@/assets/logo/logo.png";
 
 interface HeaderProps {
   currentPage?: string;
