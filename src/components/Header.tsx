@@ -12,7 +12,7 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showBoardDropdown, setShowBoardDropdown] = useState(false);
-
+         
   // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
