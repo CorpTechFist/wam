@@ -3,8 +3,8 @@ import { Badge } from "../ui/badge";
 import { Users, Globe, Briefcase, Heart, Shield, HandHeart } from "lucide-react";
 import { useTranslation } from "../TranslationContext";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import secondSecondCoalitionLogo from '../assets/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png';
-import restorativeHealthLogo from '../assets/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
+import secondSecondCoalitionLogo from '../../assets/testimonials/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png';
+import restorativeHealthLogo from '../../assets/testimonials/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
 
 export function ResourcesPartneringAgenciesPage() {
   const { translations } = useTranslation();
