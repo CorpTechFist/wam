@@ -3,15 +3,15 @@ import { ArrowRight, Users, Shield, Heart, Star, Target } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MissionVisionSection } from "./MissionVisionSection";
-import inspirationalImage from 'figma:asset/0171452568de81e96062980d7275744de3cb58d1.png';
-import professionalInspirationImage from 'figma:asset/1745a03711af08d8d076fb7f1ba38a35a613b46a.png';
-import wamLogo from 'figma:asset/214a1eee927c6da27ff6e01fb06584c55a9710c2.png';
-import newWamLogo from 'figma:asset/20dbb544fb86c05707443f40e892c6190ad0bdf2.png';
-import rupeeMoneyBag from 'figma:asset/35891226be97ab51501abfbca993e49c4304e391.png';
-import volunteersHeart from 'figma:asset/e94c6b67a088ca39f05bf8d83c9ed01bf20c3ed8.png';
-import donationJarHeart from 'figma:asset/50652cac7f0e51cd0cb4b7f95cd3f83dea7ad73f.png';
-import partnerHandshake from 'figma:asset/5c9b6ed20c02c9c67cc93d7e56e0ca0e05f88fa0.png';
-import asianBusinessmanPayment from 'figma:asset/d81f7c6638e6dd3e1ff2dc3e01f08e1c79c15c2e.png';
+//import inspirationalImage from 'figma:asset/0171452568de81e96062980d7275744de3cb58d1.png';
+//import professionalInspirationImage from 'figma:asset/1745a03711af08d8d076fb7f1ba38a35a613b46a.png';
+//import wamLogo from 'figma:asset/214a1eee927c6da27ff6e01fb06584c55a9710c2.png';
+//import newWamLogo from 'figma:asset/20dbb544fb86c05707443f40e892c6190ad0bdf2.png';
+//import rupeeMoneyBag from 'figma:asset/35891226be97ab51501abfbca993e49c4304e391.png';
+//import volunteersHeart from 'figma:asset/e94c6b67a088ca39f05bf8d83c9ed01bf20c3ed8.png';
+//import donationJarHeart from 'figma:asset/50652cac7f0e51cd0cb4b7f95cd3f83dea7ad73f.png';
+//import partnerHandshake from 'figma:asset/5c9b6ed20c02c9c67cc93d7e56e0ca0e05f88fa0.png';
+//import asianBusinessmanPayment from 'figma:asset/d81f7c6638e6dd3e1ff2dc3e01f08e1c79c15c2e.png';
 
 export function Hero() {
   const { translations } = useTranslation();
