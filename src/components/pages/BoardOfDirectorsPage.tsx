@@ -3,12 +3,15 @@ import { Button } from "../ui/button";
 import { User, ImageIcon } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 
-import robertImage from '../rob.png';
+import robertImage from '../../assets/board/rob.png';
+import tonyaUpdatedImage from '../../assets/board/Tonya.webp';
 
-import tonyaUpdatedImage from '../assets/Tonya.webp';
-import wajidUpdatedImage from '../../assets/wajid.png';
-import DianeJonesImage from '../../assets/Diane Jones.png';
 import DanielleOrtegaImage from '../../assets/DanielleOrtega.jpeg';
+import wajidUpdatedImage from '../../assets/board/wajid.jpeg';
+
+import DianeJonesImage from '../../assets/testimonials/Diane Jones.png';
+
+import DanielleOrtegaImage from '../../assets/testimonials/DanielleOrtega.jpeg';
 
 
 interface BoardOfDirectorsPageProps {
