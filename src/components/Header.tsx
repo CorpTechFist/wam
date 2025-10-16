@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Menu, X, ChevronDown, Phone, Heart } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoImage from "../assets/logo/logo.png";
 
@@ -33,24 +33,18 @@ const Header = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-white/90 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+          : "bg-transparent text-white"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3 relative">
-        {/* Brand/Logo Section */}
+        {/* Logo Section */}
         <button
           onClick={() => handleNavigation("home")}
-          className="absolute left-8 flex items-center gap-3 group transition-all duration-300 hover:scale-105"
+          className="flex items-center gap-3 group transition-all duration-300"
           style={{
             background: "transparent",
             border: "none",
             cursor: "pointer",
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.transform = "scale(1.05)";
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.transform = "scale(1)";
           }}
         >
           <img
@@ -60,13 +54,17 @@ const Header = () => {
               height: "auto",
               width: "140px",
               display: "block",
-              marginTop: "8px",
+              marginTop: "6px",
             }}
           />
         </button>
 
-        {/* Navigation Links */}
-        <div className="hidden md:flex gap-10 text-gray-800 font-medium items-center">
+        {/* Desktop Navigation */}
+        <div
+          className={`hidden md:flex gap-10 font-semibold items-center transition-colors duration-300 ${
+            isScrolled ? "text-gray-800" : "text-white"
+          }`}
+        >
           {[
             { id: "home", label: "Home" },
             { id: "about", label: "About" },
@@ -76,8 +74,10 @@ const Header = () => {
             <button
               key={link.id}
               onClick={() => handleNavigation(link.id)}
-              className={`relative hover:text-blue-600 transition-colors duration-300 ${
-                activeSection === link.id ? "text-blue-600" : ""
+              className={`relative transition-colors duration-300 ${
+                activeSection === link.id
+                  ? "text-blue-600"
+                  : "hover:text-blue-500"
               }`}
             >
               {link.label}
@@ -100,35 +100,37 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-gray-800"
+            className={`md:hidden transition-colors duration-300 ${
+              isScrolled ? "text-gray-800" : "text-white"
+            }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
-
-        {/* Mobile Dropdown Menu */}
-        {isMenuOpen && (
-          <div className="absolute top-[100%] left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-4 md:hidden">
-            {[
-              { id: "home", label: "Home" },
-              { id: "about", label: "About" },
-              { id: "initiatives", label: "Initiatives" },
-              { id: "contact", label: "Contact" },
-            ].map((link) => (
-              <button
-                key={link.id}
-                onClick={() => handleNavigation(link.id)}
-                className={`text-gray-700 text-lg hover:text-blue-600 transition-colors duration-300 ${
-                  activeSection === link.id ? "text-blue-600" : ""
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-md py-4 flex flex-col items-center space-y-4 md:hidden z-40">
+          {[
+            { id: "home", label: "Home" },
+            { id: "about", label: "About" },
+            { id: "initiatives", label: "Initiatives" },
+            { id: "contact", label: "Contact" },
+          ].map((link) => (
+            <button
+              key={link.id}
+              onClick={() => handleNavigation(link.id)}
+              className={`text-gray-700 text-lg hover:text-blue-600 transition-colors duration-300 ${
+                activeSection === link.id ? "text-blue-600" : ""
+              }`}
+            >
+              {link.label}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
