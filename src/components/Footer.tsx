@@ -217,14 +217,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                     >
                       Wajid Bhat (Engineering)
                     </DropdownMenuItem>
-                    <DropdownMenuItem
-                      onClick={() => handleNavigation('dummy-bio')}
-                      className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
-                        currentPage === 'dummy-bio' ? 'text-primary bg-primary/10' : ''
-                      }`}
-                    >
-                      Board Member (Bio)
-                    </DropdownMenuItem>
+                   
                   </DropdownMenuContent>
                 </DropdownMenu>
               </li>
