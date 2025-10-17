@@ -241,24 +241,21 @@ export function SponsorsPage() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-8 md:p-10 text-white shadow-2xl">
-              <h3 className="text-2xl mb-4">Become a Partner</h3>
-              <p className="mb-6 text-purple-100 leading-relaxed">
-                Interested in partnering with WAM Alliance? Join us in making a difference in our communities and supporting those who need it most.
-              </p>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' }));
-                }}
-                className="inline-block px-8 py-3 bg-yellow-500 hover:bg-yellow-600 text-purple-900 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 cursor-pointer"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
+         <div className="text-center max-w-3xl mx-auto">
+  <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-8 md:p-10 text-white shadow-2xl">
+    <h3 className="text-2xl mb-4">Become a Partner</h3>
+    <p className="mb-6 text-purple-100 leading-relaxed">
+      Interested in partnering with WAM Alliance? Join us in making a difference in our communities and supporting those who need it most.
+    </p>
+    <button
+      onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
+      className="inline-block px-8 py-3 bg-yellow-500 hover:bg-yellow-600 text-purple-900 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+    >
+      Contact Us
+    </button>
+  </div>
+</div>
+
         </div>
       </div>
       
