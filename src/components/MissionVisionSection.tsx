@@ -76,7 +76,7 @@ export function MissionVisionSection() {
                 className="text-xl mb-0 px-3 italic font-semibold"
                 style={{ color: "#111827" }}
               >
-                {translations.hero?.changeMessage || "We Are The Change!"}
+                { "We Are The Change!"}
               </p>
 
               <div
@@ -134,28 +134,37 @@ export function MissionVisionSection() {
               </p>
             </div>
 
- {/* Divider */}
-<div className="hidden md:block absolute left-1/2" style={{
-              transform: 'translateX(-50%)',
-              width: '3px',
-              top: '15%',
-              bottom: '15%',
-              background: 'linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 215, 0, 0.5) 25%, rgba(167, 139, 250, 0.4) 50%, rgba(255, 215, 0, 0.5) 75%, rgba(139, 92, 246, 0.3) 100%)',
-              boxShadow: '0 0 12px rgba(139, 92, 246, 0.4), 0 0 24px rgba(255, 215, 0, 0.2)',
-              borderRadius: '2px'
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '16px',
-                height: '16px',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(139, 92, 246, 0.8) 100%)',
-                border: '2px solid rgba(255, 255, 255, 0.9)',
-                boxShadow: '0 0 20px rgba(139, 92, 246, 0.6), 0 0 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5)'
-              }}></div>
+            {/* Divider */}
+            <div
+              className="hidden md:block absolute left-1/2"
+              style={{
+                transform: "translateX(-50%)",
+                width: "3px",
+                top: "15%",
+                bottom: "15%",
+                background:
+                  "linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 215, 0, 0.5) 25%, rgba(167, 139, 250, 0.4) 50%, rgba(255, 215, 0, 0.5) 75%, rgba(139, 92, 246, 0.3) 100%)",
+                boxShadow:
+                  "0 0 12px rgba(139, 92, 246, 0.4), 0 0 24px rgba(255, 215, 0, 0.2)",
+                borderRadius: "2px",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "16px",
+                  height: "16px",
+                  borderRadius: "50%",
+                  background:
+                    "linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(139, 92, 246, 0.8) 100%)",
+                  border: "2px solid rgba(255, 255, 255, 0.9)",
+                  boxShadow:
+                    "0 0 20px rgba(139, 92, 246, 0.6), 0 0 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5)",
+                }}
+              ></div>
             </div>
 
             {/* Vision */}
