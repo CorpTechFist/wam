@@ -286,14 +286,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                   <span className="text-sm text-muted-foreground group-hover:text-indigo-600 transition-colors">LinkedIn</span>
                 </a>
               </li>
-              <li className="group">
-                <a href="https://www.youtube.com/@slutah" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 hover:bg-indigo-100/60 transition-all duration-300">
-                  <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Youtube className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-sm text-muted-foreground group-hover:text-indigo-600 transition-colors">YouTube</span>
-                </a>
-              </li>
+             
               <li className="group">
                 <a href="https://www.alignable.com/biz?_seid=12819622753&_tid=3058668" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 hover:bg-indigo-100/60 transition-all duration-300">
                   <div className="w-8 h-8 bg-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
