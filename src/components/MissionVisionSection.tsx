@@ -76,7 +76,7 @@ export function MissionVisionSection() {
                 className="text-xl mb-0 px-3 italic font-semibold"
                 style={{ color: "#111827" }}
               >
-                {translations.hero?.changeMessage || "BE the Change!"}
+                {translations.hero?.changeMessage || "We Are The Change!"}
               </p>
 
               <div
