@@ -94,8 +94,9 @@ export function MissionVisionSection() {
                 className="text-lg mb-0 px-3"
                 style={{ color: "#111827", fontWeight: 500 }}
               >
-                {translations.hero?.freedomMessage ||
-                  "We are active advocates for FREEDOM and JUSTICE for ALL!"}
+                
+                 {'"Elevating lives, advocates for humanity and FREEDOM for ALL"'}
+
               </p>
             </div>
           </div>
