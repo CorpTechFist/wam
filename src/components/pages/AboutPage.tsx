@@ -56,16 +56,20 @@ export function AboutPage() {
                     </p>
                     
                     {/* Call to action badge */}
-                    <div className="mt-10 flex justify-center">
-                      <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-50 to-yellow-50 border-2 border-purple-200/60 rounded-full shadow-lg">
-                        <svg className="w-5 h-5 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                        <span className="text-purple-700" style={{ fontWeight: '600', letterSpacing: '0.05em' }}>
-                          Be The Change
-                        </span>
-                      </div>
-                    </div>
+                   <div className="mt-10 flex justify-center">
+  <div
+    onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
+    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-50 to-yellow-50 border-2 border-purple-200/60 rounded-full shadow-lg cursor-pointer"
+  >
+    <svg className="w-5 h-5 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+    <span className="text-purple-700" style={{ fontWeight: '600', letterSpacing: '0.05em' }}>
+      Be The Change
+    </span>
+  </div>
+</div>
+
                   </div>
                   
                   {/* Bottom gradient accent line */}
