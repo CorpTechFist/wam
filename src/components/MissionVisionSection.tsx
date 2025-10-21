@@ -50,56 +50,63 @@ export function MissionVisionSection() {
           }}
         >
           {/* Header */}
-          <div
-            className="text-center mb-20 pb-16"
-            style={{ borderBottom: "1px solid rgba(139, 92, 246, 0.35)" }}
-          >
-            <h2
-              className="text-3xl mb-16"
-              style={{
-                background:
-                  "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
-                letterSpacing: "1px",
-                fontWeight: "700",
-                textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
-              }}
-            >
-              LEARN TO FORGIVE & LOVE YOURSELF!
-            </h2>
+        <div
+  className="text-center mb-20 pb-16"
+  style={{ borderBottom: "1px solid rgba(139, 92, 246, 0.35)" }}
+>
+  
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-3">
-              <p
-                className="text-xl mb-0 px-3 italic font-semibold"
-                style={{ color: "#111827" }}
-              >
-                { "We Are The Change!"}
-              </p>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-3">
+    {/* We Are The Change! */}
+    <h2
+      className="text-xl mb-0 px-3 italic font-semibold"
+      style={{
+        background:
+          "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        backgroundClip: "text",
+        fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
+        letterSpacing: "0.8px",
+        fontWeight: "700",
+        textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
+      }}
+    >
+      We Are The Change!
+    </h2>
 
-              <div
-                className="hidden md:block"
-                style={{
-                  width: "2px",
-                  height: "30px",
-                  background: "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
-                  borderRadius: "1px",
-                  opacity: "0.7",
-                }}
-              ></div>
+    {/* Divider */}
+    <div
+      className="hidden md:block"
+      style={{
+        width: "2px",
+        height: "30px",
+        background: "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
+        borderRadius: "1px",
+        opacity: "0.7",
+      }}
+    ></div>
 
-              <p
-                className="text-lg mb-0 px-3"
-                style={{ color: "#111827", fontWeight: 500 }}
-              >
-                
-                 {'"Elevating lives, advocates for humanity and FREEDOM for ALL"'}
+    {/* Elevating lives... */}
+    <h2
+      className="text-lg mb-0 px-3"
+      style={{
+        background:
+          "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        backgroundClip: "text",
+        fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
+        letterSpacing: "0.8px",
+        fontWeight: "700",
+        textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
+      }}
+    >
+      Elevating lives, advocates for humanity and FREEDOM for ALL
+    </h2>
+  </div>
+</div>
 
-              </p>
-            </div>
-          </div>
 
           {/* Mission and Vision */}
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
