@@ -1,13 +1,27 @@
+import { useState } from "react";
 import { useTranslation } from "./TranslationContext";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export function MissionVisionSection() {
   const { translations } = useTranslation();
 
-  // ✅ Full fallback text
+  const [showFullMission, setShowFullMission] = useState(false);
+  const [showFullVision, setShowFullVision] = useState(false);
+
   const missionText =
     translations.hero?.missionDescription?.length > 50
       ? translations.hero.missionDescription
-      : `At We All Matter Alliance, every board member has walked through deep wounds and emerged into the light. We draw on our lived experience to fuel compassion, empathy, and unwavering dedication. We uplift every soul who reaches out by providing practical tools, heartfelt support, and a community that holds you up. Our goal is to move you from barely surviving to fully thriving—one step, one story, one triumph at a time. We are also active defenders of constitutional protections, due process, and democratic principles, ensuring every survivor's rights are honored and upheld.`;
+      : `At We All Matter Alliance, we believe that every soul—no matter their story—deserves dignity, healing, and a chance to thrive.
+
+Born from lived experience and boundless compassion, our mission is to walk beside those navigating the shadows of suicide loss, trauma, domestic violence, injustice, and systemic marginalization. We serve individuals and families who are unhoused, low-income, court-ordered for community service, or silenced by circumstance—offering not just resources, but refuge.
+
+Through legal advocacy, trauma-informed support, and practical tools for rebuilding, we create pathways to empowerment. And in partnership with TechFistGlobal.com, we extend our reach through intelligent automation and accessible digital services—bridging the gap between need and opportunity with innovation and care.
+
+We are defenders of justice, champions of equity, and architects of change. From surviving to thriving, we walk with our community—one step, one story, one triumph at a time.
+
+Because at We All Matter Alliance, healing isn’t just possible—it’s sacred.
+
+WE ARE THE CHANGE!`;
 
   const visionText =
     translations.hero?.visionDescription?.length > 50
@@ -23,20 +37,40 @@ export function MissionVisionSection() {
     color: "#111827",
     textAlign: "justify" as const,
     hyphens: "auto" as const,
-    marginBottom: "1.5rem",
+    marginBottom: "1rem",
+  };
+
+  const gradientButtonStyle = {
+    background:
+      "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 40%, #6366F1 80%, #A78BFA 100%)",
+    color: "white",
+    border: "none",
+    borderRadius: "9999px",
+    padding: "8px 16px",
+    fontSize: "0.9rem",
+    fontWeight: 600,
+    letterSpacing: "0.5px",
+    cursor: "pointer",
+    boxShadow:
+      "0 4px 15px rgba(139, 92, 246, 0.25), 0 2px 6px rgba(99, 102, 241, 0.2)",
+    transition: "all 0.3s ease",
+  };
+
+  const hoverStyle = {
+    transform: "translateY(-2px)",
+    boxShadow:
+      "0 6px 20px rgba(139, 92, 246, 0.35), 0 3px 8px rgba(99, 102, 241, 0.25)",
   };
 
   return (
     <div className="w-full">
       <div className="text-center">
-        {/* Outer glass-like container */}
         <div
           className="glass-morphism w-full py-16 px-6 md:px-16"
           style={{
             background:
               "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 255, 0.92) 100%)",
             backdropFilter: "blur(20px)",
-            border: "2px solid transparent",
             borderRadius: "12px",
             boxShadow:
               "0 20px 60px rgba(139, 92, 246, 0.25), 0 8px 25px rgba(102, 126, 234, 0.2)",
@@ -55,16 +89,12 @@ export function MissionVisionSection() {
                     "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
                   letterSpacing: "0.8px",
                   fontWeight: "700",
-                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
                 }}
               >
                 We Are The Change!
               </h2>
-
               <div
                 className="hidden md:block"
                 style={{
@@ -72,11 +102,9 @@ export function MissionVisionSection() {
                   height: "30px",
                   background:
                     "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
-                  borderRadius: "1px",
                   opacity: "0.7",
                 }}
               ></div>
-
               <h2
                 className="text-lg mb-0 px-3"
                 style={{
@@ -84,11 +112,8 @@ export function MissionVisionSection() {
                     "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
                   letterSpacing: "0.8px",
                   fontWeight: "700",
-                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
                 }}
               >
                 Elevating lives, advocates for humanity and FREEDOM for ALL
@@ -107,17 +132,45 @@ export function MissionVisionSection() {
                     "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6366F1 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
                   fontFamily: "'Lora', 'Georgia', 'serif'",
-                  letterSpacing: "0.8px",
                   fontWeight: "700",
-                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
                 }}
               >
                 Our Mission
               </h2>
 
-              <p style={paragraphStyle}>{missionText}</p>
+              <p
+                style={{
+                  ...paragraphStyle,
+                  maxHeight: showFullMission ? "100%" : "12rem",
+                  overflow: "hidden",
+                  transition: "max-height 0.5s ease",
+                }}
+              >
+                {missionText}
+              </p>
+
+              <button
+                onClick={() => setShowFullMission(!showFullMission)}
+                onMouseEnter={(e) =>
+                  Object.assign(e.currentTarget.style, hoverStyle)
+                }
+                onMouseLeave={(e) =>
+                  Object.assign(e.currentTarget.style, gradientButtonStyle)
+                }
+                style={gradientButtonStyle}
+                className="mx-auto flex items-center gap-2 mt-2"
+              >
+                {showFullMission ? (
+                  <>
+                    Show Less <ChevronUp size={18} />
+                  </>
+                ) : (
+                  <>
+                    Read More <ChevronDown size={18} />
+                  </>
+                )}
+              </button>
             </div>
 
             {/* Divider */}
@@ -129,29 +182,10 @@ export function MissionVisionSection() {
                 top: "15%",
                 bottom: "15%",
                 background:
-                  "linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 215, 0, 0.5) 25%, rgba(167, 139, 250, 0.4) 50%, rgba(255, 215, 0, 0.5) 75%, rgba(139, 92, 246, 0.3) 100%)",
-                boxShadow:
-                  "0 0 12px rgba(139, 92, 246, 0.4), 0 0 24px rgba(255, 215, 0, 0.2)",
+                  "linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 215, 0, 0.5) 50%, rgba(139, 92, 246, 0.3) 100%)",
                 borderRadius: "2px",
               }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  width: "16px",
-                  height: "16px",
-                  borderRadius: "50%",
-                  background:
-                    "linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(139, 92, 246, 0.8) 100%)",
-                  border: "2px solid rgba(255, 255, 255, 0.9)",
-                  boxShadow:
-                    "0 0 20px rgba(139, 92, 246, 0.6), 0 0 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5)",
-                }}
-              ></div>
-            </div>
+            ></div>
 
             {/* Vision */}
             <div className="flex flex-col relative md:pl-8">
@@ -162,17 +196,45 @@ export function MissionVisionSection() {
                     "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6366F1 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
                   fontFamily: "'Lora', 'Georgia', 'serif'",
-                  letterSpacing: "0.8px",
                   fontWeight: "700",
-                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
                 }}
               >
                 Our Vision
               </h2>
 
-              <p style={paragraphStyle}>{visionText}</p>
+              <p
+                style={{
+                  ...paragraphStyle,
+                  maxHeight: showFullVision ? "100%" : "12rem",
+                  overflow: "hidden",
+                  transition: "max-height 0.5s ease",
+                }}
+              >
+                {visionText}
+              </p>
+
+              <button
+                onClick={() => setShowFullVision(!showFullVision)}
+                onMouseEnter={(e) =>
+                  Object.assign(e.currentTarget.style, hoverStyle)
+                }
+                onMouseLeave={(e) =>
+                  Object.assign(e.currentTarget.style, gradientButtonStyle)
+                }
+                style={gradientButtonStyle}
+                className="mx-auto flex items-center gap-2 mt-2"
+              >
+                {showFullVision ? (
+                  <>
+                    Show Less <ChevronUp size={18} />
+                  </>
+                ) : (
+                  <>
+                    Read More <ChevronDown size={18} />
+                  </>
+                )}
+              </button>
             </div>
           </div>
         </div>
