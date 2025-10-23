@@ -26,9 +26,26 @@ export function Contact() {
           {/* Header Section */}
           <div className="text-center mb-20">
             <div className="max-w-3xl mx-auto">
-              <h1 className="text-3xl md:text-4xl mb-8" style={{ fontFamily: 'Georgia, serif', color: '#581c87' }}>
-                DONATIONS
-              </h1>
+              <div className="relative mb-8">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6" style={{ 
+                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  fontWeight: '700',
+                  letterSpacing: '-0.02em'
+                }}>
+                  DONATIONS
+                </h1>
+              </div>
+              
+              {/* Decorative Dots */}
+              <div className="flex justify-center gap-2 mb-8">
+                <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 shadow-lg shadow-purple-300"></div>
+                <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-300"></div>
+                <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500 shadow-lg shadow-purple-300"></div>
+              </div>
+              
               <div className="space-y-5 text-foreground">
                 <p className="text-base md:text-lg leading-relaxed">
                   WAM welcomes and accepts all donations. We are a registered 501(c)(3) organization with the IRS and all donations are subject to tax write offs.
@@ -67,7 +84,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-2xl md:text-3xl" style={{ fontFamily: 'cursive', color: '#7c3aed' }}>
+                  <h3 className="text-2xl md:text-3xl" style={{ color: '#7c3aed' }}>
                     CASH DONATIONS
                   </h3>
                   <Button 
@@ -93,7 +110,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-2xl md:text-3xl" style={{ fontFamily: 'cursive', color: '#7c3aed' }}>
+                  <h3 className="text-2xl md:text-3xl" style={{ color: '#7c3aed' }}>
                     ALL OTHER DONATIONS
                   </h3>
                   <Button 
