@@ -91,12 +91,16 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   </div>
                 </div>
                 
-                {/* Call to Action Banner */}
-                <div className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm">
-                  <p className="board-title tracking-widest uppercase font-semibold">
-                    {translations.hero?.changeMessage || "WE ARE THE CHANGE!"}
-                  </p>
-                </div>
+              {/* Call to Action Banner */}
+<div
+  onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
+  className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm cursor-pointer hover:shadow-md transition-all duration-300"
+>
+  <p className="board-title tracking-widest uppercase font-semibold text-purple-700">
+    {"Be the Change!"}
+  </p>
+</div>
+
               </div>
             </div>
           </div>

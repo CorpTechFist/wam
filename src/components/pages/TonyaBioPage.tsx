@@ -25,7 +25,7 @@ export function TonyaBioPage() {
               <div>
                 <h3 className="text-purple-700 mb-3">Overview</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  {translations.tonyaBio?.bio || "Tonya Jones-Smith is an accomplished nonprofit leader and suicide-loss survivor dedicated to advancing holistic healing and trauma recovery. With 30 years of multidisciplinary experience spanning behavioral health, holistic wellness, psychology, law, finance, and software engineering, she combines technical rigor, compassionate leadership, and evidence-based practice to drive organizational impact."}
+                  {translations.tonyaBio?.bio || "Tonya Jones-Smith is an accomplished nonprofit leader, suicide-loss survivor, and USMC widow dedicated to advancing holistic healing and trauma recovery. With 30 years of multidisciplinary experience spanning behavioral health, holistic wellness, psychology, law, finance, and software engineering, she combines technical rigor, compassionate leadership, and evidence-based practice to drive organizational impact."}
                 </p>
               </div>
               
