@@ -135,7 +135,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   style={{ objectPosition: 'center center' }}
                 />
               </div>
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -166,7 +166,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -197,7 +197,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -228,7 +228,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -259,7 +259,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
