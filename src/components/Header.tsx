@@ -46,7 +46,7 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
   };
 
   return (
-    <nav className="fixed top-0 w-full shadow-lg lg:flex" style={{
+   <nav className="fixed top-0 w-full shadow-lg lg:flex" style={{
       background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.95) 50%, rgba(255, 255, 255, 0.98) 100%)',
       backdropFilter: 'blur(25px) saturate(1.2)',
       borderBottom: '1px solid rgba(139, 92, 246, 0.15)',
@@ -56,25 +56,27 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
       position: 'relative',
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
     }}>
-      <div className="max-w-full px-8 py-3 flex items-center justify-between w-full" style={{
-        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 255, 0.92) 100%)',
+      <div className="max-w-full flex items-center w-full" style={{
+        background: 'rgba(255, 255, 255, 0.8)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
         margin: '0',
+        padding: '0',
         border: 'none',
-        borderBottom: '1px solid rgba(139, 92, 246, 0.15)',
+        borderBottom: '1px solid rgba(0, 0, 0, 0.06)',
         position: 'relative',
-        boxShadow: '0 4px 24px rgba(139, 92, 246, 0.08), 0 2px 12px rgba(99, 102, 241, 0.05)'
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
       }}>
         
         {/* Brand/Logo Section */}
         <button 
           onClick={() => handleNavigation('home')}
-          className="absolute left-8 flex items-center gap-3 group transition-all duration-300 hover:scale-105"
+          className="flex items-center gap-3 group transition-all duration-300 hover:scale-105"
           style={{
             background: 'transparent',
             border: 'none',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            flexShrink: 0
           }}
         >
           <button 
@@ -100,53 +102,49 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                 height: 'auto',
                 width: '140px',
                 display: 'block',
-                marginTop: '8px'
+                margin: '0'
               }}
             />
           </button>
         </button>
 
         {/* Desktop Navigation - Always Visible */}
-        <div className="hidden lg:flex items-center justify-between flex-grow">
+        <div className="hidden lg:flex items-center justify-between flex-1 ml-8">
           
-          {/* Main Navigation Links */}
-          <div className="flex items-center gap-1 ml-56">
+          {/* Main Navigation Links - Pill Container */}
+          <div className="flex items-center gap-1 flex-1 justify-center" style={{
+            background: 'rgba(249, 250, 251, 0.8)',
+            padding: '4px',
+            borderRadius: '100px',
+            border: '1px solid rgba(0, 0, 0, 0.06)',
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.8)'
+          }}>
             
             {/* Home */}
             <button
-              className={`border-0 px-5 py-2.5 mx-0.5 rounded-xl relative overflow-hidden ${
-                currentPage === 'home' 
-                  ? '' 
-                  : 'text-gray-700'
-              }`}
+              className="border-0 px-4 py-1.5 rounded-full relative overflow-hidden"
               style={{
                 background: currentPage === 'home' 
-                  ? 'linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%)'
+                  ? 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)'
                   : 'transparent',
-                backgroundImage: currentPage === 'home' 
-                  ? 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)' 
-                  : 'none',
-                WebkitBackgroundClip: currentPage === 'home' ? 'text' : 'unset',
-                WebkitTextFillColor: currentPage === 'home' ? 'transparent' : 'inherit',
-                backgroundClip: currentPage === 'home' ? 'text' : 'unset',
+                color: currentPage === 'home' ? '#FFFFFF' : '#6B7280',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                fontSize: '0.938rem',
+                fontSize: '0.875rem',
                 fontWeight: '600',
-                letterSpacing: '0.01em'
+                letterSpacing: '-0.01em',
+                boxShadow: currentPage === 'home' ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none'
               }}
               onClick={() => handleNavigation('home')}
               onMouseOver={(e) => {
                 if (currentPage !== 'home') {
-                  e.currentTarget.style.background = 'rgba(139, 92, 246, 0.08)';
-                  e.currentTarget.style.color = '#8B5CF6';
-                  e.currentTarget.style.transform = 'translateY(-1px)';
+                  e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                  e.currentTarget.style.color = '#111827';
                 }
               }}
               onMouseOut={(e) => {
                 if (currentPage !== 'home') {
                   e.currentTarget.style.background = 'transparent';
-                  e.currentTarget.style.color = '#374151';
-                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.color = '#6B7280';
                 }
               }}
             >
@@ -156,107 +154,95 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
             {/* About Us Dropdown */}
             <div className="relative">
               <button
-                className={`border-0 px-5 py-2.5 mx-0.5 rounded-xl flex items-center gap-1.5 ${
-                  currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us'
-                    ? '' 
-                    : 'text-gray-700'
-                }`}
+                className="border-0 px-4 py-1.5 rounded-full flex items-center gap-1.5"
                 style={{
                   background: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us')
-                    ? 'linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%)'
+                    ? 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)'
                     : 'transparent',
-                  backgroundImage: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us')
-                    ? 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)' 
-                    : 'none',
-                  WebkitBackgroundClip: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us') ? 'text' : 'unset',
-                  WebkitTextFillColor: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us') ? 'transparent' : 'inherit',
-                  backgroundClip: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us') ? 'text' : 'unset',
+                  color: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us') ? '#FFFFFF' : '#6B7280',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  fontSize: '0.938rem',
+                  fontSize: '0.875rem',
                   fontWeight: '600',
-                  letterSpacing: '0.01em'
+                  letterSpacing: '-0.01em',
+                  boxShadow: (currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us') ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none'
                 }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setShowDropdown(!showDropdown);
-                  onNavigate?.('about');
+                  onNavigate('about');
                 }}
                 onMouseOver={(e) => {
                   if (!(currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us')) {
-                    e.currentTarget.style.background = 'rgba(139, 92, 246, 0.08)';
-                    e.currentTarget.style.color = '#8B5CF6';
-                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                    e.currentTarget.style.color = '#111827';
                   }
                 }}
                 onMouseOut={(e) => {
                   if (!(currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us')) {
                     e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.color = '#374151';
-                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.color = '#6B7280';
                   }
                 }}
               >
                 About Us
-                <ChevronDown className={`transition-transform duration-300 ${showDropdown ? 'rotate-180' : ''}`} size={15} />
+                <ChevronDown className={`transition-transform duration-300 ${showDropdown ? 'rotate-180' : ''}`} size={14} />
               </button>
               
               {showDropdown && (
                 <div 
-                  className="absolute shadow-xl border-0 mt-3 bg-white rounded-2xl"
+                  className="absolute shadow-xl border-0 mt-2 bg-white rounded-2xl"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 250, 255, 0.96) 100%)',
-                    backdropFilter: 'blur(25px)',
-                    WebkitBackdropFilter: 'blur(25px)',
+                    background: 'rgba(255, 255, 255, 0.98)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
                     borderRadius: '16px',
-                    minWidth: '200px',
+                    minWidth: '180px',
                     top: '100%',
                     left: '0',
                     zIndex: 1000,
-                    border: '1px solid rgba(139, 92, 246, 0.15)',
-                    boxShadow: '0 12px 40px rgba(139, 92, 246, 0.15), 0 6px 20px rgba(99, 102, 241, 0.1)',
+                    border: '1px solid rgba(0, 0, 0, 0.08)',
+                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04)',
                     animation: 'slideDown 0.3s ease-out'
                   }}
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="p-2">
                     <button
-                      className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl text-gray-700"
+                      className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
                       onClick={() => handleNavigation('our-progress')}
                       style={{ 
                         transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                        fontSize: '0.938rem',
-                        fontWeight: '500'
+                        fontSize: '0.875rem',
+                        fontWeight: '500',
+                        color: '#6B7280'
                       }}
                       onMouseOver={(e) => {
-                        e.currentTarget.style.background = 'linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.08) 100%)';
-                        e.currentTarget.style.color = '#8B5CF6';
-                        e.currentTarget.style.transform = 'translateX(4px)';
+                        e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                        e.currentTarget.style.color = '#111827';
                       }}
                       onMouseOut={(e) => {
                         e.currentTarget.style.background = 'transparent';
-                        e.currentTarget.style.color = '#374151';
-                        e.currentTarget.style.transform = 'translateX(0)';
+                        e.currentTarget.style.color = '#6B7280';
                       }}
                     >
                       Our Progress
                     </button>
                     <button
-                      className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl text-gray-700"
+                      className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
                       onClick={() => handleNavigation('contact-us')}
                       style={{ 
                         transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                        fontSize: '0.938rem',
-                        fontWeight: '500'
+                        fontSize: '0.875rem',
+                        fontWeight: '500',
+                        color: '#6B7280'
                       }}
                       onMouseOver={(e) => {
-                        e.currentTarget.style.background = 'linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.08) 100%)';
-                        e.currentTarget.style.color = '#8B5CF6';
-                        e.currentTarget.style.transform = 'translateX(4px)';
+                        e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                        e.currentTarget.style.color = '#111827';
                       }}
                       onMouseOut={(e) => {
                         e.currentTarget.style.background = 'transparent';
-                        e.currentTarget.style.color = '#374151';
-                        e.currentTarget.style.transform = 'translateX(0)';
+                        e.currentTarget.style.color = '#6B7280';
                       }}
                     >
                       Contact Us
@@ -269,64 +255,54 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
             {/* Board of Directors Dropdown */}
             <div className="relative">
               <button
-                className={`border-0 px-5 py-2.5 mx-0.5 rounded-xl flex items-center gap-1.5 ${
-                  currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio'
-                    ? '' 
-                    : 'text-gray-700'
-                }`}
+                className="border-0 px-4 py-1.5 rounded-full flex items-center gap-1.5"
                 style={{
                   background: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio')
-                    ? 'linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%)'
+                    ? 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)'
                     : 'transparent',
-                  backgroundImage: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio')
-                    ? 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)' 
-                    : 'none',
-                  WebkitBackgroundClip: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio') ? 'text' : 'unset',
-                  WebkitTextFillColor: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio') ? 'transparent' : 'inherit',
-                  backgroundClip: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio') ? 'text' : 'unset',
+                  color: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio') ? '#FFFFFF' : '#6B7280',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  fontSize: '0.938rem',
+                  fontSize: '0.875rem',
                   fontWeight: '600',
-                  letterSpacing: '0.01em'
+                  letterSpacing: '-0.01em',
+                  boxShadow: (currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio') ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none'
                 }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setShowBoardDropdown(!showBoardDropdown);
-                  onNavigate?.('board-of-directors');
+                  onNavigate('board-of-directors');
                 }}
                 onMouseOver={(e) => {
                   if (!(currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio')) {
-                    e.currentTarget.style.background = 'rgba(139, 92, 246, 0.08)';
-                    e.currentTarget.style.color = '#8B5CF6';
-                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                    e.currentTarget.style.color = '#111827';
                   }
                 }}
                 onMouseOut={(e) => {
                   if (!(currentPage === 'board-of-directors' || currentPage === 'tonya-bio' || currentPage === 'rob-bio' || currentPage === 'diane-bio' || currentPage === 'danielle-bio' || currentPage === 'wajid-bio')) {
                     e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.color = '#374151';
-                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.color = '#6B7280';
                   }
                 }}
               >
                 Board of Directors
-                <ChevronDown className={`transition-transform duration-300 ${showBoardDropdown ? 'rotate-180' : ''}`} size={15} />
+                <ChevronDown className={`transition-transform duration-300 ${showBoardDropdown ? 'rotate-180' : ''}`} size={14} />
               </button>
               
               {showBoardDropdown && (
                 <div 
-                  className="absolute shadow-xl border-0 mt-3 bg-white rounded-2xl"
+                  className="absolute shadow-xl border-0 mt-2 bg-white rounded-2xl"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 250, 255, 0.96) 100%)',
-                    backdropFilter: 'blur(25px)',
-                    WebkitBackdropFilter: 'blur(25px)',
+                    background: 'rgba(255, 255, 255, 0.98)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
                     borderRadius: '16px',
                     minWidth: '260px',
                     top: '100%',
                     left: '0',
                     zIndex: 1000,
-                    border: '1px solid rgba(139, 92, 246, 0.15)',
-                    boxShadow: '0 12px 40px rgba(139, 92, 246, 0.15), 0 6px 20px rgba(99, 102, 241, 0.1)',
+                    border: '1px solid rgba(0, 0, 0, 0.08)',
+                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04)',
                     animation: 'slideDown 0.3s ease-out'
                   }}
                   onClick={(e) => e.stopPropagation()}
@@ -337,27 +313,26 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                       { key: 'rob-bio', label: "Robert Smith (Vice President/CFO)" },
                       { key: 'diane-bio', label: "Diane Jones (Director/Secretary)" },
                       { key: 'danielle-bio', label: "Danielle Ortega (Paralegal)" },
-                      { key: 'wajid-bio', label: "Wajid Bhat (Engineering)" }
-                     
+                      { key: 'wajid-bio', label: "Wajid Bhat (Engineering)" },
+                      { key: 'dummy-bio', label: "John Anderson (Advisor)" }
                     ].map((item) => (
                       <button
                         key={item.key}
-                        className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl text-gray-700"
+                        className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
                         onClick={() => handleNavigation(item.key)}
                         style={{ 
                           transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                          fontSize: '0.938rem',
-                          fontWeight: '500'
+                          fontSize: '0.875rem',
+                          fontWeight: '500',
+                          color: '#6B7280'
                         }}
                         onMouseOver={(e) => {
-                          e.currentTarget.style.background = 'linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.08) 100%)';
-                          e.currentTarget.style.color = '#8B5CF6';
-                          e.currentTarget.style.transform = 'translateX(4px)';
+                          e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                          e.currentTarget.style.color = '#111827';
                         }}
                         onMouseOut={(e) => {
                           e.currentTarget.style.background = 'transparent';
-                          e.currentTarget.style.color = '#374151';
-                          e.currentTarget.style.transform = 'translateX(0)';
+                          e.currentTarget.style.color = '#6B7280';
                         }}
                       >
                         {item.label}
@@ -372,39 +347,29 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
             {navigationItems.slice(1).map((item) => (
               <button
                 key={item.name}
-                className={`border-0 px-5 py-2.5 mx-0.5 rounded-xl ${
-                  currentPage === item.href 
-                    ? '' 
-                    : 'text-gray-700'
-                }`}
+                className="border-0 px-4 py-1.5 rounded-full"
                 style={{
                   background: currentPage === item.href 
-                    ? 'linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%)'
+                    ? 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)'
                     : 'transparent',
-                  backgroundImage: currentPage === item.href 
-                    ? 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)' 
-                    : 'none',
-                  WebkitBackgroundClip: currentPage === item.href ? 'text' : 'unset',
-                  WebkitTextFillColor: currentPage === item.href ? 'transparent' : 'inherit',
-                  backgroundClip: currentPage === item.href ? 'text' : 'unset',
+                  color: currentPage === item.href ? '#FFFFFF' : '#6B7280',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  fontSize: '0.938rem',
+                  fontSize: '0.875rem',
                   fontWeight: '600',
-                  letterSpacing: '0.01em'
+                  letterSpacing: '-0.01em',
+                  boxShadow: currentPage === item.href ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none'
                 }}
                 onClick={() => handleNavigation(item.href)}
                 onMouseOver={(e) => {
                   if (currentPage !== item.href) {
-                    e.currentTarget.style.background = 'rgba(139, 92, 246, 0.08)';
-                    e.currentTarget.style.color = '#8B5CF6';
-                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                    e.currentTarget.style.color = '#111827';
                   }
                 }}
                 onMouseOut={(e) => {
                   if (currentPage !== item.href) {
                     e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.color = '#374151';
-                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.color = '#6B7280';
                   }
                 }}
               >
@@ -414,16 +379,15 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
           </div>
 
           {/* Right Side Actions */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <button 
-              className="border-2 flex items-center gap-2 px-4 py-2.5 rounded-xl"
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full border-0"
               style={{
-                borderColor: 'rgba(139, 92, 246, 0.3)',
-                color: '#8B5CF6',
-                background: 'rgba(139, 92, 246, 0.05)',
+                color: '#6B7280',
+                background: 'transparent',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 fontWeight: '600',
-                fontSize: '0.938rem'
+                fontSize: '0.875rem'
               }}
               onClick={() => {
                 const confirmed = window.confirm("☑️ Open this link in FaceTime");
@@ -439,43 +403,36 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                 }
               }}
               onMouseOver={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)';
-                e.currentTarget.style.borderColor = '#8B5CF6';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 8px 20px rgba(139, 92, 246, 0.25)';
+                e.currentTarget.style.background = 'rgba(243, 244, 246, 0.8)';
+                e.currentTarget.style.color = '#111827';
               }}
               onMouseOut={(e) => {
-                e.currentTarget.style.background = 'rgba(139, 92, 246, 0.05)';
-                e.currentTarget.style.borderColor = 'rgba(139, 92, 246, 0.3)';
-                e.currentTarget.style.color = '#8B5CF6';
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = '#6B7280';
               }}
             >
-              <Phone size={17} />
+              <Phone size={16} />
               Call
             </button>
             
             <button 
-              className="px-6 py-2.5 text-white rounded-xl relative overflow-hidden"
+              className="px-5 py-1.5 text-white rounded-full border-0"
               style={{
-                background: 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)',
-                border: 'none',
+                background: 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                fontWeight: '700',
-                fontSize: '0.938rem',
-                letterSpacing: '0.5px',
-                boxShadow: '0 6px 20px rgba(139, 92, 246, 0.3)'
+                fontWeight: '600',
+                fontSize: '0.875rem',
+                letterSpacing: '-0.01em',
+                boxShadow: '0 4px 12px rgba(139, 92, 246, 0.3)'
               }}
               onClick={() => handleNavigation('need-help-now')}
               onMouseOver={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 12px 30px rgba(139, 92, 246, 0.4)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(139, 92, 246, 0.4)';
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 6px 20px rgba(139, 92, 246, 0.3)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(139, 92, 246, 0.3)';
               }}
             >
               REACH OUT!
