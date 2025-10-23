@@ -225,7 +225,7 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                         e.currentTarget.style.color = '#6B7280';
                       }}
                     >
-                      Our Progress
+                      Programs and Projects
                     </button>
                     <button
                       className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"

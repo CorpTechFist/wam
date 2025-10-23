@@ -8,15 +8,31 @@ export function OurProgress() {
     <div className="relative overflow-hidden">
       <section className="py-16 relative overflow-hidden">
         {/* Modern gradient background */}
-        <div className="absolute inset-0 bg-blue-50/70"></div>
+        <div className="absolute inset-0 bg-white"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           {/* Section Header with modern styling */}
           <div className="text-center mb-16 space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight bg-gradient-to-r from-purple-700 via-indigo-600 to-violet-700 bg-clip-text text-transparent" style={{ fontFamily: "'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive" }}>
-              {translations.ourProgress?.title || "Progress & Future Programs"}
-            </h2>
+              <div className="relative mb-8">
+             <h2
+  className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-[1.3] pb-2"
+  style={{
+    background:
+      "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+    fontWeight: 700,
+    letterSpacing: "-0.02em",
+    display: "inline-block",
+    paddingBottom: "0.15em", // ✅ prevents g/j clipping
+  }}
+>
+  Programs and Future Projects
+</h2>
 
+            </div>
+           
             {/* Modern disclaimer card */}
             <div className="max-w-3xl mx-auto relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
