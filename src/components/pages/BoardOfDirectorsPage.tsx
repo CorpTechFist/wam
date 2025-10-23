@@ -108,11 +108,15 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                 </div>
                 
                 {/* Call to Action Banner */}
-                <div className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm">
-                  <p className="board-title tracking-widest uppercase">
-                    {translations.hero?.changeMessage || "WE ARE THE CHANGE!"}
-                  </p>
-                </div>
+<div
+  className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm cursor-pointer"
+  onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
+>
+  <p className="board-title tracking-widest uppercase">
+    {translations.hero?.changeMessage || "WE ARE THE CHANGE!"}
+  </p>
+</div>
+
               </div>
             </div>
           </div>
@@ -135,7 +139,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   style={{ objectPosition: 'center center' }}
                 />
               </div>
-              
+            
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -166,7 +170,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+            
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -197,7 +201,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+            
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -228,7 +232,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+            
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
@@ -259,7 +263,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+            
             </div>
             <div className="text-center space-y-1">
               <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition-colors duration-300">
