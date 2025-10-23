@@ -18,9 +18,8 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
   const { translations } = useTranslation();
 
   return (
-    <div className="py-12 px-4 relative overflow-hidden bg-white">
+       <div className="py-12 px-4 relative overflow-hidden bg-white">
       <div className="container mx-auto max-w-6xl">
-        
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="py-8 relative overflow-hidden">
@@ -33,21 +32,39 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                 margin: 0 auto;
                 max-width: 100%;
               }
+              
               .board-title {
                 color: #374151;
               }
+              
               .board-text {
                 color: #6b7280;
               }
             `}</style>
-
             <div className="board-hero-section">
               <div className="max-w-5xl mx-auto">
                 {/* Title Section */}
                 <div className="text-center mb-8 pb-6 border-b-2 border-gray-200">
-                  <h1 className="board-title mb-4 tracking-tight font-bold text-3xl">
-                    {translations.boardOfDirectors?.title || "Board of Directors"}
-                  </h1>
+                  <div className="relative mb-8">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6" style={{ 
+                      background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      fontWeight: '700',
+                      letterSpacing: '-0.02em'
+                    }}>
+                      {translations.boardOfDirectors?.title || "Board of Directors"}
+                    </h1>
+                  </div>
+                  
+                  {/* Decorative Dots */}
+                  <div className="flex justify-center gap-2 mb-8">
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 shadow-lg shadow-purple-300"></div>
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-300"></div>
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500 shadow-lg shadow-purple-300"></div>
+                  </div>
+                  
                   <p className="text-lg board-text leading-relaxed max-w-3xl mx-auto">
                     {translations.boardOfDirectors?.description || "Our certified Board of Directors are driven by the passion to make our world a better place."}
                   </p>
@@ -55,7 +72,6 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                 
                 {/* Content Grid */}
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  
                   {/* Join Message Card */}
                   <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div className="flex items-start gap-3">
@@ -76,7 +92,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   {/* Welcome Message Card */}
                   <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-10 h-10 bg-gold-100 rounded-full flex items-center justify-center">
                         <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
@@ -91,16 +107,12 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   </div>
                 </div>
                 
-              {/* Call to Action Banner */}
-<div
-  onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
-  className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm cursor-pointer hover:shadow-md transition-all duration-300"
->
-  <p className="board-title tracking-widest uppercase font-semibold text-purple-700">
-    {"Be the Change!"}
-  </p>
-</div>
-
+                {/* Call to Action Banner */}
+                <div className="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-lg p-6 text-center border-l-4 border-r-4 border-purple-600 shadow-sm">
+                  <p className="board-title tracking-widest uppercase">
+                    {translations.hero?.changeMessage || "WE ARE THE CHANGE!"}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
