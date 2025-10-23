@@ -16,7 +16,7 @@ export function Services() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ fontFamily: 'Georgia, serif', color: '#581c87' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#581c87' }}>
               DONORS
             </h2>
             <p className="text-base md:text-lg text-card-foreground max-w-3xl mx-auto leading-relaxed mb-4">
@@ -50,7 +50,7 @@ export function Services() {
                       window.dispatchEvent(event);
                     }}
                     className="text-2xl md:text-3xl font-bold mb-4 underline cursor-pointer hover:text-purple-700 transition-colors"
-                    style={{ color: '#7c3aed', fontFamily: 'cursive' }}
+                    style={{ color: '#7c3aed' }}
                   >
                     {translations.donationPages?.personalDonorsTitle || "PERSONAL DONORS"}
                   </button>
@@ -79,7 +79,7 @@ export function Services() {
                       window.dispatchEvent(event);
                     }}
                     className="text-2xl md:text-3xl font-bold mb-4 underline cursor-pointer hover:text-purple-700 transition-colors"
-                    style={{ color: '#7c3aed', fontFamily: 'cursive' }}
+                    style={{ color: '#7c3aed' }}
                   >
                     {translations.donationPages?.sponsorsTitle || "PARTNERS"}
                   </button>
