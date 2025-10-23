@@ -1,11 +1,7 @@
-import { useState } from "react";
 import { useTranslation } from "./TranslationContext";
 
 export function MissionVisionSection() {
   const { translations } = useTranslation();
-
-  const [showFullMission, setShowFullMission] = useState(false);
-  const [showFullVision, setShowFullVision] = useState(false);
 
   // ✅ Full fallback text
   const missionText =
@@ -17,9 +13,6 @@ export function MissionVisionSection() {
     translations.hero?.visionDescription?.length > 50
       ? translations.hero.visionDescription
       : `We envision a world where trauma survivors feel seen, heard, and equipped to heal themselves. We champion understanding of the many paths to recovery—from peer support circles and holistic practices to evidence-based therapies. We provide resources, support, skills, and training to suicide loss survivors, trauma survivors, LGBTQa2s+ individuals, and those wrongfully accused. By broadening awareness and knowledge, we ignite hope, spark transformation, and nurture a culture of enduring resilience, civic engagement, and justice for all.`;
-
-  const truncate = (text: string, length = 250) =>
-    text.length > length ? text.slice(0, length) + "..." : text;
 
   const paragraphStyle = {
     fontFamily: "'Inter', 'system-ui', 'sans-serif'",
@@ -50,63 +43,58 @@ export function MissionVisionSection() {
           }}
         >
           {/* Header */}
-        <div
-  className="text-center mb-20 pb-16"
-  style={{ borderBottom: "1px solid rgba(139, 92, 246, 0.35)" }}
->
-  
+          <div
+            className="text-center mb-20 pb-16"
+            style={{ borderBottom: "1px solid rgba(139, 92, 246, 0.35)" }}
+          >
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3">
+              <h2
+                className="text-xl mb-0 px-3 italic font-semibold"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
+                  letterSpacing: "0.8px",
+                  fontWeight: "700",
+                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
+                }}
+              >
+                We Are The Change!
+              </h2>
 
-  <div className="flex flex-col md:flex-row items-center justify-center gap-3">
-    {/* We Are The Change! */}
-    <h2
-      className="text-xl mb-0 px-3 italic font-semibold"
-      style={{
-        background:
-          "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        backgroundClip: "text",
-        fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
-        letterSpacing: "0.8px",
-        fontWeight: "700",
-        textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
-      }}
-    >
-      We Are The Change!
-    </h2>
+              <div
+                className="hidden md:block"
+                style={{
+                  width: "2px",
+                  height: "30px",
+                  background:
+                    "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
+                  borderRadius: "1px",
+                  opacity: "0.7",
+                }}
+              ></div>
 
-    {/* Divider */}
-    <div
-      className="hidden md:block"
-      style={{
-        width: "2px",
-        height: "30px",
-        background: "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
-        borderRadius: "1px",
-        opacity: "0.7",
-      }}
-    ></div>
-
-    {/* Elevating lives... */}
-    <h2
-      className="text-lg mb-0 px-3"
-      style={{
-        background:
-          "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        backgroundClip: "text",
-        fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
-        letterSpacing: "0.8px",
-        fontWeight: "700",
-        textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
-      }}
-    >
-      Elevating lives, advocates for humanity and FREEDOM for ALL
-    </h2>
-  </div>
-</div>
-
+              <h2
+                className="text-lg mb-0 px-3"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
+                  letterSpacing: "0.8px",
+                  fontWeight: "700",
+                  textShadow: "0 2px 4px rgba(139, 92, 246, 0.2)",
+                }}
+              >
+                Elevating lives, advocates for humanity and FREEDOM for ALL
+              </h2>
+            </div>
+          </div>
 
           {/* Mission and Vision */}
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
@@ -129,17 +117,7 @@ export function MissionVisionSection() {
                 Our Mission
               </h2>
 
-              <p style={paragraphStyle}>
-                {showFullMission ? missionText : truncate(missionText)}
-                {missionText.length > 250 && (
-                  <button
-                    className="ml-2 text-purple-600 font-semibold"
-                    onClick={() => setShowFullMission(!showFullMission)}
-                  >
-                    {showFullMission ? "Show less" : "Read more"}
-                  </button>
-                )}
-              </p>
+              <p style={paragraphStyle}>{missionText}</p>
             </div>
 
             {/* Divider */}
@@ -194,17 +172,7 @@ export function MissionVisionSection() {
                 Our Vision
               </h2>
 
-              <p style={paragraphStyle}>
-                {showFullVision ? visionText : truncate(visionText)}
-                {visionText.length > 250 && (
-                  <button
-                    className="ml-2 text-purple-600 font-semibold"
-                    onClick={() => setShowFullVision(!showFullVision)}
-                  >
-                    {showFullVision ? "Show less" : "Read more"}
-                  </button>
-                )}
-              </p>
+              <p style={paragraphStyle}>{visionText}</p>
             </div>
           </div>
         </div>
