@@ -16,9 +16,26 @@ export function Services() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#581c87' }}>
-              DONORS
-            </h2>
+            <div className="relative mb-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6" style={{ 
+                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                fontWeight: '700',
+                letterSpacing: '-0.02em'
+              }}>
+                DONORS
+              </h2>
+            </div>
+            
+            {/* Decorative Dots */}
+            <div className="flex justify-center gap-2 mb-8">
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 shadow-lg shadow-purple-300"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-300"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500 shadow-lg shadow-purple-300"></div>
+            </div>
+            
             <p className="text-base md:text-lg text-card-foreground max-w-3xl mx-auto leading-relaxed mb-4">
               WAM works with mainly personal donations, and company sponsors.
             </p>
