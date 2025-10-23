@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Quote, Heart, Star, ChevronDown, ChevronUp } from "lucide-react";
+import {
+  Quote,
+  Heart,
+  Star,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -16,13 +22,15 @@ import seanfromoh from "../assets/testimonials/seanfromoh.png";
 
 export function News() {
   const { translations } = useTranslation();
-  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+  const [expandedCards, setExpandedCards] = useState<number[]>(
+    [],
+  );
 
   const toggleExpanded = (index: number) => {
     setExpandedCards((prev) =>
       prev.includes(index)
         ? prev.filter((i) => i !== index)
-        : [...prev, index]
+        : [...prev, index],
     );
   };
 
@@ -84,26 +92,35 @@ export function News() {
   return (
     <section
       id="testimonials"
-      className="pt-0 pb-10 relative overflow-hidden border-t border-b border-purple-200"
+      className="pt-0 pb-10 relative overflow-hidden border-t border-b border-white"
       style={{ background: "#ffffff" }}
     >
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <div className="p-8 max-w-4xl mx-auto text-center">
-
-            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-10" style={{ 
-              background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontWeight: '700',
-              letterSpacing: '-0.02em'
-            }}>
-              {translations.news?.title || "Testimonials & Success Stories"}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl mb-10"
+              style={{
+                background:
+                  "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                fontWeight: "700",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              {translations.news?.title ||
+                "Testimonials & Success Stories"}
             </h2>
             <p className="text-sm md:text-base text-black max-w-3xl mx-auto leading-relaxed">
-              {translations.news?.subtitle || "These are just some of the people WAM has helped journey from barely surviving to thriving!"}<br />
-              <span className="text-indigo-600 font-semibold italic text-base">{translations.news?.description || "We help by providing love, support, and resources to those in need, with real results and without abandonment."}</span>
+              {translations.news?.subtitle ||
+                "These are just some of the people WAM has helped journey from barely surviving to thriving!"}
+              <br />
+              <span className="text-indigo-600 font-semibold italic text-base">
+                {translations.news?.description ||
+                  "We help by providing love, support, and resources to those in need, with real results and without abandonment."}
+              </span>
             </p>
           </div>
         </div>
@@ -111,7 +128,8 @@ export function News() {
         {/* Cards */}
         <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => {
-            const image = profileImages[index % profileImages.length];
+            const image =
+              profileImages[index % profileImages.length];
             const expanded = expandedCards.includes(index);
 
             return (
@@ -124,7 +142,7 @@ export function News() {
                     : ""
                 }`}
               >
-                <Card className="glass-morphism border-0 shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl transition-all duration-500">
+                <Card className="glass-morphism border border-purple-200 shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl hover:border-purple-400 transition-all duration-500">
                   <CardContent className="p-8">
                     {/* Header */}
                     <div className="flex items-center justify-between mb-6">
@@ -135,7 +153,8 @@ export function News() {
                         {testimonial.type === "testimonial" && (
                           <Heart className="w-4 h-4 mr-2 text-purple-600" />
                         )}
-                        {testimonial.type === "success story" && (
+                        {testimonial.type ===
+                          "success story" && (
                           <Star className="w-4 h-4 mr-2 text-amber-500" />
                         )}
                         {testimonial.type}
@@ -171,12 +190,15 @@ export function News() {
                           <div
                             className={`transition-[max-height] duration-500 ease-in-out overflow-hidden`}
                             style={{
-                              maxHeight: expanded ? "1000px" : "100px",
+                              maxHeight: expanded
+                                ? "1000px"
+                                : "100px",
                             }}
                           >
                             <p
                               style={{
-                                fontFamily: "Inter, system-ui, sans-serif",
+                                fontFamily:
+                                  "Inter, system-ui, sans-serif",
                               }}
                             >
                               {testimonial.story}
@@ -184,16 +206,20 @@ export function News() {
                           </div>
                           {testimonial.story.length > 180 && (
                             <button
-                              onClick={() => toggleExpanded(index)}
+                              onClick={() =>
+                                toggleExpanded(index)
+                              }
                               className="mt-2 text-purple-600 hover:text-purple-800 font-medium text-sm flex items-center gap-1 transition-colors"
                             >
                               {expanded ? (
                                 <>
-                                  Read Less <ChevronUp className="w-4 h-4" />
+                                  Read Less{" "}
+                                  <ChevronUp className="w-4 h-4" />
                                 </>
                               ) : (
                                 <>
-                                  Read More <ChevronDown className="w-4 h-4" />
+                                  Read More{" "}
+                                  <ChevronDown className="w-4 h-4" />
                                 </>
                               )}
                             </button>
