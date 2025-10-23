@@ -88,30 +88,24 @@ export function News() {
       style={{ background: "#ffffff" }}
     >
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2
-            className="text-2xl md:text-3xl font-bold mb-6"
-            style={{
-              fontFamily: "Georgia, serif",
-              color: "#581c87",
-              textShadow: "0 1px 2px rgba(139,92,246,0.2)",
-            }}
-          >
-            {translations.news?.title || "Testimonials & Success Stories"}
-          </h2>
-          <p
-            className="text-base md:text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed"
-            style={{ fontFamily: "Inter, system-ui, sans-serif" }}
-          >
-            {translations.news?.subtitle ||
-              "These are just some of the people WAM has helped journey from barely surviving to thriving!"}
-            <br />
-            <span className="text-indigo-700 font-semibold italic">
-              {translations.news?.description ||
-                "We help by providing love, support, and resources to those in need—with real results and without abandonment."}
-            </span>
-          </p>
+          <div className="p-8 max-w-4xl mx-auto text-center">
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-10" style={{ 
+              background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              fontWeight: '700',
+              letterSpacing: '-0.02em'
+            }}>
+              {translations.news?.title || "Testimonials & Success Stories"}
+            </h2>
+            <p className="text-sm md:text-base text-black max-w-3xl mx-auto leading-relaxed">
+              {translations.news?.subtitle || "These are just some of the people WAM has helped journey from barely surviving to thriving!"}<br />
+              <span className="text-indigo-600 font-semibold italic text-base">{translations.news?.description || "We help by providing love, support, and resources to those in need, with real results and without abandonment."}</span>
+            </p>
+          </div>
         </div>
 
         {/* Cards */}
