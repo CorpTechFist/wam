@@ -111,12 +111,12 @@ export function DonationSchedulingPage() {
           <CardContent className="p-8 md:p-10">
             {/* Service Type Tabs */}
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-10 bg-gradient-to-r from-purple-100 to-purple-50 p-2 rounded-2xl border border-purple-200/50">
+              <TabsList className="grid w-full grid-cols-2 mb-10 bg-gradient-to-r from-purple-100 to-purple-50 p-2 h-20 rounded-2xl border border-purple-200/50">
                 <TabsTrigger 
                   value="pickup" 
                   className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-purple-700 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-3 transition-all duration-300"
                 >
-                  <Truck className="w-5 h-5 mr-2" />
+                  <Truck className="w-5 h- mr-2" />
                   <span style={{ fontWeight: '600' }}>Schedule Pickup</span>
                 </TabsTrigger>
                 <TabsTrigger 
