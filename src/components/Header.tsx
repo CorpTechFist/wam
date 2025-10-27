@@ -314,7 +314,7 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                       { key: 'diane-bio', label: "Diane Jones (Director/Secretary)" },
                       { key: 'danielle-bio', label: "Danielle Ortega (Paralegal)" },
                       { key: 'wajid-bio', label: "Wajid Bhat (Engineering)" },
-                      { key: 'dummy-bio', label: "John Anderson (Advisor)" }
+                 
                     ].map((item) => (
                       <button
                         key={item.key}
