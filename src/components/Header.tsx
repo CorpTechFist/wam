@@ -394,11 +394,11 @@ export function Header({ currentPage = "home", onNavigate }: HeaderProps) {
                 if (confirmed) {
                   const userAgent = navigator.userAgent.toLowerCase();
                   if (userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('mac')) {
-                    window.open('facetime://+1234567890', '_self');
+                    window.open('facetime://+1 385 414 4144', '_self');
                   } else if (userAgent.includes('android')) {
-                    window.open('tel:+1234567890', '_self');
+                    window.open('tel:+1 385 414 4144', '_self');
                   } else {
-                    window.open('facetime://+1234567890', '_self') || window.open('tel:+1234567890', '_self');
+                    window.open('facetime://+1 385 414 4144', '_self') || window.open('tel:+1 385 414 4144', '_self');
                   }
                 }
               }}
