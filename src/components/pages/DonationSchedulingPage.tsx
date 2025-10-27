@@ -614,7 +614,7 @@ export function DonationSchedulingPage() {
                 <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-purple-600" />
                 </div>
-                <span className="text-gray-800" style={{ fontWeight: '500' }}>(555) 123-4567</span>
+                <span className="text-gray-800" style={{ fontWeight: '500' }}>3854144144</span>
               </div>
               <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md border border-purple-200/50">
                 <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
