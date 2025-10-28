@@ -1,4 +1,7 @@
 import { useTranslation } from "../TranslationContext";
+import { ImageIcon } from "lucide-react";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
+
 import TonyaImage from "../../assets/board/Tonya.webp";
 import RobertImage from "../../assets/board/rob.png";
 import DianeImage from "../../assets/testimonials/Diane Jones.png";
@@ -13,19 +16,45 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
   const { translations } = useTranslation();
 
   const members = [
-    { name: "Tonya Jones Smith", title: "President", image: TonyaImage },
-    { name: "Robert Smith", title: "Vice President / CFO", image: RobertImage },
-    { name: "Diane Jones", title: "Secretary", image: DianeImage },
-    { name: "Danielle Ortega", title: "Board of Directors Paralegal", image: DanielleImage },
-    { name: "Wajid Bhat", title: "Engineering", image: WajidImage },
+    {
+      name: "Tonya Jones Smith",
+      title: "President",
+      image: TonyaImage,
+      bioId: "tonya-bio",
+    },
+    {
+      name: "Robert Smith",
+      title: "Vice President / CFO",
+      image: RobertImage,
+      bioId: "rob-bio",
+    },
+    {
+      name: "Diane Jones",
+      title: "Secretary",
+      image: DianeImage,
+      bioId: "diane-bio",
+    },
+    {
+      name: "Danielle Ortega",
+      title: "Board of Directors Paralegal",
+      image: DanielleImage,
+      bioId: "danielle-bio",
+    },
+    {
+      name: "Wajid Bhat",
+      title: "Engineering",
+      image: WajidImage,
+      bioId: "wajid-bio",
+    },
   ];
 
   return (
-    <div className="py-12 px-4 bg-white text-gray-800">
+    <div className="py-16 px-4 bg-white text-gray-800">
       <div className="container mx-auto max-w-6xl text-center">
-        {/* Title Section */}
+
+        {/* Title */}
         <h1
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+          className="text-4xl md:text-5xl font-bold mb-6"
           style={{
             background:
               "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #ffd700 50%, #8b5cf6 75%, #7c3aed 100%)",
@@ -36,65 +65,96 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
           Board of Directors
         </h1>
 
+        {/* Decorative dots */}
         <div className="flex justify-center gap-2 mb-8">
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600"></div>
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500"></div>
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500"></div>
         </div>
 
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          Our certified Board of Directors are driven by the passion to make our world a better place.
-        </p>
-
-        {/* Info Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-10">
-          <div className="p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition">
-            <h3 className="text-sm font-semibold text-gray-900 mb-2 uppercase">Join Our Team</h3>
-            <p className="text-sm text-gray-600">
-              Join We All Matter Alliance Team by applying through email with your resume and biography.
-            </p>
-          </div>
-
-          <div className="p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition">
-            <h3 className="text-sm font-semibold text-gray-900 mb-2 uppercase">Our Values</h3>
-            <p className="text-sm text-gray-600">
-              We are a welcoming, loving, passionate, and innovative group who believes loving yourself is the beginning to a better world!
-            </p>
-          </div>
+        {/* Intro Text */}
+        <div className="max-w-3xl mx-auto mb-12 text-justify text-lg text-gray-600 leading-relaxed space-y-6">
+          <p>
+            Our certified Board of Directors are driven by the passion to make our world a better place.
+          </p>
+          <p>
+            Join We All Matter Alliance Team by applying through email with your resume and biography.
+          </p>
+          <p>
+            We are a welcoming, loving, passionate, and innovative group who believes loving yourself
+            is the beginning to a better world!
+          </p>
+          <p className="text-2xl md:text-3xl font-semibold text-center bg-gradient-to-r from-purple-600 via-yellow-400 to-purple-600 bg-clip-text text-transparent">
+            WE ARE THE CHANGE!
+          </p>
         </div>
 
-        {/* CTA */}
-  <div
-  onClick={() => onNavigate?.("contact-us")}
-  className="bg-purple-600 hover:bg-purple-700 text-white rounded-xl py-6 text-center font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
->
-  Be the Change!
-</div>
+        {/* CTA Button */}
+        <div
+          onClick={() => onNavigate?.("contact-us")}
+          className="inline-block bg-purple-600 hover:bg-purple-700 text-white rounded-xl py-4 px-10 text-center font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer mb-16"
+        >
+          Be the Change!
+        </div>
 
+        {/* Members Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+          {members.map((member, index) => (
+            <div
+              key={member.name}
+              className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center group cursor-pointer"
+              style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => onNavigate?.(member.bioId)}
+            >
+              {/* Image */}
+              <div className="mb-4 relative">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-purple-400 transition-all duration-300 bg-gray-50">
+                  {member.image ? (
+                    <ImageWithFallback
+                      src={member.image}
+                      alt={`${member.name} professional headshot`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+                      <ImageIcon className="w-14 h-14 text-gray-300" />
+                    </div>
+                  )}
+                </div>
+                <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              </div>
 
+              {/* Info */}
+              <div className="text-center space-y-1">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-purple-700 transition-colors duration-300">
+                  {member.name}
+                </h3>
+                <p className="text-sm text-gray-600 uppercase tracking-wide">{member.title}</p>
 
-      </div>
-
-      {/* Board Members */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
-        {members.map((member) => (
-          <div
-            key={member.name}
-            className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition flex flex-col items-center group"
-          >
-            <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-purple-400 transition-all bg-gray-50">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+                {/* View Profile Link */}
+                <div className="pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs text-purple-600 inline-flex items-center gap-1">
+                    View Profile
+                    <svg
+                      className="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
             </div>
-            <h3 className="text-gray-900 font-bold group-hover:text-purple-700 transition">
-              {member.name}
-            </h3>
-            <p className="text-sm text-gray-600 uppercase tracking-wide">{member.title}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </div>
   );
