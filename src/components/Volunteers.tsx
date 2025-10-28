@@ -3,16 +3,12 @@ import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import {
   Quote,
-  Heart,
-  Star,
   ChevronDown,
   ChevronUp,
-  Users,
-  Award,
   Sparkles,
   User,
+  Mail,
 } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Volunteers() {
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
@@ -33,6 +29,7 @@ export function Volunteers() {
         "Sireen is a devoted mother, tireless volunteer, and fierce advocate for the people of Gaza and Palestine. Originally from Gaza, she now lives in Utah with her son Aiden and her parents, where she continues her mission to uplift those affected by war, displacement, and humanitarian crisis.\n\nAs a single mother, Sireen balances the demands of parenting with an unwavering commitment to justice. She has helped deliver life-saving aid to families in Gaza and supported those who fled to Egypt, organizing donations, coordinating relief efforts, and raising awareness about the urgent need for ceasefire and compassion.\n\nHer work is deeply personal—rooted in love for her homeland and the people still suffering under siege. Whether she's gathering supplies, speaking out for peace, or building support networks, Sireen leads with empathy, resilience, and purpose.\n\nAt WAM Alliance, Sireen brings lived experience, cultural insight, and a warrior's heart to every initiative. Her presence reminds us that advocacy is not just a cause—it's a calling.",
       role: "Project Coordinator",
       type: "Featured Volunteer",
+      email: "aidensroots@gmail.com",
     },
   ];
 
@@ -69,7 +66,7 @@ export function Volunteers() {
           </div>
         </div>
 
-        {/* Featured Volunteer Card - Centered */}
+        {/* Featured Volunteer Card */}
         <div className="max-w-3xl mx-auto">
           {volunteers.map((volunteer, index) => {
             const expanded = expandedCards.includes(index);
@@ -80,7 +77,7 @@ export function Volunteers() {
                 className="transition-all duration-500 hover:scale-[1.01]"
               >
                 <Card className="glass-morphism border-2 border-purple-300 shadow-2xl bg-white/95 backdrop-blur-md hover:shadow-3xl hover:border-purple-500 transition-all duration-500 relative overflow-hidden">
-                  {/* Decorative gradient overlay */}
+                  {/* Decorative gradient line */}
                   <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 via-amber-400 to-purple-500"></div>
                   
                   <CardContent className="p-6">
@@ -125,29 +122,18 @@ export function Volunteers() {
                           <div
                             className={`transition-[max-height] duration-500 ease-in-out overflow-hidden`}
                             style={{
-                              maxHeight: expanded
-                                ? "2000px"
-                                : "80px",
+                              maxHeight: expanded ? "2000px" : "80px",
                             }}
                           >
-                            <div
-                              style={{
-                                fontFamily:
-                                  "Inter, system-ui, sans-serif",
-                              }}
-                            >
-                              {volunteer.story.split('\n\n').map((paragraph, i) => (
-                                <p key={i} className="mb-2.5 last:mb-0">
-                                  {paragraph}
-                                </p>
-                              ))}
-                            </div>
+                            {volunteer.story.split("\n\n").map((paragraph, i) => (
+                              <p key={i} className="mb-2.5 last:mb-0">
+                                {paragraph}
+                              </p>
+                            ))}
                           </div>
                           {volunteer.story.length > 180 && (
                             <button
-                              onClick={() =>
-                                toggleExpanded(index)
-                              }
+                              onClick={() => toggleExpanded(index)}
                               className="mt-2 text-purple-600 hover:text-purple-800 font-semibold text-xs flex items-center gap-1 transition-colors group"
                             >
                               {expanded ? (
@@ -167,9 +153,17 @@ export function Volunteers() {
                       </blockquote>
                     </div>
 
-                    {/* Footer */}
-                    <div className="border-t border-purple-200 pt-3">
-
+                    {/* Footer - Contact Button */}
+                    <div className="border-t border-purple-200 pt-3 flex justify-end">
+                      <a
+                        href={`mailto:${volunteer.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-amber-400 text-white font-semibold text-sm rounded-full shadow-md hover:shadow-lg hover:from-purple-600 hover:to-amber-500 transition-all duration-300"
+                      >
+                        <Mail className="w-4 h-4" />
+                        Contact Now
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
