@@ -12,6 +12,7 @@ import { ModernBackground } from "./components/ModernBackground";
 import { TranslationProvider } from "./components/TranslationContext";
 
 
+
 // Import page components
 import { HomePage } from "./components/pages/HomePage";
 import { AboutPage } from "./components/pages/AboutPage";
@@ -35,6 +36,7 @@ import { SponsorsPage } from "./components/pages/SponsorsPage";
 import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./components/pages/TermsOfServicePage";
 import { ResourcesPartneringAgenciesPage } from "./components/pages/ResourcesPartneringAgenciesPage";
+import { VolunteersPage } from "./components/pages/VolunteersPage";
 
 
 export default function App() {
@@ -120,6 +122,7 @@ export default function App() {
         
         {currentPage === "resources-partnering-agencies" && <ResourcesPartneringAgenciesPage />}
         
+        {currentPage === "volunteers" && <VolunteersPage />}
         <Footer currentPage={currentPage} onNavigate={handleNavigation} />
       </div>
     </TranslationProvider>
