@@ -155,16 +155,17 @@ export function Volunteers() {
 
                     {/* Footer - Contact Button */}
                     <div className="border-t border-purple-200 pt-3 flex justify-end">
-                      <a
-                        href={`mailto:${volunteer.email}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-amber-400 text-white font-semibold text-sm rounded-full shadow-md hover:shadow-lg hover:from-purple-600 hover:to-amber-500 transition-all duration-300"
-                      >
-                        <Mail className="w-4 h-4" />
-                        Contact Now
-                      </a>
-                    </div>
+  <a
+    href={`mailto:${volunteer.email}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white font-semibold text-sm rounded-full shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-300"
+  >
+    <Mail className="w-4 h-4" />
+    Contact Now
+  </a>
+</div>
+
                   </CardContent>
                 </Card>
               </div>
