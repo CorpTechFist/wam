@@ -84,7 +84,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
             We are a welcoming, loving, passionate, and innovative group who believes loving yourself
             is the beginning to a better world!
           </p>
-          <p className="text-2xl md:text-3xl font-semibold text-center bg-gradient-to-r from-purple-600 via-yellow-400 to-purple-600 bg-clip-text text-transparent">
+          <p>
             WE ARE THE CHANGE!
           </p>
         </div>
