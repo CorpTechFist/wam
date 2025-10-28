@@ -159,12 +159,18 @@ export function Volunteers() {
     href={`mailto:${volunteer.email}`}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white font-semibold text-sm rounded-full shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-300"
+    className="inline-flex items-center gap-2 px-5 py-2.5 
+      bg-purple-600 text-white font-semibold text-sm 
+      rounded-full shadow-lg shadow-purple-300/30 
+      hover:bg-purple-700 hover:shadow-purple-400/40 
+      hover:scale-105 active:scale-95 
+      transition-all duration-300 ease-out"
   >
-    <Mail className="w-4 h-4" />
-    Contact Now
+    <Mail className="w-4 h-4 animate-pulse" />
+    <span>Contact Now</span>
   </a>
 </div>
+
 
                   </CardContent>
                 </Card>
