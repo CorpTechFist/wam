@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { Button } from "./ui/button";
-import logoImage from "../assets/logo/logo.png";
+import logoImage from "../assets/logo/wamnewlogo.png";
+
+
 
 interface HeaderProps {
   currentPage?: string;

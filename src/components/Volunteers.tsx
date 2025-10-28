@@ -154,9 +154,9 @@ export function Volunteers() {
                     </div>
 
                     {/* Footer - Contact Button */}
-                    <div className="border-t border-purple-200 pt-3 flex justify-end">
+        <div className="border-t border-purple-200 pt-3 flex justify-end">
   <a
-    href={`mailto:${volunteer.email}`}
+    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${volunteer.email}`}
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center gap-2 px-5 py-2.5 
