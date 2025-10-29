@@ -14,8 +14,7 @@ export function Header({
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [showBoardDropdown, setShowBoardDropdown] =
-    useState(false);
+  const [showBoardDropdown, setShowBoardDropdown] = useState(false);
 
   // ✅ Close dropdowns when clicking outside
   useEffect(() => {
@@ -64,7 +63,7 @@ export function Header({
       }}
     >
       <div className="max-w-full flex items-center w-full">
-        {/* ✅ Brand / Logo */}
+        {/* ✅ Logo */}
         <button
           onClick={() => handleNavigation("home")}
           className="flex items-center gap-3 group transition-all duration-300 hover:scale-105"
@@ -95,31 +94,29 @@ export function Header({
                   currentPage === "home"
                     ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                     : "transparent",
-                color:
-                  currentPage === "home" ? "#FFF" : "#6B7280",
+                color: currentPage === "home" ? "#FFF" : "#6B7280",
               }}
               onClick={() => handleNavigation("home")}
             >
               WAM Alliance
             </button>
 
-            {/* About Dropdown */}
+            {/* About Us Dropdown */}
             <div className="relative">
               <button
                 className="border-0 px-4 py-1.5 rounded-full flex items-center gap-1.5"
                 style={{
                   background:
-                    currentPage === "about" ||
-                    currentPage === "our-progress" ||
-                    currentPage === "contact-us"
+                    ["about", "our-progress", "contact-us"].includes(
+                      currentPage
+                    )
                       ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                       : "transparent",
-                  color:
-                    currentPage === "about" ||
-                    currentPage === "our-progress" ||
-                    currentPage === "contact-us"
-                      ? "#FFF"
-                      : "#6B7280",
+                  color: ["about", "our-progress", "contact-us"].includes(
+                    currentPage
+                  )
+                    ? "#FFF"
+                    : "#6B7280",
                 }}
                 onClick={(e) => {
                   e.stopPropagation();
@@ -139,17 +136,13 @@ export function Header({
                 <div className="absolute bg-white shadow-xl rounded-2xl mt-2">
                   <button
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm"
-                    onClick={() =>
-                      handleNavigation("our-progress")
-                    }
+                    onClick={() => handleNavigation("our-progress")}
                   >
                     Programs and Projects
                   </button>
                   <button
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm"
-                    onClick={() =>
-                      handleNavigation("contact-us")
-                    }
+                    onClick={() => handleNavigation("contact-us")}
                   >
                     Contact Us
                   </button>
@@ -157,7 +150,7 @@ export function Header({
               )}
             </div>
 
-            {/* Board Dropdown */}
+            {/* ✅ Board Dropdown (Now Navigates to Board Page) */}
             <div className="relative">
               <button
                 className="border-0 px-4 py-1.5 rounded-full flex items-center gap-1.5"
@@ -175,7 +168,8 @@ export function Header({
                 }}
                 onClick={(e) => {
                   e.stopPropagation();
-                  setShowBoardDropdown(!showBoardDropdown);
+                  handleNavigation("board-of-directors"); // ✅ Navigate
+                  setShowBoardDropdown(!showBoardDropdown); // ✅ Still toggle dropdown
                 }}
               >
                 Board of Directors
@@ -196,28 +190,16 @@ export function Header({
                     },
                     {
                       key: "rob-bio",
-                      label:
-                        "Robert Smith (Vice President/CFO)",
+                      label: "Robert Smith (Vice President/CFO)",
                     },
-                    {
-                      key: "diane-bio",
-                      label: "Diane Jones (Secretary)",
-                    },
-                    {
-                      key: "danielle-bio",
-                      label: "Danielle Ortega (Paralegal)",
-                    },
-                    {
-                      key: "wajid-bio",
-                      label: "Wajid Bhat (Engineering)",
-                    },
+                    { key: "diane-bio", label: "Diane Jones (Secretary)" },
+                    { key: "danielle-bio", label: "Danielle Ortega (Paralegal)" },
+                    { key: "wajid-bio", label: "Wajid Bhat (Engineering)" },
                   ].map((member) => (
                     <button
                       key={member.key}
                       className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm"
-                      onClick={() =>
-                        handleNavigation(member.key)
-                      }
+                      onClick={() => handleNavigation(member.key)}
                     >
                       {member.label}
                     </button>
@@ -237,9 +219,7 @@ export function Header({
                       ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                       : "transparent",
                   color:
-                    currentPage === item.href
-                      ? "#FFF"
-                      : "#6B7280",
+                    currentPage === item.href ? "#FFF" : "#6B7280",
                 }}
                 onClick={() => handleNavigation(item.href)}
               >
@@ -248,22 +228,13 @@ export function Header({
             ))}
           </div>
 
-          {/* Right Side Actions */}
+          {/* Right Side */}
           <div className="flex items-center gap-2">
             <Button
               variant="ghost"
-              className="!border-0 !outline-none !ring-0 !shadow-none hover:!border-0 focus:!outline-none focus:!ring-0 focus-visible:!ring-0 
-               focus-visible:!outline-none data-[state=open]:!ring-0 data-[state=open]:!outline-none active:!border-0"
               onClick={() => {
-                const confirmed = window.confirm(
-                  "☑️ Open this link in FaceTime?",
-                );
-                if (confirmed) {
-                  window.open(
-                    "facetime://+13854144144",
-                    "_self",
-                  );
-                }
+                const confirmed = window.confirm("☑️ Open this link in FaceTime?");
+                if (confirmed) window.open("facetime://+13854144144", "_self");
               }}
             >
               <Phone size={16} />
@@ -271,9 +242,7 @@ export function Header({
             </Button>
 
             <Button
-              className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold 
-               !border-0 !outline-none !ring-0 !shadow-none hover:!border-0 focus:!outline-none focus:!ring-0 focus-visible:!ring-0 
-               focus-visible:!outline-none data-[state=open]:!ring-0 data-[state=open]:!outline-none active:!border-0"
+              className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold"
               onClick={() => handleNavigation("need-help-now")}
             >
               REACH OUT!
@@ -320,17 +289,13 @@ export function Header({
                 <div className="pl-4 border-l border-gray-200">
                   <button
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                    onClick={() =>
-                      handleNavigation("our-progress")
-                    }
+                    onClick={() => handleNavigation("our-progress")}
                   >
                     Programs and Projects
                   </button>
                   <button
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                    onClick={() =>
-                      handleNavigation("contact-us")
-                    }
+                    onClick={() => handleNavigation("contact-us")}
                   >
                     Contact Us
                   </button>
@@ -338,29 +303,24 @@ export function Header({
               )}
             </div>
 
-            {/* Mobile Board Dropdown */}
+            {/* ✅ Mobile Board Dropdown */}
             <div>
               <button
                 className="block w-full text-left px-4 py-2 rounded-lg text-gray-800 hover:bg-gray-100"
-                onClick={() =>
-                  setShowBoardDropdown(!showBoardDropdown)
-                }
+                onClick={() => {
+                  handleNavigation("board-of-directors"); // ✅ Navigate
+                  setShowBoardDropdown(!showBoardDropdown); // ✅ Expand dropdown
+                }}
               >
                 Board of Directors
               </button>
               {showBoardDropdown && (
                 <div className="pl-4 border-l border-gray-200">
                   {[
-                    {
-                      key: "tonya-bio",
-                      label: "Tonya Jones Smith",
-                    },
+                    { key: "tonya-bio", label: "Tonya Jones Smith" },
                     { key: "rob-bio", label: "Robert Smith" },
                     { key: "diane-bio", label: "Diane Jones" },
-                    {
-                      key: "danielle-bio",
-                      label: "Danielle Ortega",
-                    },
+                    { key: "danielle-bio", label: "Danielle Ortega" },
                     { key: "wajid-bio", label: "Wajid Bhat" },
                   ].map((item) => (
                     <button
