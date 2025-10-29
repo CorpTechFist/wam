@@ -2,7 +2,7 @@ import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Users, Heart, Star, Gift } from "lucide-react";
 import { useTranslation } from "../TranslationContext";
-import donorsImage from 'figma:asset/0ac45be3ff4699bae26fbda27fa3b09f73de9747.png';
+import donorsImage from 'asset/0ac45be3ff4699bae26fbda27fa3b09f73de9747.png';
 
 export function PersonalDonorsPage() {
   const { translations } = useTranslation();

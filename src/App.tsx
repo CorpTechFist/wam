@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Header } from './components/Header';
-
 import { Banner } from "./components/Banner";
 import { Footer } from "./components/Footer";
 import { OurProgress } from "./components/OurProgress";
@@ -11,9 +10,7 @@ import { NeedHelpNow } from "./components/NeedHelpNow";
 import { ModernBackground } from "./components/ModernBackground";
 import { TranslationProvider } from "./components/TranslationContext";
 
-
-
-// Import page components
+// Import all pages
 import { HomePage } from "./components/pages/HomePage";
 import { AboutPage } from "./components/pages/AboutPage";
 import { ServicesPage } from "./components/pages/ServicesPage";
@@ -38,91 +35,94 @@ import { TermsOfServicePage } from "./components/pages/TermsOfServicePage";
 import { ResourcesPartneringAgenciesPage } from "./components/pages/ResourcesPartneringAgenciesPage";
 import { VolunteersPage } from "./components/pages/VolunteersPage";
 
-
 export default function App() {
-  const [currentPage, setCurrentPage] = useState("home");
+  // ✅ Initialize from URL hash or default to "home"
+  const getInitialPage = () => {
+    const hash = window.location.hash.slice(1);
+    return hash || "home";
+  };
 
+  const [currentPage, setCurrentPage] = useState(getInitialPage);
+
+  // ✅ Centralized navigation function
   const handleNavigation = (page: string) => {
     setCurrentPage(page);
-    // Scroll to top when navigating to a new page
+
+    // Update browser history and URL hash
+    window.history.pushState({ page }, '', `#${page}`);
+
+    // Scroll to top on navigation
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Listen for custom navigation events from volunteer link
+  // ✅ Handle browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const page = event.state?.page || getInitialPage();
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
+  // ✅ Custom event listener for programmatic navigation
   useEffect(() => {
     const handleCustomNavigation = (event: CustomEvent) => {
       handleNavigation(event.detail);
     };
 
     window.addEventListener('navigate', handleCustomNavigation as EventListener);
-    
     return () => {
       window.removeEventListener('navigate', handleCustomNavigation as EventListener);
     };
   }, []);
 
+  // ✅ Render
   return (
     <TranslationProvider>
       <div className="min-h-screen text-foreground relative">
         <ModernBackground />
         <Header currentPage={currentPage} onNavigate={handleNavigation} />
         <Banner />
-        
+
+        {/* Pages */}
         {currentPage === "home" && <HomePage />}
-        
         {currentPage === "about" && <AboutPage />}
-        
         {currentPage === "services" && <ServicesPage />}
-        
         {currentPage === "members" && <MembersPage />}
-        
-        {currentPage === "board-of-directors" && <BoardOfDirectorsPage onNavigate={handleNavigation} />}
-        
+        {currentPage === "board-of-directors" && (
+          <BoardOfDirectorsPage onNavigate={handleNavigation} />
+        )}
         {currentPage === "news" && <NewsPage />}
-        
         {currentPage === "contact" && <ContactPage />}
-        
         {currentPage === "our-progress" && <OurProgress />}
-        
         {currentPage === "contact-us" && <ContactUs />}
-        
         {currentPage === "volunteer" && <Volunteer />}
-        
         {currentPage === "volunteer-application" && <VolunteerApplication />}
-        
         {currentPage === "need-help-now" && <NeedHelpNow />}
-        
         {currentPage === "tonya-bio" && <TonyaBioPage />}
-        
         {currentPage === "rob-bio" && <RobBioPage />}
-        
         {currentPage === "diane-bio" && <DianeBioPage />}
-        
         {currentPage === "danielle-bio" && <DanielleBioPage />}
-        
         {currentPage === "wajid-bio" && <WajidBioPage />}
-        
         {currentPage === "dummy-bio" && <DummyBioPage onNavigate={handleNavigation} />}
-        
         {currentPage === "dummy-bio-2" && <DummyBio2Page onNavigate={handleNavigation} />}
-        
         {currentPage === "personal-donors" && <PersonalDonorsPage />}
-        
         {currentPage === "cash-donations" && <CashDonationsPage />}
-        
         {currentPage === "other-donations" && <OtherDonationsPage />}
-        
         {currentPage === "donation-scheduling" && <DonationSchedulingPage />}
-        
         {currentPage === "sponsors" && <SponsorsPage />}
-        
         {currentPage === "privacy-policy" && <PrivacyPolicyPage />}
-        
         {currentPage === "terms-of-service" && <TermsOfServicePage />}
-        
-        {currentPage === "resources-partnering-agencies" && <ResourcesPartneringAgenciesPage />}
-        
+        {currentPage === "resources-partnering-agencies" && (
+          <ResourcesPartneringAgenciesPage />
+        )}
         {currentPage === "volunteers" && <VolunteersPage />}
+
         <Footer currentPage={currentPage} onNavigate={handleNavigation} />
       </div>
     </TranslationProvider>
