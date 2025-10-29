@@ -76,9 +76,9 @@ export function Volunteers() {
                 key={index}
                 className="transition-all duration-500 hover:scale-[1.01]"
               >
-                <Card className="glass-morphism border-2 border-purple-300 shadow-2xl bg-white/95 backdrop-blur-md hover:shadow-3xl hover:border-purple-500 transition-all duration-500 relative overflow-hidden">
+                <Card className="">
                   {/* Decorative gradient line */}
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 via-amber-400 to-purple-500"></div>
+                  <div className=""></div>
                   
                   <CardContent className="p-6">
                     {/* Header */}
