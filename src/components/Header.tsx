@@ -7,7 +7,7 @@ import {
   Heart,
 } from "lucide-react";
 import { useState, useEffect } from "react";
-import logoImage from "../assets/logo/logo.png";
+import logoImage from "../assets/logo/wamnewlogo.png";
 
 interface HeaderProps {
   currentPage?: string;
