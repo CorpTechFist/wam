@@ -156,9 +156,7 @@ export function PersonalDonorsPage() {
           {/* Gerry - Repeated Donor */}
           <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
-            <div className="absolute top-4 right-4">
-              <Star className="w-6 h-6 text-yellow-500 fill-yellow-400" />
-            </div>
+        
             <CardContent className="p-8 md:p-10">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center shadow-lg">
