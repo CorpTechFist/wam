@@ -13,7 +13,7 @@ import {
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 // Local images (replace with your own volunteer images if available)
-//import sireen from "../assets/volunteers/sireen.jpg";
+import sireen from "../assets/icons/sireen.jpg";
 //import leeann from "../assets/volunteers/leeann.jpg";
 //import anika from "../assets/volunteers/anika.jpg";
 
@@ -37,7 +37,7 @@ export function Volunteers() {
       role: "Project Coordinator",
       type: "Featured Volunteer",
       email: "aidensroots@gmail.com",
-      //image: sireen,
+      image: sireen,
     },
     {
       name: "Leeann Hymas",
