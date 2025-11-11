@@ -5,13 +5,13 @@ import { useTranslation } from "./TranslationContext";
 
 export function OurProgress() {
   const { translations } = useTranslation();
-  const [showFullAiden, setShowFullAiden] = useState(false);
+  const [showFullAden, setShowFullAden] = useState(false);
 
-  const aidenFullText =
-    "Aiden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aiden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war. Born from lived experience and a survivor's heart, Aiden's Roots provides direct aid to those in crisis, including food, clean water, shelter, clothing, medical treatment, and educational support. Over the past two years, Sireen has helped coordinate the evacuation of injured children from Gaza to Egypt and the United States, working with organizations like PCRF and Heal Palestine to secure visas, transportation, and life-saving care. Through Aiden's Roots, Sireen has helped deliver tents, parcels, and safe housing to families who fled with nothing. She's personally assisted in the evacuation and treatment of her cousins Sara and Ahd—both severely injured—ensuring they received urgent medical attention in New York, South Carolina, and Colorado. This project is more than aid—it's advocacy. Aiden's Roots calls for ceasefire, healing, and global solidarity. It mobilizes volunteers, amplifies survivor stories, and builds bridges between communities in Utah, Egypt, and Gaza. At its core, Aiden's Roots is a mother's mission to protect, uplift, and never forget. It's a lifeline for those who remain and a beacon for those who've fled.";
+  const AdenFullText =
+    "Aden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war. Born from lived experience and a survivor's heart, Aden's Roots provides direct aid to those in crisis, including food, clean water, shelter, clothing, medical treatment, and educational support. Over the past two years, Sireen has helped coordinate the evacuation of injured children from Gaza to Egypt and the United States, working with organizations like PCRF and Heal Palestine to secure visas, transportation, and life-saving care. Through Aden's Roots, Sireen has helped deliver tents, parcels, and safe housing to families who fled with nothing. She's personally assisted in the evacuation and treatment of her cousins Sara and Ahd—both severely injured—ensuring they received urgent medical attention in New York, South Carolina, and Colorado. This project is more than aid—it's advocacy. Aden's Roots calls for ceasefire, healing, and global solidarity. It mobilizes volunteers, amplifies survivor stories, and builds bridges between communities in Utah, Egypt, and Gaza. At its core, Aden's Roots is a mother's mission to protect, uplift, and never forget. It's a lifeline for those who remain and a beacon for those who've fled.";
 
-  const aidenShortText =
-    "Aiden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aiden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war.";
+  const AdenShortText =
+    "Aden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war.";
 
   return (
     <div className="relative overflow-hidden">
@@ -122,20 +122,20 @@ export function OurProgress() {
                 "Techfist Global Inc - A Proud Sponsor of WAM Alliance"
               }
               year={
-                translations.ourProgress?.year2024 || "2024"
+                 "2025"
               }
               desc={
                 "Techfist Global stands as a proud sponsor and technological partner of WAM Alliance. Providing advanced digital solutions, strategic design, and scalable systems to amplify impact across global networks, bridging innovation with purpose to inspire sustainability, inclusion, and collective growth."
               }
             />
 
-            {/* Aiden's Roots */}
+            {/* Aden's Roots */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
               <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 h-full">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                   <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug">
-                    Aiden's Roots - A Project of WAM Alliance
+                    Aden's Roots - A Project of WAM Alliance
                   </h3>
                   <span
                     className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium"
@@ -147,23 +147,23 @@ export function OurProgress() {
                         "0 4px 12px rgba(168, 85, 247, 0.3)",
                     }}
                   >
-                    {translations.ourProgress?.year2024 ||
-                      "2024"}
+                    {
+                      "2025"}
                   </span>
                 </div>
 
                 <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
-                  {showFullAiden
-                    ? aidenFullText
-                    : aidenShortText}
+                  {showFullAden
+                    ? AdenFullText
+                    : AdenShortText}
                 </p>
                 <button
                   onClick={() =>
-                    setShowFullAiden(!showFullAiden)
+                    setShowFullAden(!showFullAden)
                   }
                   className="mt-4 text-purple-600 font-medium hover:text-purple-800 transition-all duration-300"
                 >
-                  {showFullAiden
+                  {showFullAden
                     ? "Read Less ↑"
                     : "Read More ↓"}
                 </button>

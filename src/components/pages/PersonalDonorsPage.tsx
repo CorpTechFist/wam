@@ -82,19 +82,18 @@ export function PersonalDonorsPage() {
               the results would be greater quality of life for individuals and their families that are less fortunate.
             </p>
           </div>
+         
+          <p className="inline-flex items-center px-6 py-3 text-xl" style={{ 
           
-          <Badge className="inline-flex items-center px-6 py-3 text-xl" style={{ 
-            background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
-            color: '#ffffff',
+            color: '#9d3df7ff',
             fontWeight: '600',
             letterSpacing: '0.08em',
             borderRadius: '12px',
-            border: '2px solid rgba(255, 215, 0, 0.3)',
-            boxShadow: '0 4px 15px rgba(124, 58, 237, 0.3), 0 2px 8px rgba(255, 215, 0, 0.2)'
+           
           }}>
             WE ARE THE CHANGE!
-          </Badge>
-          
+          </p>
+        
           {/* Decorative Dots */}
           <div className="flex justify-center gap-2 mt-8">
             <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 shadow-lg shadow-purple-300"></div>

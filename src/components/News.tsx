@@ -142,7 +142,7 @@ export function News() {
                     : ""
                 }`}
               >
-                <Card className="glass-morphism border border-purple-200 shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl hover:border-purple-400 transition-all duration-500">
+                <Card className=" shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl hover:border-purple-400 transition-all duration-500">
                   <CardContent className="p-8">
                     {/* Header */}
                     <div className="flex items-center justify-between mb-6">

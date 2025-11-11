@@ -5,10 +5,17 @@ import {
   Quote,
   ChevronDown,
   ChevronUp,
-  Sparkles,
+  Star,
   User,
   Mail,
+  Sparkles,
 } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+
+// Local images (replace with your own volunteer images if available)
+//import sireen from "../assets/volunteers/sireen.jpg";
+//import leeann from "../assets/volunteers/leeann.jpg";
+//import anika from "../assets/volunteers/anika.jpg";
 
 export function Volunteers() {
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
@@ -17,7 +24,7 @@ export function Volunteers() {
     setExpandedCards((prev) =>
       prev.includes(index)
         ? prev.filter((i) => i !== index)
-        : [...prev, index],
+        : [...prev, index]
     );
   };
 
@@ -30,20 +37,42 @@ export function Volunteers() {
       role: "Project Coordinator",
       type: "Featured Volunteer",
       email: "aidensroots@gmail.com",
+      //image: sireen,
+    },
+    {
+      name: "Leeann Hymas",
+      title: "Project Volunteer & Community Builder",
+      story:
+        "Born in Hawaii and raised across the globe, Leeann Hymas grew up in a military family that instilled in her the values of discipline, service, and community. Constant relocation gave her a deep appreciation for diverse cultures and the importance of showing up for others—no matter where you are.\n\nThough Leeann once dreamed of joining the military herself, she faced barriers as an LGBTQAI2S individual from a young age. Rather than let that stop her, she chose to live with the same integrity and commitment to service that she admired in those around her.\n\nHer life has become a testament to quiet strength, personal growth, and unwavering support for those in need. Leeann brings a rich background in food service and security to her volunteer work, along with a creative spirit expressed through art, video, and gaming.\n\nHer hands-on approach and compassionate presence make her a vital part of the We All Matter Alliance team. Whether helping at events, supporting outreach, or simply listening with empathy, Leeann lives as if she had served—and in many ways, she has. Her journey reminds us that service isn’t defined by uniforms—it’s defined by heart.",
+      role: "Project Coordinator",
+      type: "Featured Volunteer",
+      email: "",
+      //image: leeann,
+    },
+    {
+      name: "Anika Curtis",
+      title: "Creative Volunteer & Community Advocate",
+      story:
+        "Anika Curtis is a passionate artist and dedicated volunteer whose creativity is rooted in healing and purpose. Born in California and shaped by experiences across multiple states, Anika ultimately found her home in Utah—where she chose to be closer to family and step into her calling as an advocate for those whose voices often go unheard.\n\nFor Anika, art is more than expression—it’s liberation. She uses painting, design, and mixed media as a way to process emotion, release stress, and transform personal experiences into something tangible and uplifting.\n\nHer work reflects a deep sensitivity to the struggles of others and a fierce commitment to justice, empathy, and inclusion. As a volunteer with We All Matter Alliance, Anika brings her creative gifts into every project she touches.\n\nWhether helping with outreach materials, supporting community events, or simply showing up with compassion and care, she embodies the spirit of service through artistry. Her presence reminds us that healing isn’t just about systems—it’s about connection, color, and courage.",
+      role: "Project Coordinator",
+      type: "Featured Volunteer",
+      email: "",
+     // image: anika,
     },
   ];
 
   return (
     <section
       id="volunteers"
-      className="pt-0 pb-8 relative overflow-hidden border-t border-b border-white"
+      className="pt-0 pb-10 relative overflow-hidden border-t border-b border-white"
       style={{ background: "#ffffff" }}
     >
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-8">
-          <div className="p-6 max-w-4xl mx-auto text-center">
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <div className="p-8 max-w-4xl mx-auto text-center">
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl mb-10"
               style={{
                 background:
                   "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)",
@@ -66,85 +95,77 @@ export function Volunteers() {
           </div>
         </div>
 
-        {/* Featured Volunteer Card */}
-        <div className="max-w-3xl mx-auto">
+        {/* Cards Grid */}
+        <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {volunteers.map((volunteer, index) => {
             const expanded = expandedCards.includes(index);
-
             return (
               <div
                 key={index}
                 className="transition-all duration-500 hover:scale-[1.01]"
               >
-                <Card className="">
-                  {/* Decorative gradient line */}
-                  <div className=""></div>
-                  
-                  <CardContent className="p-6">
+                <Card className=" shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl hover:border-purple-400 transition-all duration-500">
+                  <CardContent className="p-8">
                     {/* Header */}
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center justify-between mb-6">
                       <Badge
                         variant="secondary"
-                        className="bg-gradient-to-r from-purple-200 to-amber-100 text-purple-900 border-2 border-purple-300/50 px-3 py-1 text-xs font-bold shadow-lg"
+                        className="bg-gradient-to-r from-purple-100 to-amber-50 text-purple-900 border border-purple-200/50 px-4 py-1.5 text-sm font-semibold capitalize shadow-sm"
                       >
-                        <Sparkles className="w-3.5 h-3.5 mr-1 text-purple-600" />
+                        <Sparkles className="w-4 h-4 mr-2 text-purple-600" />
                         {volunteer.type}
                       </Badge>
-                      <Quote className="w-7 h-7 text-purple-300 rotate-180" />
+                      <Quote className="w-8 h-8 text-purple-300 rotate-180" />
                     </div>
 
                     {/* Profile */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="relative flex-shrink-0">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-amber-500 to-purple-500 rounded-full blur opacity-60 animate-pulse"></div>
-                        <div className="relative w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 via-amber-400 to-purple-500 flex items-center justify-center border-3 border-white shadow-xl">
-                          <User className="w-8 h-8 text-white" />
-                        </div>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="relative">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full blur opacity-60"></div>
+                        <ImageWithFallback
+                          src={volunteer.image}
+                          alt={volunteer.name}
+                          className="relative w-16 h-16 rounded-full object-cover border-2 border-white shadow-md"
+                        />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="font-bold text-purple-900 text-lg md:text-xl mb-0.5 leading-tight">
+                      <div>
+                        <h3 className="font-bold text-purple-900 text-lg">
                           {volunteer.name}
                         </h3>
-                        <p className="text-purple-700 font-semibold text-sm leading-tight">
-                          {volunteer.role}
-                        </p>
-                        <p className="text-purple-600 text-xs font-medium italic mt-0.5">
-                          {volunteer.title}
-                        </p>
+                        <p className="text-purple-600 text-sm font-medium">{volunteer.role}</p>
+                        <p className="text-purple-500 text-xs italic">{volunteer.title}</p>
                       </div>
                     </div>
 
                     {/* Story */}
-                    <div className="mb-4">
-                      <blockquote className="text-gray-800 text-sm leading-relaxed relative">
-                        <Quote className="w-4 h-4 text-purple-200 absolute -top-1.5 -left-1.5" />
-                        <div className="relative z-10 pl-5">
+                    <div className="mb-6">
+                      <blockquote className="text-gray-800 text-base leading-relaxed italic relative">
+                        <Quote className="w-5 h-5 text-purple-200 absolute -top-2 -left-2" />
+                        <div className="relative z-10 pl-6">
                           <div
                             className={`transition-[max-height] duration-500 ease-in-out overflow-hidden`}
                             style={{
-                              maxHeight: expanded ? "2000px" : "80px",
+                              maxHeight: expanded ? "1000px" : "100px",
                             }}
                           >
-                            {volunteer.story.split("\n\n").map((paragraph, i) => (
-                              <p key={i} className="mb-2.5 last:mb-0">
-                                {paragraph}
+                            {volunteer.story.split("\n\n").map((p, i) => (
+                              <p key={i} className="mb-2 last:mb-0">
+                                {p}
                               </p>
                             ))}
                           </div>
-                          {volunteer.story.length > 180 && (
+                          {volunteer.story.length > 200 && (
                             <button
                               onClick={() => toggleExpanded(index)}
-                              className="mt-2 text-purple-600 hover:text-purple-800 font-semibold text-xs flex items-center gap-1 transition-colors group"
+                              className="mt-2 text-purple-600 hover:text-purple-800 font-medium text-sm flex items-center gap-1 transition-colors"
                             >
                               {expanded ? (
                                 <>
-                                  Read Less{" "}
-                                  <ChevronUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
+                                  Read Less <ChevronUp className="w-4 h-4" />
                                 </>
                               ) : (
                                 <>
-                                  Read More{" "}
-                                  <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform" />
+                                  Read More <ChevronDown className="w-4 h-4" />
                                 </>
                               )}
                             </button>
@@ -153,25 +174,19 @@ export function Volunteers() {
                       </blockquote>
                     </div>
 
-                    {/* Footer - Contact Button */}
-        <div className="border-t border-purple-200 pt-3 flex justify-end">
-  <a
-    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${volunteer.email}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 px-5 py-2.5 
-      bg-purple-600 text-white font-semibold text-sm 
-      rounded-full shadow-lg shadow-purple-300/30 
-      hover:bg-purple-700 hover:shadow-purple-400/40 
-      hover:scale-105 active:scale-95 
-      transition-all duration-300 ease-out"
-  >
-    <Mail className="w-4 h-4 animate-pulse" />
-    <span>Contact Now</span>
-  </a>
-</div>
+                    {/* Footer */}
+                    <div className="border-t border-purple-100 pt-4 mt-auto flex justify-between items-center">
+                     
 
-
+                      {volunteer.email && (
+                        <a
+                          href={`mailto:${volunteer.email}`}
+                          className="flex items-center gap-2 text-purple-600 hover:text-purple-800 text-sm font-medium"
+                        >
+                          <Mail className="w-4 h-4" /> Contact
+                        </a>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               </div>
