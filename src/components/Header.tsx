@@ -1,5 +1,12 @@
 import { Button } from "./ui/button";
 import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "./ui/dialog";
+import {
   Menu,
   X,
   ChevronDown,
@@ -22,6 +29,7 @@ export function Header({
   const [showDropdown, setShowDropdown] = useState(false);
   const [showBoardDropdown, setShowBoardDropdown] =
     useState(false);
+  const [showPhoneDialog, setShowPhoneDialog] = useState(false);
 
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -56,6 +64,7 @@ export function Header({
   };
 
   return (
+    <>
     <nav
       className="fixed top-0 w-full shadow-lg lg:flex"
       style={{
@@ -188,13 +197,17 @@ export function Header({
                   background:
                     currentPage === "about" ||
                     currentPage === "our-progress" ||
-                    currentPage === "contact-us"
+                    currentPage === "contact-us" ||
+                    currentPage ===
+                      "resources-partnering-agencies"
                       ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                       : "transparent",
                   color:
                     currentPage === "about" ||
                     currentPage === "our-progress" ||
-                    currentPage === "contact-us"
+                    currentPage === "contact-us" ||
+                    currentPage ===
+                      "resources-partnering-agencies"
                       ? "#FFFFFF"
                       : "#6B7280",
                   transition:
@@ -205,7 +218,9 @@ export function Header({
                   boxShadow:
                     currentPage === "about" ||
                     currentPage === "our-progress" ||
-                    currentPage === "contact-us"
+                    currentPage === "contact-us" ||
+                    currentPage ===
+                      "resources-partnering-agencies"
                       ? "0 4px 12px rgba(139, 92, 246, 0.3)"
                       : "none",
                 }}
@@ -219,7 +234,9 @@ export function Header({
                     !(
                       currentPage === "about" ||
                       currentPage === "our-progress" ||
-                      currentPage === "contact-us"
+                      currentPage === "contact-us" ||
+                      currentPage ===
+                        "resources-partnering-agencies"
                     )
                   ) {
                     e.currentTarget.style.background =
@@ -232,7 +249,9 @@ export function Header({
                     !(
                       currentPage === "about" ||
                       currentPage === "our-progress" ||
-                      currentPage === "contact-us"
+                      currentPage === "contact-us" ||
+                      currentPage ===
+                        "resources-partnering-agencies"
                     )
                   ) {
                     e.currentTarget.style.background =
@@ -292,6 +311,33 @@ export function Header({
                       }}
                     >
                       Programs and Projects
+                    </button>
+                    <button
+                      className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
+                      onClick={() =>
+                        handleNavigation(
+                          "resources-partnering-agencies",
+                        )
+                      }
+                      style={{
+                        transition:
+                          "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+                        fontSize: "0.875rem",
+                        fontWeight: "500",
+                        color: "#6B7280",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.background =
+                          "rgba(243, 244, 246, 0.8)";
+                        e.currentTarget.style.color = "#111827";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.background =
+                          "transparent";
+                        e.currentTarget.style.color = "#6B7280";
+                      }}
+                    >
+                      Trusted Partners
                     </button>
                     <button
                       className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
@@ -582,36 +628,7 @@ export function Header({
                 fontWeight: "600",
                 fontSize: "0.875rem",
               }}
-              onClick={() => {
-                const confirmed = window.confirm(
-                  "☑️ Open this link in FaceTime",
-                );
-                if (confirmed) {
-                  const userAgent =
-                    navigator.userAgent.toLowerCase();
-                  if (
-                    userAgent.includes("iphone") ||
-                    userAgent.includes("ipad") ||
-                    userAgent.includes("mac")
-                  ) {
-                    window.open(
-                      "facetime://+1 385 414 4144",
-                      "_self",
-                    );
-                  } else if (userAgent.includes("android")) {
-                    window.open("tel:+1 385 414 4144", "_self");
-                  } else {
-                    window.open(
-                      "facetime://+1 385 414 4144",
-                      "_self",
-                    ) ||
-                      window.open(
-                        "tel:+1 385 414 4144",
-                        "_self",
-                      );
-                  }
-                }
-              }}
+              onClick={() => setShowPhoneDialog(true)}
               onMouseOver={(e) => {
                 e.currentTarget.style.background =
                   "rgba(243, 244, 246, 0.8)";
@@ -667,6 +684,7 @@ export function Header({
             background: "rgba(139, 92, 246, 0.08)",
             border: "1px solid rgba(139, 92, 246, 0.2)",
             transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+            marginLeft: "auto",
           }}
           onMouseOver={(e) => {
             e.currentTarget.style.background =
@@ -770,6 +788,30 @@ export function Header({
                   }
                 >
                   Our Progress
+                </button>
+                <button
+                  className={`w-full text-left py-2 px-3 mb-2 rounded-lg ${
+                    currentPage ===
+                    "resources-partnering-agencies"
+                      ? "text-purple-600"
+                      : "text-gray-500"
+                  }`}
+                  style={{
+                    border: "none",
+                    fontSize: "0.9rem",
+                    background:
+                      currentPage ===
+                      "resources-partnering-agencies"
+                        ? "rgba(124, 58, 237, 0.1)"
+                        : "transparent",
+                  }}
+                  onClick={() =>
+                    handleNavigation(
+                      "resources-partnering-agencies",
+                    )
+                  }
+                >
+                  Trusted Partners
                 </button>
                 <button
                   className={`w-full text-left py-2 px-3 mb-2 rounded-lg ${
@@ -950,5 +992,50 @@ export function Header({
         </div>
       )}
     </nav>
+
+    {/* Phone Number Dialog */}
+<Dialog open={showPhoneDialog} onOpenChange={setShowPhoneDialog}>
+  <DialogContent
+    className="bg-white rounded-2xl shadow-2xl border border-purple-100 relative"
+    style={{
+      top: "150px",
+      position: "fixed",
+      left: "50%",
+      transform: "translateX(-50%)",
+      width: "320px", // 👈 adjust this for your preferred width
+      maxWidth: "90vw",
+      padding: "1.5rem",
+    }}
+  >
+   
+   
+
+    {/* Header */}
+    <DialogHeader className="text-center p-0">
+      <DialogTitle className="flex items-center justify-center gap-2 text-lg font-semibold text-purple-700">
+        <Phone className="h-5 w-5 text-purple-600" />
+        WAM Phone
+      </DialogTitle>
+      <DialogDescription className="text-sm text-gray-500 mt-1">
+        Call us or start a FaceTime chat below
+      </DialogDescription>
+    </DialogHeader>
+
+    {/* Content */}
+    <div className="flex flex-col items-center justify-center py-4 space-y-3">
+      <a
+        href="tel:+13854144144"
+        className="text-lg font-semibold text-purple-600 hover:text-purple-700 transition-colors"
+      >
+        +1 (385) 414-4144
+      </a>
+
+    
+    </div>
+  </DialogContent>
+</Dialog>
+
+
+    </>
   );
 }

@@ -5,7 +5,7 @@ import { useTranslation } from "../TranslationContext";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import secondSecondCoalitionLogo from '../../assets/testimonials/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png';
 import restorativeHealthLogo from '../../assets/testimonials/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
-
+import techfistLogo from '../../assets/logo/tfglogo.png'
 export function ResourcesPartneringAgenciesPage() {
   const { translations } = useTranslation();
 
@@ -132,7 +132,7 @@ export function ResourcesPartneringAgenciesPage() {
                 <div className="bg-gradient-to-r from-purple-600 to-purple-700 h-2"></div>
                 <CardContent className="p-8">
                   <div className="flex items-start gap-5">
-                    <div className="w-20 h-20 bg-purple-50 border-2 border-purple-300 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+                    <div className="w-20 h-20 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
                       <ImageWithFallback
                         src={secondSecondCoalitionLogo}
                         alt="2ND % 2ND Coalition Logo"
@@ -161,11 +161,11 @@ export function ResourcesPartneringAgenciesPage() {
               </Card>
               
               {/* Partnering Agency Card */}
-              <Card className="bg-white border-2 border-yellow-400 hover:border-yellow-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
-                <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 h-2"></div>
+              <Card className="bg-white border-2 border-purple-200 hover:border-purple-400 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 h-2"></div>
                 <CardContent className="p-8">
                   <div className="flex items-start gap-5">
-                    <div className="w-20 h-20 bg-yellow-50 border-2 border-yellow-300 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+                    <div className="w-40 h-40   flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
                       <ImageWithFallback
                         src={restorativeHealthLogo}
                         alt="Restorative Health Logo"
@@ -173,7 +173,7 @@ export function ResourcesPartneringAgenciesPage() {
                       />
                     </div>
                     <div className="flex-1">
-                      <Badge className="mb-3 bg-yellow-100 text-yellow-800 border border-yellow-300 hover:bg-yellow-200">
+                     <Badge className="mb-3 bg-purple-100 text-purple-800 border border-purple-300 hover:bg-purple-200">
                         <HandHeart className="w-3 h-3 mr-1" />
                         PARTNERING AGENCY
                       </Badge>
@@ -188,6 +188,42 @@ export function ResourcesPartneringAgenciesPage() {
                         </a>
                       </h3>
                       <p className="text-gray-600 text-sm leading-relaxed">World class health care with options for our LGBTQ+ community and those looking to improve quality of life.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+                {/* Partnering Agency Card */}
+             <Card className="bg-white border-2 border-purple-200 hover:border-purple-400 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 h-2"></div>
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-5">
+                <div className="w-40 h-40  flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+  <div className="w-full h-full transform scale-125">
+    <ImageWithFallback
+      src={techfistLogo}
+      alt="Techfist Global IN Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
+
+                    <div className="flex-1">
+ <Badge className="mb-3 bg-purple-100 text-purple-800 border border-purple-300 hover:bg-purple-200">
+                        <HandHeart className="w-3 h-3 mr-1" />
+                        PARTNERING AGENCY
+                      </Badge>
+                      <h3 className="text-lg mb-2">
+                        <a 
+                          href="https://techfistglobal.com/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-purple-700 hover:text-purple-900 transition-colors duration-300 hover:underline"
+                        >
+                          Techfisht Global Inc
+                        </a>
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">In partnership with TechFist Global, We All Matter drives the power of technology to amplify change, empower people, and build a better tomorrow.</p>
                     </div>
                   </div>
                 </CardContent>

@@ -4,7 +4,7 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 import TonyaImage from "../../assets/board/Tonya.webp";
 import RobertImage from "../../assets/board/rob.png";
-import DianeImage from "../../assets/testimonials/Diane Jones.png";
+import DianeImage from "../../assets/board/Diane.JPEG";
 import DanielleImage from "../../assets/testimonials/DanielleOrtega.jpeg";
 import WajidImage from "../../assets/board/wajid.jpeg";
 
