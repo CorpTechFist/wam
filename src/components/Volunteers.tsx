@@ -15,7 +15,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 // Local images (replace with your own volunteer images if available)
 import sireen from "../assets/icons/sireen.jpg";
  import leeann from "../assets/icons/Leeann.jpeg";
-import userIcon from "../assets/icons/user.jpeg";
+import Anika from "../assets/icons/Anika.jpeg";
 
 export function Volunteers() {
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
@@ -57,7 +57,7 @@ export function Volunteers() {
       role: "Project Coordinator",
       type: "Featured Volunteer",
       email: "",
-      image: userIcon,
+      image: Anika,
     },
   ];
 
