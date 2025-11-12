@@ -73,13 +73,13 @@ WE ARE THE CHANGE!`;
             backdropFilter: "blur(20px)",
             borderRadius: "12px",
             boxShadow:
-              "0 20px 60px rgba(139, 92, 246, 0.25), 0 8px 25px rgba(102, 126, 234, 0.2)",
+              "0 20px 60px rgba(241, 239, 244, 0.25), 0 8px 25px rgba(244, 246, 251, 0.2)",
           }}
         >
           {/* Header */}
           <div
             className="text-center mb-20 pb-16"
-            style={{ borderBottom: "1px solid rgba(139, 92, 246, 0.35)" }}
+            style={{ borderBottom: "1px solid rgba(246, 245, 248, 0.35)" }}
           >
             <div className="flex flex-col md:flex-row items-center justify-center gap-3">
               <h2

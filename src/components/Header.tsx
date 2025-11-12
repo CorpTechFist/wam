@@ -154,7 +154,7 @@ export function Header({
               style={{
                 background:
                   currentPage === "home"
-                    ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
+                    ? "linear-gradient(135deg, #f7f6f9ff 0%, #f4f2f7ff 100%)"
                     : "transparent",
                 color:
                   currentPage === "home"
