@@ -53,15 +53,10 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
       <div className="container mx-auto max-w-6xl text-center">
 
         {/* Title */}
-        <h1
-          className="text-4xl md:text-5xl font-bold mb-6"
-          style={{
-            background:
-              "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #ffd700 50%, #8b5cf6 75%, #7c3aed 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
+          <h1
+  className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
           Board of Directors
         </h1>
 
