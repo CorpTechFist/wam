@@ -89,6 +89,8 @@ export function ContactUs() {
               {/* Right Side - EmailJS Form */}
               <div className="p-8 md:p-12 flex items-center">
                 <form ref={formRef} onSubmit={sendEmail} className="space-y-4 w-full">
+                  <input type="hidden" name="formSource" value="Contact Us Page" />
+
                   <div className="space-y-2">
                     <Label htmlFor="fullName">{translations.contactUsPage?.fullName || "Full Name *"}</Label>
                     <Input name="fullName" required placeholder="Enter your full name" />

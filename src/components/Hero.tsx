@@ -340,7 +340,7 @@ export function Hero() {
               <div className="px-8 py-16 mx-auto max-w-7xl">
                 {/* Title Section with decorative elements */}
                 <div className="text-center mb-12 relative">
-                  <div className="inline-flex items-center justify-center mb-6">
+                  {/* <div className="inline-flex items-center justify-center mb-6">
                     <div style={{
                       width: '40px',
                       height: '2px',
@@ -354,7 +354,7 @@ export function Hero() {
                       background: 'linear-gradient(90deg, #8B5CF6 0%, transparent 100%)',
                       marginLeft: '16px'
                     }}></div>
-                  </div>
+                  </div> */}
 
                   <h2 className="mb-0" style={{
                     fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",
@@ -487,7 +487,9 @@ export function Hero() {
                       <div className="flex flex-col h-full">
                         <div className="flex-grow relative overflow-hidden">
                           <ImageWithFallback 
-                            src="https://images.unsplash.com/photo-1758599668338-4c55a3bd0ce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXIlMjBoZWxwaW5nJTIwaGFuZHMlMjBjb21tdW5pdHklMjBzZXJ2aWNlfGVufDF8fHx8MTc1OTQ4NjY3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                         
+                          
+                            src="https://images.unsplash.com/photo-1560220604-1985ebfe28b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwcGVvcGxlJTIwZG9uYXRpbmclMjBjaGFyaXR5JTIwdm9sdW50ZWVyJTIwY29tbXVuaXR5fGVufDF8fHx8MTc1OTk0ODE4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                             alt="Volunteer Helping Hands Community Service"
                             className="w-full h-full"
                             style={{
@@ -685,8 +687,7 @@ export function Hero() {
                       <div className="flex flex-col h-full">
                         <div className="flex-grow relative overflow-hidden">
                           <ImageWithFallback 
-                            src="https://images.unsplash.com/photo-1560220604-1985ebfe28b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwcGVvcGxlJTIwZG9uYXRpbmclMjBjaGFyaXR5JTIwdm9sdW50ZWVyJTIwY29tbXVuaXR5fGVufDF8fHx8MTc1OTk0ODE4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                            alt="Diverse Community Volunteers Supporting Charity"
+                            src=" https://images.unsplash.com/photo-1745962979027-c5e51183cf40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=900"
                             className="w-full h-full"
                             style={{
                               objectFit: 'cover',
