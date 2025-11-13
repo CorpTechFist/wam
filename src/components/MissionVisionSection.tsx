@@ -78,7 +78,7 @@ WE ARE THE CHANGE!`;
         >
           {/* Header */}
           <div
-            className="text-center mb-20 pb-16"
+            className="text-center mb-15 pb-16"
             style={{ borderBottom: "1px solid rgba(246, 245, 248, 0.35)" }}
           >
             <div className="flex flex-col md:flex-row items-center justify-center gap-3">
