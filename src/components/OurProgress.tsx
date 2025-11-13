@@ -27,7 +27,7 @@ export function OurProgress() {
   className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-  Programs and Future Projects
+  Programs and  Projects
 </h2>
 
 

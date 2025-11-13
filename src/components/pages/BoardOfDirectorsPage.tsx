@@ -36,13 +36,13 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
     },
     {
       name: "Danielle Ortega",
-      title: "Board of Directors Paralegal",
+      title: " Paralegal",
       image: DanielleImage,
       bioId: "danielle-bio",
     },
     {
       name: "Wajid Bhat",
-      title: "Engineering",
+      title: "Engineering IT Director",
       image: WajidImage,
       bioId: "wajid-bio",
     },

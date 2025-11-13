@@ -154,7 +154,7 @@ export function Header({
               style={{
                 background:
                   currentPage === "home"
-                    ? "linear-gradient(135deg, #f7f6f9ff 0%, #f4f2f7ff 100%)"
+                    ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                     : "transparent",
                 color:
                   currentPage === "home"
@@ -167,7 +167,7 @@ export function Header({
                 letterSpacing: "-0.01em",
                 boxShadow:
                   currentPage === "home"
-                    ? "0 4px 12px rgba(139, 92, 246, 0.3)"
+                    ? "0 4px 12px rgba(84, 29, 213, 0.3)"
                     : "none",
               }}
               onClick={() => handleNavigation("home")}
@@ -787,7 +787,7 @@ export function Header({
                     handleNavigation("our-progress")
                   }
                 >
-                  Our Progress
+                 Programs and Projects
                 </button>
                 <button
                   className={`w-full text-left py-2 px-3 mb-2 rounded-lg ${

@@ -148,8 +148,17 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                         currentPage === 'our-progress' ? 'text-primary bg-primary/10' : ''
                       }`}
                     >
-                      Our Progress
+                     Programs and Projects
                     </DropdownMenuItem>
+                   <DropdownMenuItem
+                      onClick={() => handleNavigation('resources-partnering-agencies')}
+                      className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
+                        currentPage === 'our-progress' ? 'text-primary bg-primary/10' : ''
+                      }`}
+                    >
+                     Trusted Partners
+                    </DropdownMenuItem>
+
                     <DropdownMenuItem
                       onClick={() => handleNavigation('contact-us')}
                       className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
@@ -220,6 +229,17 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                    
                   </DropdownMenuContent>
                 </DropdownMenu>
+              </li>
+               <li className="flex items-center gap-2">
+                <div className="w-1 h-1 bg-primary"></div>
+                <button 
+                  onClick={() => handleNavigation('volunteers')}
+                  className={`text-sm text-muted-foreground hover:text-indigo-600 transition-colors duration-300 text-left ${
+                    currentPage === 'volunteers' ? 'text-primary' : ''
+                  }`}
+                >
+                  Volunteers
+                </button>
               </li>
               <li className="flex items-center gap-2">
                 <div className="w-1 h-1 bg-primary"></div>
