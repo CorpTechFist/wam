@@ -192,22 +192,17 @@ export function CashDonationsPage() {
   const totalAmount = amount + feeAmount;
 
   return (
-    <div className="min-h-screen pt-28 pb-8 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff !important', background: '#ffffff !important' }}>
+    <div className="min-h-screen pt-16 pb-8 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff !important', background: '#ffffff !important' }}>
       <div className="container mx-auto px-4 max-w-6xl bg-white" style={{ backgroundColor: '#ffffff' }}>
         {/* Our Heart Our Mission Section */}
         <div className="text-center mb-20">
           <div className="relative inline-block mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-purple-300 to-purple-400 opacity-20 blur-3xl rounded-full"></div>
-            <h2 className="relative text-2xl md:text-3xl lg:text-4xl mb-4" style={{ 
-              background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #8b5cf6 50%, #c4b5fd 75%, #7c3aed 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontWeight: '700',
-              letterSpacing: '-0.02em'
-            }}>
+                           <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
               Our Heart Our Mission
-            </h2>
+            </h3>
           </div>
           
           <div className="max-w-4xl mx-auto relative">

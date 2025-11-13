@@ -15,26 +15,20 @@ export function OtherDonationsPage() {
 
           {/* Donation Types Grid */}
           <div className="max-w-2xl mx-auto mb-16">
-            <div className="pt-16 px-6 md:px-12 pb-24 text-center relative z-30">
+            <div className="pt-7 px-6 md:px-12 pb-24 text-center relative z-30">
               {/* Decorative Elements */}
               <div className="absolute top-8 left-1/2 -translate-x-1/2 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-yellow-400/20 rounded-full blur-3xl"></div>
               
               {/* Title with Modern Styling */}
               <div className="relative mb-8">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  fontWeight: '700',
-                  letterSpacing: '-0.02em'
-                }}>
+                              <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
                   WE ALL MATTER ALLIANCE
-                </h2>
+                </h3>
                 <h3 className="text-2xl md:text-3xl" style={{ 
-                  background: 'linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFD700 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+               
+                  WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '600'
                 }}>
