@@ -55,9 +55,9 @@ export function Hero() {
             {/* Need Help Section with Side Buttons */}
             <div className="flex justify-center mb-20">
               {/* Professional Crisis Support Card */}
-              <div className="glass-morphism py-10 px-10 w-full" style={{
+              <div className=" py-10 px-10 w-full" style={{
                 backdropFilter: 'blur(25px)',
-                boxShadow: '0 25px 70px rgba(139, 92, 246, 0.22), 0 15px 35px rgba(167, 139, 250, 0.15), 0 8px 20px rgba(99, 102, 241, 0.12)',
+                boxShadow: '0 25px 70px rgba(162, 129, 247, 0.12), 0 15px 35px rgba(92, 23, 231, 0.02), 0 8px 20px rgba(99, 101, 241, 0.11)',
                 borderRadius: '0px',
                 overflow: 'hidden',
                 position: 'relative'
@@ -69,7 +69,7 @@ export function Hero() {
                   top: 0,
                   left: 0,
                   right: 0,
-                  height: '4px',
+                  height: '2px',
                   background: 'linear-gradient(90deg, #8B5CF6 0%, #6366F1 50%, #8B5CF6 100%)',
                   boxShadow: '0 2px 12px rgba(139, 92, 246, 0.5)'
                 }}></div>
@@ -123,8 +123,8 @@ export function Hero() {
                       background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 250, 255, 0.95) 100%)',
                       borderRadius: '20px',
                       overflow: 'hidden',
-                      border: '1px solid rgba(139, 92, 246, 0.15)',
-                      boxShadow: '0 8px 24px rgba(139, 92, 246, 0.12), 0 4px 12px rgba(99, 102, 241, 0.08)',
+                      border: '1px solid rgba(244, 242, 247, 0.15)',
+                      boxShadow: '0 8px 24px rgba(243, 240, 248, 0.12), 0 4px 12px rgba(99, 102, 241, 0.08)',
                       transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                       height: '100%'
                     }}
@@ -340,7 +340,7 @@ export function Hero() {
               <div className="px-8 py-16 mx-auto max-w-7xl">
                 {/* Title Section with decorative elements */}
                 <div className="text-center mb-12 relative">
-                  {/* <div className="inline-flex items-center justify-center mb-6">
+                  { <div className="inline-flex items-center justify-center mb-6">
                     <div style={{
                       width: '40px',
                       height: '2px',
@@ -354,7 +354,7 @@ export function Hero() {
                       background: 'linear-gradient(90deg, #8B5CF6 0%, transparent 100%)',
                       marginLeft: '16px'
                     }}></div>
-                  </div> */}
+                  </div> }
 
                   <h2 className="mb-0" style={{
                     fontFamily: "'Inter', 'SF Pro Display', 'system-ui', 'sans-serif'",

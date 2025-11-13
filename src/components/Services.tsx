@@ -9,24 +9,19 @@ export function Services() {
   const { translations } = useTranslation();
 
   return (
-    <section id="services" className="pt-24 pb-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
+    <section id="services" className=" pb-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
       background: '#FFFFFF'
     }}>
-      <div className="container mx-auto px-4 relative z-10 py-16">
+      <div className="container mx-auto px-2 relative z-10 py-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="max-w-4xl mx-auto">
             <div className="relative mb-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6" style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                fontWeight: '700',
-                letterSpacing: '-0.02em'
-              }}>
+               <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
                 DONORS
-              </h2>
+              </h3>
             </div>
             
             {/* Decorative Dots */}

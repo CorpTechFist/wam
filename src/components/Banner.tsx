@@ -19,7 +19,7 @@ export function Banner() {
       <div
         className="relative flex flex-col items-center justify-center px-4 py-32 text-center"
         style={{
-          minHeight: "500px",
+          minHeight: "550px",
         }}
       >
         {/* Tagline */}
@@ -45,7 +45,7 @@ export function Banner() {
       </div>
 
       {/* Bottom Accent Line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-accent" />
+    
     </div>
   );
 }

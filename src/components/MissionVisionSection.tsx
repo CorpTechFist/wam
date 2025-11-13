@@ -66,7 +66,7 @@ WE ARE THE CHANGE!`;
     <div className="w-full">
       <div className="text-center">
         <div
-          className="glass-morphism w-full py-16 px-6 md:px-16"
+          className=" w-full py-16 px-6 md:px-16"
           style={{
             background:
               "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 255, 0.92) 100%)",

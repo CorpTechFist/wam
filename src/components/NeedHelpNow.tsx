@@ -69,9 +69,11 @@ export function NeedHelpNow() {
                 <span className="text-sm tracking-wider text-red-800">CRISIS SUPPORT</span>
               </div>
 
-              <h1 className="text-3xl md:text-5xl tracking-tight text-purple-900 mb-4">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
                 Need Help Now?
-              </h1>
+              </h3>
 
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-yellow-500 mx-auto mb-6"></div>
 
