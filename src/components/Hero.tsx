@@ -337,7 +337,7 @@ export function Hero() {
 
             {/* Our Promise Section */}
             <div className="mb-0">
-              <div className="px-8 py-16 mx-auto max-w-7xl">
+              <div className="px-8 py-1 mx-auto max-w-7xl">
                 {/* Title Section with decorative elements */}
                 <div className="text-center mb-12 relative">
                   { <div className="inline-flex items-center justify-center mb-6">
