@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Badge } from "./ui/badge";
 import { Info } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
@@ -23,15 +22,12 @@ export function OurProgress() {
           {/* Section Header */}
           <div className="text-center mb-16 space-y-6">
             <div className="relative mb-8">
-   <h2
-  className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
-  style={{ WebkitTextFillColor: "#7c3aed" }}
->
-  Programs and  Projects
-</h2>
-
-
-
+              <h2
+                className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+                style={{ WebkitTextFillColor: "#7c3aed" }}
+              >
+                Programs and Projects
+              </h2>
             </div>
 
             {/* Disclaimer */}
@@ -44,8 +40,7 @@ export function OurProgress() {
                     style={{
                       background:
                         "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
-                      boxShadow:
-                        "0 4px 12px rgba(139, 92, 246, 0.3)",
+                      boxShadow: "0 4px 12px rgba(139, 92, 246, 0.3)",
                     }}
                   >
                     <Info className="w-5 h-5 text-white" />
@@ -59,75 +54,86 @@ export function OurProgress() {
             </div>
           </div>
 
-          {/* Program Cards Grid */}
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Established Organization */}
+          {/* ✅ Program Cards Grid - Fixed Height Isolation */}
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <Card
               title="FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS"
               year="2023"
               desc="WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization."
             />
-
-            {/* Talent Recruitment */}
             <Card
               title="TALENT RECRUITMENT"
               year="2024 - Present"
               desc="WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning."
             />
-
-            {/* No Strings Attached Program */}
             <Card
               title="NO STRINGS ATTACHED PROGRAM"
               year="2024"
               desc="This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."
             />
-
-            {/* Techfist Sponsor */}
             <Card
               title="Techfist Global Inc - A Proud Sponsor of WAM Alliance"
               year="2025"
-              desc="Techfist Global stands as a proud sponsor and technological partner of WAM Alliance. Providing advanced digital solutions, strategic design, and scalable systems to amplify impact across global networks, bridging innovation with purpose to inspire sustainability, inclusion, and collective growth."
+              desc="Techfist Global stands as a proud sponsor
+and technological partner of WAM Alliance.
+Providing advanced digital solutions,
+strategic design, and scalable systems
+to amplify impact across global networks —
+bridging innovation with purpose
+to inspire sustainability, inclusion, and growth.
+Together, we empower communities
+to build a smarter, more connected future."
             />
+            {/* Left Card - CSW */}
+            <div className="self-start">
+              <Card
+                title="Community Safety Watch - CSW"
+                year="2025"
+                desc="The Community Safety Watch (CSW) is a neighborhood-led, non-confrontational initiative designed to increase safety, awareness, and community resilience in neighborhoods experiencing suspicious activity by masked individuals. CSW focuses on observation, reporting, prevention, and community support—working in partnership with local law enforcement and service providers while prioritizing de-escalation, legal compliance, and the dignity of all residents."
+              />
+            </div>
 
-            {/* Community Safety Watch */}
-            <Card
-              title="Community Safety Watch - CSW"
-              year="2025"
-              desc="The Community Safety Watch (CSW) is a neighborhood-led, non-confrontational initiative designed to increase safety, awareness, and community resilience in neighborhoods experiencing suspicious activity by masked individuals. CSW focuses on observation, reporting, prevention, and community support—working in partnership with local law enforcement and service providers while prioritizing de-escalation, legal compliance, and the dignity of all residents."
-            />
+            {/* Right Card - Aden's Roots Program */}
+            <div className="self-start">
+              <div className="group relative transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
+                <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+                    <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug">
+                      Aden's Roots Program
+                    </h3>
+                    <span
+                      className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium"
+                      style={{
+                        background:
+                          "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
+                        color: "white",
+                        boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
+                      }}
+                    >
+                      2025
+                    </span>
+                  </div>
 
-            {/* ✅ Aden's Roots Program (Moved to Last on Right Side) */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
-              <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 h-full">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
-                  <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug">
-                    Aden's Roots Program
-                  </h3>
-                  <span
-                    className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium"
+                  {/* ✅ Smooth Expand - Without Affecting Neighbor */}
+                  <div
+                    className="overflow-hidden transition-[max-height] duration-700 ease-in-out"
                     style={{
-                      background:
-                        "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
-                      color: "white",
-                      boxShadow:
-                        "0 4px 12px rgba(168, 85, 247, 0.3)",
+                      maxHeight: showFullAden ? "1200px" : "140px",
                     }}
                   >
-                    2025
-                  </span>
+                    <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
+                      {AdenFullText}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => setShowFullAden(!showFullAden)}
+                    className="mt-4 text-purple-600 font-medium hover:text-purple-800 transition-all duration-300"
+                  >
+                    {showFullAden ? "Read Less ↑" : "Read More ↓"}
+                  </button>
                 </div>
-
-                <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
-                  {showFullAden ? AdenFullText : AdenShortText}
-                </p>
-
-                <button
-                  onClick={() => setShowFullAden(!showFullAden)}
-                  className="mt-4 text-purple-600 font-medium hover:text-purple-800 transition-all duration-300"
-                >
-                  {showFullAden ? "Read Less ↑" : "Read More ↓"}
-                </button>
               </div>
             </div>
           </div>
@@ -148,9 +154,9 @@ function Card({
   desc: string;
 }) {
   return (
-    <div className="group relative">
+    <div className="group relative transition-all duration-300">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-violet-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
-      <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 h-full">
+      <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
           <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug text-justify">
             {title}
@@ -158,8 +164,7 @@ function Card({
           <span
             className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium shrink-0"
             style={{
-              background:
-                "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
+              background: "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
               color: "white",
               boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
             }}
@@ -167,7 +172,6 @@ function Card({
             {year}
           </span>
         </div>
-
         <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
           {desc}
         </p>
