@@ -53,21 +53,16 @@ export function PersonalDonorsPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-28 pb-16 px-4 md:px-8 bg-white relative z-10" style={{ backgroundColor: '#ffffff', backgroundImage: 'none' }}>
+    <div className="min-h-screen pt-20 pb-16 px-4 md:px-8 bg-white relative z-10" style={{ backgroundColor: '#ffffff', backgroundImage: 'none' }}>
       <div className="container mx-auto max-w-7xl">
         {/* Modern Header Section */}
         <div className="text-center mb-20">
           <div className="relative mb-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6" style={{ 
-              background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontWeight: '700',
-              letterSpacing: '-0.02em'
-            }}>
+                     <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+  style={{ WebkitTextFillColor: "#7c3aed" }}
+>
               OUR VALUED DONORS
-            </h1>
+            </h3>
           </div>
           
           <div className="max-w-3xl mx-auto space-y-5 mb-8">
