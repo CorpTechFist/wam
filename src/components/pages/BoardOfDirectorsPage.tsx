@@ -34,12 +34,12 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
       image: DianeImage,
       bioId: "diane-bio",
     },
-    {
-      name: "Danielle Ortega",
-      title: " Paralegal",
-      image: DanielleImage,
-      bioId: "danielle-bio",
-    },
+    // {
+    //   name: "Danielle Ortega",
+    //   title: " Paralegal",
+    //   image: DanielleImage,
+    //   bioId: "danielle-bio",
+    // },
     {
       name: "Wajid Bhat",
       title: "Engineering IT Director",
