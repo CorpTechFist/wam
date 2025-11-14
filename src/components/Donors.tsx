@@ -5,7 +5,7 @@ import { useTranslation } from "./TranslationContext";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import donorImage from 'figma:asset/68c16c033605004c6e9b7b3532fbe93693d87955.png';
 
-export function Services() {
+export function Donors() {
   const { translations } = useTranslation();
 
   return (

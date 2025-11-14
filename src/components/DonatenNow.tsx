@@ -6,7 +6,7 @@ import { Textarea } from "./ui/textarea";
 import { MapPin, Phone, Mail, Send, DollarSign, Gift } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
-export function Contact() {
+export function DonateNow() {
   const { translations } = useTranslation();
 
   const handleCashDonationsClick = () => {

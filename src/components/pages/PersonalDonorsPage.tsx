@@ -100,7 +100,7 @@ export function PersonalDonorsPage() {
         {/* Donor Categories Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* All Our Online Donors */}
-          <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-white border-2 border-purple-400 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
             <div className="absolute top-0 left-0 w-full h-1"></div>
             <CardContent className="p-8 md:p-10">
               <div className="flex justify-center mb-6">
@@ -109,7 +109,7 @@ export function PersonalDonorsPage() {
                 </div>
               </div>
               <h3 className="text-center text-2xl mb-6" style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                background: '#7c3aed',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -124,16 +124,16 @@ export function PersonalDonorsPage() {
           </Card>
 
           {/* Anonymous Donors */}
-          <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-white border-2 border-purple-400 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
             <div className="absolute top-0 left-0 w-full h-1 "></div>
             <CardContent className="p-8 md:p-10">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center shadow-lg">
-                  <Heart className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 to-yellow-50 flex items-center justify-center shadow-lg">
+                  <Heart className="w-8 h-8 text-purple-600"/>
                 </div>
               </div>
               <h3 className="text-center text-2xl mb-6" style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                background: '#7c3aed',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -148,7 +148,7 @@ export function PersonalDonorsPage() {
           </Card>
 
           {/* Gerry - Repeated Donor */}
-          <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-white border-2 border-purple-400 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
             <div className="absolute top-0 left-0 w-full h-1"></div>
         
             <CardContent className="p-8 md:p-10">
@@ -158,7 +158,7 @@ export function PersonalDonorsPage() {
                 </div>
               </div>
               <h3 className="text-center text-2xl mb-6" style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                background: '#7c3aed',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -173,16 +173,16 @@ export function PersonalDonorsPage() {
           </Card>
 
           {/* Katherine */}
-          <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-white border-2 border-purple-400 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
             <div className="absolute top-0 left-0 w-full h-1 "></div>
             <CardContent className="p-8 md:p-10">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center shadow-lg">
-                  <Heart className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center shadow-lg">
+                  <Heart className="w-8 h-8 text-purple-600"/>
                 </div>
               </div>
               <h3 className="text-center text-2xl mb-6" style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #9000ffff 100%)',
+                background: ' #7c3aed',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -198,7 +198,7 @@ export function PersonalDonorsPage() {
         </div>
 
         {/* Kathleen McGowen - Featured Full Width */}
-        <Card className="bg-white border-2 border-purple-300/60 rounded-3xl shadow-2xl shadow-purple-200/60 overflow-hidden relative group hover:shadow-3xl hover:shadow-purple-300/70 transition-all duration-300">
+        <Card className="bg-white border-2 border-purple-400 rounded-3xl shadow-2xl shadow-purple-200/60 overflow-hidden relative group hover:shadow-3xl hover:shadow-purple-300/70 transition-all duration-300">
           <div className="absolute top-0 left-0 w-full h-1.5"></div>
           <div className="absolute bottom-0 left-0 w-full h-1.5 "></div>
           <CardContent className="p-10 md:p-14">
@@ -213,16 +213,14 @@ export function PersonalDonorsPage() {
               rel="noopener noreferrer"
               className="text-center text-3xl md:text-4xl mb-8 block transition-all duration-300 group/link"
               style={{ 
-                background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #7055faff 50%, #8b5cf6 75%, #7c3aed 100%)',
+                 background: '#7c3aed',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
-                fontWeight: '700',
-                textDecoration: 'underline',
-                textDecorationColor: '#a78bfa'
+                fontWeight: '700'
               }}
             >
-              KATHLEEN McGOWEN
+              KATHLEEN McGOWAN
             </a>
             <p className="text-gray-700 leading-relaxed text-center text-lg max-w-3xl mx-auto">
               Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.

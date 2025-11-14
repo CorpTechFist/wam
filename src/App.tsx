@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Header } from './components/Header';
 import { Banner } from "./components/Banner";
 import { Footer } from "./components/Footer";
-import { OurProgress } from "./components/OurProgress";
+import { ProgramsandProjects } from "./components/ProgramsandProjects";
 import { ContactUs } from "./components/ContactUs";
 import { Volunteer } from "./components/Volunteer";
 import { VolunteerApplication } from "./components/VolunteerApplication";
@@ -13,10 +13,10 @@ import { TranslationProvider } from "./components/TranslationContext";
 // Import all pages
 import { HomePage } from "./components/pages/HomePage";
 import { AboutPage } from "./components/pages/AboutPage";
-import { ServicesPage } from "./components/pages/ServicesPage";
+import { DonorsPage } from "./components/pages/DonorsPage";
 import { MembersPage } from "./components/pages/MembersPage";
-import { NewsPage } from "./components/pages/NewsPage";
-import { ContactPage } from "./components/pages/ContactPage";
+import { TestimonialsPage } from "./components/pages/TestimonialPage";
+import { DonateNowPage } from "./components/pages/DonateNowPage";
 import { TonyaBioPage } from "./components/pages/TonyaBioPage";
 import { RobBioPage } from "./components/pages/RobBioPage";
 import { DianeBioPage } from "./components/pages/DianeBioPage";
@@ -92,14 +92,14 @@ export default function App() {
         {/* Pages */}
         {currentPage === "home" && <HomePage />}
         {currentPage === "about" && <AboutPage />}
-        {currentPage === "services" && <ServicesPage />}
+        {currentPage === "donors" && <DonorsPage />}
         {currentPage === "members" && <MembersPage />}
         {currentPage === "board-of-directors" && (
           <BoardOfDirectorsPage onNavigate={handleNavigation} />
         )}
-        {currentPage === "news" && <NewsPage />}
-        {currentPage === "contact" && <ContactPage />}
-        {currentPage === "our-progress" && <OurProgress />}
+        {currentPage === "testimonials" && <TestimonialsPage />}
+        {currentPage === "donate-now" && <DonateNowPage />}
+        {currentPage === "programs-and-projects" && <ProgramsandProjects />}
         {currentPage === "contact-us" && <ContactUs />}
         {currentPage === "volunteer" && <Volunteer />}
         {currentPage === "volunteer-application" && <VolunteerApplication />}

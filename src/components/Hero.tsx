@@ -57,7 +57,7 @@ export function Hero() {
               {/* Professional Crisis Support Card */}
               <div className=" py-10 px-10 w-full" style={{
                 backdropFilter: 'blur(25px)',
-                boxShadow: '0 25px 70px rgba(162, 129, 247, 0.12), 0 15px 35px rgba(92, 23, 231, 0.02), 0 8px 20px rgba(99, 101, 241, 0.11)',
+                boxShadow: '0 0px 0px rgba(162, 129, 247, 0.12), 0 15px 35px rgba(244, 244, 244, 0.02), 0 8px 20px rgba(236, 237, 247, 0.11)',
                 borderRadius: '0px',
                 overflow: 'hidden',
                 position: 'relative'
@@ -70,8 +70,8 @@ export function Hero() {
                   left: 0,
                   right: 0,
                   height: '2px',
-                  background: 'linear-gradient(90deg, #8B5CF6 0%, #6366F1 50%, #8B5CF6 100%)',
-                  boxShadow: '0 2px 12px rgba(139, 92, 246, 0.5)'
+                  
+                 
                 }}></div>
 
                 {/* Professional Header with Icon */}
@@ -262,7 +262,7 @@ export function Hero() {
                     <button
                       className="bg-purple-600 border-purple-400 text-white px-8 py-4 flex items-center gap-2"
                       style={{
-                        background: 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6366F1 100%)',
+                       
                         border: 'none',
                         color: 'white',
                         fontFamily: "'Inter', 'system-ui', 'sans-serif'",
@@ -272,7 +272,7 @@ export function Hero() {
                         borderRadius: '14px',
                         position: 'relative',
                         overflow: 'hidden',
-                        boxShadow: '0 12px 30px rgba(139, 92, 246, 0.35), 0 6px 15px rgba(99, 102, 241, 0.25)',
+                       
                         cursor: 'pointer',
                         transition: 'transform 0.2s ease, box-shadow 0.2s ease'
                       }}

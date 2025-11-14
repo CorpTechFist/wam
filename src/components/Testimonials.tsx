@@ -20,7 +20,8 @@ import jay from "../assets/testimonials/Jay.png";
 import mercedes from "../assets/testimonials/mercedes.png";
 import seanfromoh from "../assets/testimonials/seanfromoh.png";
 
-export function News() {
+export function Testimonials() {
+
   const { translations } = useTranslation();
   const [expandedCards, setExpandedCards] = useState<number[]>(
     [],

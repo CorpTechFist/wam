@@ -1,12 +1,12 @@
-import { News } from "../News";
+import { Testimonials } from "../Testimonials";
 
-export function NewsPage() {
+export function TestimonialsPage() {
   return (
     <main className="py-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
-      background: '#FAF9F6'
+      background: '#FFFFFF'
     }}>
       <div>
-        <News />
+        <Testimonials />
       </div>
     </main>
   );

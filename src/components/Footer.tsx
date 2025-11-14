@@ -61,7 +61,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
           top: 0,
           left: 0,
           right: 0,
-          height: '4px',
+          height: '2px',
           background: 'linear-gradient(90deg, #8B5CF6 0%, #6366F1 50%, #8B5CF6 100%)',
           boxShadow: '0 2px 12px rgba(139, 92, 246, 0.5)'
         }}></div>
@@ -84,7 +84,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-muted-foreground flex-shrink-0" />
-                <div className="border border-muted-foreground/30 px-3 py-1 hover:border-indigo-500/50 transition-colors">
+                <div className=" hover:border-indigo-500/50 transition-colors">
                   <a href="tel:3854144144" className="text-sm text-muted-foreground hover:text-indigo-600 transition-colors">
                     3854144144
                   </a>
@@ -131,7 +131,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <button className={`flex items-center text-sm text-muted-foreground hover:text-indigo-600 transition-colors duration-300 text-left group ${
-                      currentPage === 'about' || currentPage === 'our-progress' || currentPage === 'contact-us' ? 'text-primary' : ''
+                      currentPage === 'about' || currentPage === 'programs-and-projects' || currentPage === 'contact-us' ? 'text-primary' : ''
                     }`}>
                       About Us
                       <ChevronDown className="w-3 h-3 ml-1 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -143,9 +143,9 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                     className="w-56 bg-white/98 backdrop-blur-md border border-indigo-300/30 shadow-2xl"
                   >
                     <DropdownMenuItem
-                      onClick={() => handleNavigation('our-progress')}
+                      onClick={() => handleNavigation('programs-and-projects')}
                       className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
-                        currentPage === 'our-progress' ? 'text-primary bg-primary/10' : ''
+                        currentPage === 'programs-and-projects' ? 'text-primary bg-primary/10' : ''
                       }`}
                     >
                      Programs and Projects
@@ -153,7 +153,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                    <DropdownMenuItem
                       onClick={() => handleNavigation('resources-partnering-agencies')}
                       className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
-                        currentPage === 'our-progress' ? 'text-primary bg-primary/10' : ''
+                        currentPage === 'programs-and-projects' ? 'text-primary bg-primary/10' : ''
                       }`}
                     >
                      Trusted Partners
@@ -210,14 +210,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                     >
                       Diane Jones (Director/Secretary)
                     </DropdownMenuItem>
-                    <DropdownMenuItem
-                      onClick={() => handleNavigation('danielle-bio')}
-                      className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
-                        currentPage === 'danielle-bio' ? 'text-primary bg-primary/10' : ''
-                      }`}
-                    >
-                      Danielle Ortega (Paralegal)
-                    </DropdownMenuItem>
+                  
                     <DropdownMenuItem
                       onClick={() => handleNavigation('wajid-bio')}
                       className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
@@ -255,9 +248,9 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
               <li className="flex items-center gap-2">
                 <div className="w-1 h-1 bg-primary"></div>
                 <button 
-                  onClick={() => handleNavigation('services')}
+                  onClick={() => handleNavigation('donors')}
                   className={`text-sm text-muted-foreground hover:text-indigo-600 transition-colors duration-300 text-left ${
-                    currentPage === 'services' ? 'text-primary' : ''
+                    currentPage === 'donors' ? 'text-primary' : ''
                   }`}
                 >
                   Donors
@@ -266,9 +259,9 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
               <li className="flex items-center gap-2">
                 <div className="w-1 h-1 bg-primary"></div>
                 <button 
-                  onClick={() => handleNavigation('contact')}
+                  onClick={() => handleNavigation('donate-now')}
                   className={`text-sm text-muted-foreground hover:text-indigo-600 transition-colors duration-300 text-left ${
-                    currentPage === 'contact' ? 'text-primary' : ''
+                    currentPage === 'donate-now' ? 'text-primary' : ''
                   }`}
                 >
                   Donate Now

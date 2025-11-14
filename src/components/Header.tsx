@@ -49,9 +49,9 @@ export function Header({
 
   const navigationItems = [
     { name: "WAM Alliance", href: "home" },
-    { name: "Testimonials", href: "news" },
-    { name: "Donors", href: "services" },
-    { name: "Donate Now", href: "contact" },
+    { name: "Testimonials", href: "testimonials" },
+    { name: "Donors", href: "donors" },
+    { name: "Donate Now", href: "donate-now" },
   ];
 
   const handleNavigation = (page: string) => {
@@ -196,7 +196,7 @@ export function Header({
                 style={{
                   background:
                     currentPage === "about" ||
-                    currentPage === "our-progress" ||
+                    currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
                       "resources-partnering-agencies"
@@ -204,7 +204,7 @@ export function Header({
                       : "transparent",
                   color:
                     currentPage === "about" ||
-                    currentPage === "our-progress" ||
+                    currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
                       "resources-partnering-agencies"
@@ -217,7 +217,7 @@ export function Header({
                   letterSpacing: "-0.01em",
                   boxShadow:
                     currentPage === "about" ||
-                    currentPage === "our-progress" ||
+                    currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
                       "resources-partnering-agencies"
@@ -233,7 +233,7 @@ export function Header({
                   if (
                     !(
                       currentPage === "about" ||
-                      currentPage === "our-progress" ||
+                      currentPage === "programs-and-projects" ||
                       currentPage === "contact-us" ||
                       currentPage ===
                         "resources-partnering-agencies"
@@ -248,7 +248,7 @@ export function Header({
                   if (
                     !(
                       currentPage === "about" ||
-                      currentPage === "our-progress" ||
+                      currentPage === "programs-and-projects" ||
                       currentPage === "contact-us" ||
                       currentPage ===
                         "resources-partnering-agencies"
@@ -290,7 +290,7 @@ export function Header({
                     <button
                       className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
                       onClick={() =>
-                        handleNavigation("our-progress")
+                        handleNavigation("programs-and-projects")
                       }
                       style={{
                         transition:
@@ -487,10 +487,9 @@ export function Header({
                         label:
                           "Diane Jones (Director/Secretary)",
                       },
-                      {
-                        key: "danielle-bio",
-                        label: "Danielle Ortega (Paralegal)",
-                      },
+                      
+                        
+                        
                       {
                         key: "wajid-bio",
                         label: "Wajid Bhat (Engineering)",
@@ -771,7 +770,7 @@ export function Header({
               >
                 <button
                   className={`w-full text-left py-2 px-3 mb-2 rounded-lg ${
-                    currentPage === "our-progress"
+                    currentPage === "programs-and-projects"
                       ? "text-purple-600"
                       : "text-gray-500"
                   }`}
@@ -779,12 +778,12 @@ export function Header({
                     border: "none",
                     fontSize: "0.9rem",
                     background:
-                      currentPage === "our-progress"
+                      currentPage === "programs-and-projects"
                         ? "rgba(124, 58, 237, 0.1)"
                         : "transparent",
                   }}
                   onClick={() =>
-                    handleNavigation("our-progress")
+                    handleNavigation("programs-and-projects")
                   }
                 >
                  Programs and Projects
@@ -874,10 +873,7 @@ export function Header({
                     key: "diane-bio",
                     label: "Diane Jones (Director/Secretary)",
                   },
-                  {
-                    key: "danielle-bio",
-                    label: "Danielle Ortega (Paralegal)",
-                  },
+                
                   {
                     key: "wajid-bio",
                     label: "Wajid Bhat (Engineering)",

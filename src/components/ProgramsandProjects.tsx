@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Info } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
-export function OurProgress() {
+export function ProgramsandProjects() {
   const { translations } = useTranslation();
   const [showFullAden, setShowFullAden] = useState(false);
 

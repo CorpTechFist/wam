@@ -1,10 +1,10 @@
-import { Contact } from "../Contact";
+import { DonateNow } from "../DonatenNow";
 
-export function ContactPage() {
+export function DonateNowPage() {
   return (
     <main className="py-20 relative overflow-hidden border-t border-b border-gray-200 border-opacity-50 bg-white">
       <div>
-        <Contact />
+        <DonateNow />
       </div>
     </main>
   );
