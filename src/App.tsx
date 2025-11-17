@@ -32,7 +32,7 @@ import { DonationSchedulingPage } from "./components/pages/DonationSchedulingPag
 import { SponsorsPage } from "./components/pages/SponsorsPage";
 import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./components/pages/TermsOfServicePage";
-import { ResourcesPartneringAgenciesPage } from "./components/pages/ResourcesPartneringAgenciesPage";
+import { TrustedPartnersPage} from "./components/pages/TrustedPartnersPage";
 import { VolunteersPage } from "./components/pages/VolunteersPage";
 
 export default function App() {
@@ -118,8 +118,8 @@ export default function App() {
         {currentPage === "sponsors" && <SponsorsPage />}
         {currentPage === "privacy-policy" && <PrivacyPolicyPage />}
         {currentPage === "terms-of-service" && <TermsOfServicePage />}
-        {currentPage === "resources-partnering-agencies" && (
-          <ResourcesPartneringAgenciesPage />
+        {currentPage === "trusted-Partners" && (
+          <TrustedPartnersPage/>
         )}
         {currentPage === "volunteers" && <VolunteersPage />}
 

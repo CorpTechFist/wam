@@ -199,7 +199,7 @@ export function Header({
                     currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
-                      "resources-partnering-agencies"
+                      "trusted-partners"
                       ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                       : "transparent",
                   color:
@@ -207,7 +207,7 @@ export function Header({
                     currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
-                      "resources-partnering-agencies"
+                      "trusted-partners"
                       ? "#FFFFFF"
                       : "#6B7280",
                   transition:
@@ -220,7 +220,7 @@ export function Header({
                     currentPage === "programs-and-projects" ||
                     currentPage === "contact-us" ||
                     currentPage ===
-                      "resources-partnering-agencies"
+                      "trusted-partners"
                       ? "0 4px 12px rgba(139, 92, 246, 0.3)"
                       : "none",
                 }}
@@ -236,7 +236,7 @@ export function Header({
                       currentPage === "programs-and-projects" ||
                       currentPage === "contact-us" ||
                       currentPage ===
-                        "resources-partnering-agencies"
+                        "trusted-partners"
                     )
                   ) {
                     e.currentTarget.style.background =
@@ -251,7 +251,7 @@ export function Header({
                       currentPage === "programs-and-projects" ||
                       currentPage === "contact-us" ||
                       currentPage ===
-                        "resources-partnering-agencies"
+                        "trusted-partners"
                     )
                   ) {
                     e.currentTarget.style.background =
@@ -316,7 +316,7 @@ export function Header({
                       className="w-full text-left py-2.5 px-4 border-0 bg-transparent rounded-xl"
                       onClick={() =>
                         handleNavigation(
-                          "resources-partnering-agencies",
+                          "trusted-partners",
                         )
                       }
                       style={{
@@ -791,7 +791,7 @@ export function Header({
                 <button
                   className={`w-full text-left py-2 px-3 mb-2 rounded-lg ${
                     currentPage ===
-                    "resources-partnering-agencies"
+                    "trusted-partners"
                       ? "text-purple-600"
                       : "text-gray-500"
                   }`}
@@ -800,13 +800,13 @@ export function Header({
                     fontSize: "0.9rem",
                     background:
                       currentPage ===
-                      "resources-partnering-agencies"
+                      "trusted-partners"
                         ? "rgba(124, 58, 237, 0.1)"
                         : "transparent",
                   }}
                   onClick={() =>
                     handleNavigation(
-                      "resources-partnering-agencies",
+                      "trusted-partners",
                     )
                   }
                 >

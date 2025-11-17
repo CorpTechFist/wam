@@ -6,7 +6,7 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 import secondSecondCoalitionLogo from '../../assets/testimonials/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png';
 import restorativeHealthLogo from '../../assets/testimonials/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
 import techfistLogo from '../../assets/logo/tfglogo.png'
-export function ResourcesPartneringAgenciesPage() {
+export function TrustedPartners() {
   const { translations } = useTranslation();
 
   const agencies = [
@@ -63,7 +63,7 @@ export function ResourcesPartneringAgenciesPage() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Purple/Gold Accent Border Top */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 "></div>
       
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
@@ -235,8 +235,7 @@ export function ResourcesPartneringAgenciesPage() {
         </div>
       </div>
       
-      {/* Purple/Gold Accent Border Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
+
     </div>
   );
 }
