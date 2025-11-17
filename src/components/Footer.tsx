@@ -343,11 +343,20 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
         <Separator className="mb-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
         {/* Bottom Footer */}
+        {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-             <div className="flex items-center gap-2">
- <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary"></div> <span>© 2025 Techfist Global InC</span> </div>
+  <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary"></div>
+  <a 
+    href="https://techfistglobal.com/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="hover:underline hover:text-indigo-600 transition-colors"
+  >
+    © 2025 Techfist Global Inc
+  </a>
+</div>
 
             <div className="flex items-center space-x-6">
               <button onClick={() => handleNavigation('privacy-policy')} className="flex items-center gap-1 hover:text-indigo-600 transition-colors mr-4">
