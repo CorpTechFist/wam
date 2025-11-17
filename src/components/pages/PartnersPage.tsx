@@ -4,7 +4,7 @@ import { Heart, Star, Building, Users, Award, Target } from "lucide-react";
 import { useTranslation } from "../TranslationContext";
 import { unsplash_tool } from "../../tools";
 
-export function SponsorsPage() {
+export function PartnersPage() {
   const { translations } = useTranslation();
 
   const sponsors = [
@@ -260,7 +260,7 @@ export function SponsorsPage() {
       </div>
       
       {/* Purple/Gold Accent Border Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
+    
     </div>
   );
 }

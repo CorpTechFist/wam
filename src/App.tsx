@@ -29,7 +29,7 @@ import { PersonalDonorsPage } from "./components/pages/PersonalDonorsPage";
 import { CashDonationsPage } from "./components/pages/CashDonationsPage";
 import { OtherDonationsPage } from "./components/pages/OtherDonationsPage";
 import { DonationSchedulingPage } from "./components/pages/DonationSchedulingPage";
-import { SponsorsPage } from "./components/pages/SponsorsPage";
+import { PartnersPage } from "./components/pages/PartnersPage";
 import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./components/pages/TermsOfServicePage";
 import { TrustedPartnersPage} from "./components/pages/TrustedPartnersPage";
@@ -115,7 +115,7 @@ export default function App() {
         {currentPage === "cash-donations" && <CashDonationsPage />}
         {currentPage === "other-donations" && <OtherDonationsPage />}
         {currentPage === "donation-scheduling" && <DonationSchedulingPage />}
-        {currentPage === "sponsors" && <SponsorsPage />}
+        {currentPage === "partners" && <PartnersPage />}
         {currentPage === "privacy-policy" && <PrivacyPolicyPage />}
         {currentPage === "terms-of-service" && <TermsOfServicePage />}
         {currentPage === "trusted-partners" && (

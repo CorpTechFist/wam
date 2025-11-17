@@ -87,7 +87,7 @@ export function Donors() {
                 <div className="flex-1">
                   <button 
                     onClick={() => {
-                      const event = new CustomEvent('navigate', { detail: 'sponsors' });
+                      const event = new CustomEvent('navigate', { detail: 'partners' });
                       window.dispatchEvent(event);
                     }}
                     className="text-2xl md:text-3xl font-bold mb-4 underline cursor-pointer hover:text-purple-700 transition-colors"
