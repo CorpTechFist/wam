@@ -151,7 +151,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                      Programs and Projects
                     </DropdownMenuItem>
                    <DropdownMenuItem
-                      onClick={() => handleNavigation('resources-partnering-agencies')}
+                      onClick={() => handleNavigation('trusted-partners')}
                       className={`px-4 py-3 text-sm text-gray-900 hover:bg-indigo-100/80 hover:text-indigo-700 transition-colors duration-300 cursor-pointer ${
                         currentPage === 'programs-and-projects' ? 'text-primary bg-primary/10' : ''
                       }`}
