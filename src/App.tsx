@@ -118,7 +118,7 @@ export default function App() {
         {currentPage === "sponsors" && <SponsorsPage />}
         {currentPage === "privacy-policy" && <PrivacyPolicyPage />}
         {currentPage === "terms-of-service" && <TermsOfServicePage />}
-        {currentPage === "trusted-Partners" && (
+        {currentPage === "trusted-partners" && (
           <TrustedPartnersPage/>
         )}
         {currentPage === "volunteers" && <VolunteersPage />}

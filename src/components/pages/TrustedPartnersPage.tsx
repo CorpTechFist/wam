@@ -6,7 +6,7 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 import secondSecondCoalitionLogo from '../../assets/testimonials/3dedd5dd8d7d270478c178c7d281ad8f8472cbc4.png';
 import restorativeHealthLogo from '../../assets/testimonials/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
 import techfistLogo from '../../assets/logo/tfglogo.png'
-export function TrustedPartners() {
+export function TrustedPartnersPage() {
   const { translations } = useTranslation();
 
   const agencies = [
