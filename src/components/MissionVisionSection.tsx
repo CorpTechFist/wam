@@ -1,32 +1,16 @@
+
 import { useState } from "react";
 import { useTranslation } from "./TranslationContext";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export function MissionVisionSection() {
-  const { translations } = useTranslation();
+  const { language, t } = useTranslation();
 
   const [showFullMission, setShowFullMission] = useState(false);
   const [showFullVision, setShowFullVision] = useState(false);
 
-  const missionText =
-    translations.hero?.missionDescription?.length > 50
-      ? translations.hero.missionDescription
-      : `At We All Matter Alliance, we believe that every soul—no matter their story—deserves dignity, healing, and a chance to thrive.
-
-Born from lived experience and boundless compassion, our mission is to walk beside those navigating the shadows of suicide loss, trauma, domestic violence, injustice, and systemic marginalization. We serve individuals and families who are unhoused, low-income, court-ordered for community service, or silenced by circumstance—offering not just resources, but refuge.
-
-Through legal advocacy, trauma-informed support, and practical tools for rebuilding, we create pathways to empowerment. And in partnership with TechFistGlobal.com, we extend our reach through intelligent automation and accessible digital services—bridging the gap between need and opportunity with innovation and care.
-
-We are defenders of justice, champions of equity, and architects of change. From surviving to thriving, we walk with our community—one step, one story, one triumph at a time.
-
-Because at We All Matter Alliance, healing isn’t just possible—it’s sacred.
-
-WE ARE THE CHANGE!`;
-
-  const visionText =
-    translations.hero?.visionDescription?.length > 50
-      ? translations.hero.visionDescription
-      : `We envision a world where trauma survivors feel seen, heard, and equipped to heal themselves. We champion understanding of the many paths to recovery—from peer support circles and holistic practices to evidence-based therapies. We provide resources, support, skills, and training to suicide loss survivors, trauma survivors, LGBTQa2s+ individuals, and those wrongfully accused. By broadening awareness and knowledge, we ignite hope, spark transformation, and nurture a culture of enduring resilience, civic engagement, and justice for all.`;
+  const missionText = t('mission.text');
+  const visionText = t('vision.text');
 
   const paragraphStyle = {
     fontFamily: "'Inter', 'system-ui', 'sans-serif'",
@@ -79,11 +63,14 @@ WE ARE THE CHANGE!`;
           {/* Header */}
           <div
             className="text-center mb-15 pb-16"
-            style={{ borderBottom: "1px solid rgba(246, 245, 248, 0.35)" }}
+            style={{
+              borderBottom:
+                "1px solid rgba(246, 245, 248, 0.35)",
+            }}
           >
             <div className="flex flex-col md:flex-row items-center justify-center gap-3">
               <h2
-                className="text-xl mb-0 px-3 italic font-semibold"
+                className="text-xl mb-0 px-3 bold font-semibold"
                 style={{
                   background:
                     "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
@@ -93,7 +80,7 @@ WE ARE THE CHANGE!`;
                   fontWeight: "700",
                 }}
               >
-                We Are The Change!
+                {t('mission.weAreTheChange')}
               </h2>
               <div
                 className="hidden md:block"
@@ -116,7 +103,7 @@ WE ARE THE CHANGE!`;
                   fontWeight: "700",
                 }}
               >
-                Elevating lives, advocates for humanity and FREEDOM for ALL
+                {t('mission.tagline')}
               </h2>
             </div>
           </div>
@@ -136,7 +123,7 @@ WE ARE THE CHANGE!`;
                   fontWeight: "700",
                 }}
               >
-                Our Mission
+                {t('mission.ourMission')}
               </h2>
 
               <p
@@ -151,23 +138,31 @@ WE ARE THE CHANGE!`;
               </p>
 
               <button
-                onClick={() => setShowFullMission(!showFullMission)}
+                onClick={() =>
+                  setShowFullMission(!showFullMission)
+                }
                 onMouseEnter={(e) =>
-                  Object.assign(e.currentTarget.style, hoverStyle)
+                  Object.assign(
+                    e.currentTarget.style,
+                    hoverStyle,
+                  )
                 }
                 onMouseLeave={(e) =>
-                  Object.assign(e.currentTarget.style, gradientButtonStyle)
+                  Object.assign(
+                    e.currentTarget.style,
+                    gradientButtonStyle,
+                  )
                 }
                 style={gradientButtonStyle}
                 className="mx-auto flex items-center gap-2 mt-2"
               >
                 {showFullMission ? (
                   <>
-                    Show Less <ChevronUp size={18} />
+                    {t('mission.showLess')} <ChevronUp size={18} />
                   </>
                 ) : (
                   <>
-                    Read More <ChevronDown size={18} />
+                    {t('mission.readMore')} <ChevronDown size={18} />
                   </>
                 )}
               </button>
@@ -200,7 +195,7 @@ WE ARE THE CHANGE!`;
                   fontWeight: "700",
                 }}
               >
-                Our Vision
+                {t('mission.ourVision')}
               </h2>
 
               <p
@@ -215,23 +210,31 @@ WE ARE THE CHANGE!`;
               </p>
 
               <button
-                onClick={() => setShowFullVision(!showFullVision)}
+                onClick={() =>
+                  setShowFullVision(!showFullVision)
+                }
                 onMouseEnter={(e) =>
-                  Object.assign(e.currentTarget.style, hoverStyle)
+                  Object.assign(
+                    e.currentTarget.style,
+                    hoverStyle,
+                  )
                 }
                 onMouseLeave={(e) =>
-                  Object.assign(e.currentTarget.style, gradientButtonStyle)
+                  Object.assign(
+                    e.currentTarget.style,
+                    gradientButtonStyle,
+                  )
                 }
                 style={gradientButtonStyle}
                 className="mx-auto flex items-center gap-2 mt-2"
               >
                 {showFullVision ? (
                   <>
-                    Show Less <ChevronUp size={18} />
+                    {t('mission.showLess')} <ChevronUp size={18} />
                   </>
                 ) : (
                   <>
-                    Read More <ChevronDown size={18} />
+                    {t('mission.readMore')} <ChevronDown size={18} />
                   </>
                 )}
               </button>
