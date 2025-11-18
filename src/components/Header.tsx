@@ -86,16 +86,15 @@ export function Header({
         }}
       >
        <div
-  className="max-w-full flex items-center w-full"
+  className="max-w-full flex items-center justify-between w-full px-4 py-3"
   style={{
     background: "rgba(255, 255, 255, 0.8)",
     backdropFilter: "blur(20px)",
     WebkitBackdropFilter: "blur(20px)",
     margin: "0",
-    padding: "0",
     border: "none",
     borderBottom: "1px solid rgba(0, 0, 0, 0.06)",
-    position: "relative",   // ✅ FIXED
+    position: "relative",
     zIndex: "1000",
     boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)",
   }}
@@ -713,39 +712,69 @@ export function Header({
             </div>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className="border-0 p-2.5 rounded-xl lg:hidden"
-            type="button"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            style={{
-              background: "rgba(139, 92, 246, 0.08)",
-              border: "1px solid rgba(139, 92, 246, 0.2)",
-              transition:
-                "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-              marginLeft: "auto",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.background =
-                "rgba(139, 92, 246, 0.15)";
-              e.currentTarget.style.borderColor =
-                "rgba(139, 92, 246, 0.3)";
-              e.currentTarget.style.transform = "scale(1.05)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.background =
-                "rgba(139, 92, 246, 0.08)";
-              e.currentTarget.style.borderColor =
-                "rgba(139, 92, 246, 0.2)";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            {isMenuOpen ? (
-              <X size={24} style={{ color: "#8B5CF6" }} />
-            ) : (
-              <Menu size={24} style={{ color: "#8B5CF6" }} />
-            )}
-          </button>
+          {/* Mobile Language Toggle & Menu */}
+          <div className="flex items-center gap-2 lg:hidden ml-auto">
+            <button
+              className="border-0 p-2.5 rounded-xl"
+              type="button"
+              onClick={toggleLanguage}
+              style={{
+                background: "rgba(139, 92, 246, 0.08)",
+                border: "1px solid rgba(139, 92, 246, 0.2)",
+                transition:
+                  "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background =
+                  "rgba(139, 92, 246, 0.15)";
+                e.currentTarget.style.borderColor =
+                  "rgba(139, 92, 246, 0.3)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background =
+                  "rgba(139, 92, 246, 0.08)";
+                e.currentTarget.style.borderColor =
+                  "rgba(139, 92, 246, 0.2)";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+              title="Toggle Language"
+            >
+              <Languages size={20} style={{ color: "#8B5CF6" }} />
+            </button>
+
+            <button
+              className="border-0 p-2.5 rounded-xl"
+              type="button"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              style={{
+                background: "rgba(139, 92, 246, 0.08)",
+                border: "1px solid rgba(139, 92, 246, 0.2)",
+                transition:
+                  "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background =
+                  "rgba(139, 92, 246, 0.15)";
+                e.currentTarget.style.borderColor =
+                  "rgba(139, 92, 246, 0.3)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background =
+                  "rgba(139, 92, 246, 0.08)";
+                e.currentTarget.style.borderColor =
+                  "rgba(139, 92, 246, 0.2)";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            >
+              {isMenuOpen ? (
+                <X size={24} style={{ color: "#8B5CF6" }} />
+              ) : (
+                <Menu size={24} style={{ color: "#8B5CF6" }} />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
