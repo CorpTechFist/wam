@@ -780,10 +780,11 @@ export function Header({
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div
-            className="lg:hidden border-t"
+            className="lg:hidden border-t overflow-y-auto"
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.98)",
               backdropFilter: "blur(20px)",
+              maxHeight: "calc(100vh - 80px)",
             }}
           >
             <div className="max-w-full py-4 px-4">
