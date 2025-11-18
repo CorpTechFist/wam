@@ -39,26 +39,26 @@ export function Volunteers() {
       email: "aidensroots@gmail.com",
       image: sireen,
     },
-    {
-      name: "Leeann Hymas",
-      title: "Project Volunteer & Community Builder",
-      story:
-        "Born in Hawaii and raised across the globe, Leeann Hymas grew up in a military family that instilled in her the values of discipline, service, and community. Constant relocation gave her a deep appreciation for diverse cultures and the importance of showing up for others—no matter where you are.\n\nThough Leeann once dreamed of joining the military herself, she faced barriers as an LGBTQAI2S individual from a young age. Rather than let that stop her, she chose to live with the same integrity and commitment to service that she admired in those around her.\n\nHer life has become a testament to quiet strength, personal growth, and unwavering support for those in need. Leeann brings a rich background in food service and security to her volunteer work, along with a creative spirit expressed through art, video, and gaming.\n\nHer hands-on approach and compassionate presence make her a vital part of the We All Matter Alliance team. Whether helping at events, supporting outreach, or simply listening with empathy, Leeann lives as if she had served—and in many ways, she has. Her journey reminds us that service isn’t defined by uniforms—it’s defined by heart.",
-      role: "Project Coordinator",
-      type: "Featured Volunteer",
-      email: "",
-      image: leeann,
-    },
-    {
-      name: "Anika Curtis",
-      title: "Creative Volunteer & Community Advocate",
-      story:
-        "Anika Curtis is a passionate artist and dedicated volunteer whose creativity is rooted in healing and purpose. Born in California and shaped by experiences across multiple states, Anika ultimately found her home in Utah—where she chose to be closer to family and step into her calling as an advocate for those whose voices often go unheard.\n\nFor Anika, art is more than expression—it’s liberation. She uses painting, design, and mixed media as a way to process emotion, release stress, and transform personal experiences into something tangible and uplifting.\n\nHer work reflects a deep sensitivity to the struggles of others and a fierce commitment to justice, empathy, and inclusion. As a volunteer with We All Matter Alliance, Anika brings her creative gifts into every project she touches.\n\nWhether helping with outreach materials, supporting community events, or simply showing up with compassion and care, she embodies the spirit of service through artistry. Her presence reminds us that healing isn’t just about systems—it’s about connection, color, and courage.",
-      role: "Project Coordinator",
-      type: "Featured Volunteer",
-      email: "",
-      image: Anika,
-    },
+    // {
+    //   name: "Leeann Hymas",
+    //   title: "Project Volunteer & Community Builder",
+    //   story:
+    //     "Born in Hawaii and raised across the globe, Leeann Hymas grew up in a military family that instilled in her the values of discipline, service, and community. Constant relocation gave her a deep appreciation for diverse cultures and the importance of showing up for others—no matter where you are.\n\nThough Leeann once dreamed of joining the military herself, she faced barriers as an LGBTQAI2S individual from a young age. Rather than let that stop her, she chose to live with the same integrity and commitment to service that she admired in those around her.\n\nHer life has become a testament to quiet strength, personal growth, and unwavering support for those in need. Leeann brings a rich background in food service and security to her volunteer work, along with a creative spirit expressed through art, video, and gaming.\n\nHer hands-on approach and compassionate presence make her a vital part of the We All Matter Alliance team. Whether helping at events, supporting outreach, or simply listening with empathy, Leeann lives as if she had served—and in many ways, she has. Her journey reminds us that service isn’t defined by uniforms—it’s defined by heart.",
+    //   role: "Project Coordinator",
+    //   type: "Featured Volunteer",
+    //   email: "",
+    //   image: leeann,
+    // },
+    // {
+    //   name: "Anika Curtis",
+    //   title: "Creative Volunteer & Community Advocate",
+    //   story:
+    //     "Anika Curtis is a passionate artist and dedicated volunteer whose creativity is rooted in healing and purpose. Born in California and shaped by experiences across multiple states, Anika ultimately found her home in Utah—where she chose to be closer to family and step into her calling as an advocate for those whose voices often go unheard.\n\nFor Anika, art is more than expression—it’s liberation. She uses painting, design, and mixed media as a way to process emotion, release stress, and transform personal experiences into something tangible and uplifting.\n\nHer work reflects a deep sensitivity to the struggles of others and a fierce commitment to justice, empathy, and inclusion. As a volunteer with We All Matter Alliance, Anika brings her creative gifts into every project she touches.\n\nWhether helping with outreach materials, supporting community events, or simply showing up with compassion and care, she embodies the spirit of service through artistry. Her presence reminds us that healing isn’t just about systems—it’s about connection, color, and courage.",
+    //   role: "Project Coordinator",
+    //   type: "Featured Volunteer",
+    //   email: "",
+    //   image: Anika,
+    // },
   ];
 
   return (
