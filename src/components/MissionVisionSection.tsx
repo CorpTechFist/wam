@@ -88,7 +88,11 @@ export function MissionVisionSection() {
             className="w-full max-h-[420px] object-cover rounded-2xl shadow-lg"
           />
         </div>
-   
+   </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-50 p-12 shadow-md rounded-xl"
+
+ style={{ marginTop: "20px" }}>
+
 
       {/* ==============================
           VISION SECTION
