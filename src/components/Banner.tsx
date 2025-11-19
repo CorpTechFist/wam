@@ -16,7 +16,7 @@ export function Banner() {
       
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center px-4 py-32 text-center" style={{
-        minHeight: '700px', 
+        minHeight: '500px', marginTop:"350px"
       }}>
        
         {/* Tagline */}
