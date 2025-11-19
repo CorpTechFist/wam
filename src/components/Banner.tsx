@@ -12,14 +12,13 @@ export function Banner() {
         }}
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40" />
+      
       
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-center px-4 py-32 text-center mt-20" style={{
-        minHeight: '700px'
+      <div className="relative flex flex-col items-center justify-center px-4 py-32 text-center" style={{
+        minHeight: '700px', 
       }}>
-        
+       
         {/* Tagline */}
         <h2 className="text-white text-2xl md:text-4xl lg:text-5xl mb-4 tracking-tight" style={{
           textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(139,92,246,0.5)'
