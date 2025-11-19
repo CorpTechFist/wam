@@ -16,11 +16,11 @@ export function MissionVisionSection() {
     fontSize: "1.05rem",
     lineHeight: 1.9,
     color: "#374151",
-    textAlign: "justify",
-  };
+      };
 
   return (
-    <section className="w-full py-20 px-6 md:px-20 space-y-32 bg-white">
+  <section className="w-full py-16 px-4 md:px-20 space-y-16 md:space-y-32 bg-white">
+
 
       {/* ==============================
           GLOBAL HEADER (Sparkles, Title, Tagline)
@@ -68,7 +68,8 @@ export function MissionVisionSection() {
       {/* ==============================
           MISSION SECTION
       =============================== */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-10 p-12 shadow-md rounded-xl">
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-gray-10 p-6 md:p-12 shadow-md rounded-xl">
+
 
         {/* TEXT LEFT */}
         <div className="pr-8 md:pr-12">
@@ -85,7 +86,8 @@ export function MissionVisionSection() {
               maxHeight: showFullMission ? "100%" : "10rem",
               overflow: "hidden",
 
-                fontFamily: "Inter, system-ui, sans-serif", textAlign: "justify"
+                fontFamily: "Inter, &quot;system-ui&quot;, &quot;sans-serif&quot;; letter-spacing: 0.2px; color: rgb(75, 85, 99); font-size: 1.125rem; font-weight: 500; line-height: 1.8"
+             
             }}
           >
             {missionText}
@@ -116,9 +118,8 @@ export function MissionVisionSection() {
           />
         </div>
    </div>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-10 p-12 shadow-md rounded-xl"
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-gray-10 p-6 md:p-12 shadow-md rounded-xl mt-6">
 
- style={{ marginTop: "20px" }}>
 
 
       {/* ==============================
@@ -149,8 +150,8 @@ export function MissionVisionSection() {
               ...paragraphStyle,
               maxHeight: showFullVision ? "100%" : "10rem",
               overflow: "hidden",
-
-              fontFamily: "Inter, system-ui, sans-serif", textAlign: "justify"
+                fontFamily: "Inter, &quot;system-ui&quot;, &quot;sans-serif&quot;; letter-spacing: 0.2px; color: rgb(75, 85, 99); font-size: 1.125rem; font-weight: 500; line-height: 1.8"
+             
             }}
           >
             {visionText}
