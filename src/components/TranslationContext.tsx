@@ -107,6 +107,83 @@ Because at We All Matter Alliance, healing isn't just possible—it's sacred.
 
 WE ARE THE CHANGE!`,
     'vision.text': 'We envision a world where trauma survivors feel seen, heard, and equipped to heal themselves. We champion understanding of the many paths to recovery—from peer support circles and holistic practices to evidence-based therapies. We provide resources, support, skills, and training to suicide loss survivors, trauma survivors, LGBTQa2s+ individuals, and those wrongfully accused. By broadening awareness and knowledge, we ignite hope, spark transformation, and nurture a culture of enduring resilience, civic engagement, and justice for all.',
+    
+    // About Page - Join the Movement
+    'aboutPage.joinMovement': 'JOIN THE MOVEMENT',
+    'aboutPage.movementDescription': 'Because silence is complicity. Follow us, share your tip-offs, and help build a nation where every person—regardless of race, status, or background—enjoys true justice and dignity.',
+    'aboutPage.beTheChange': 'Be The Change',
+    'aboutPage.boardOfDirectors': 'BOARD OF DIRECTORS',
+    
+    // Volunteers Page
+    'volunteers.title': 'Our Amazing Volunteers',
+    'volunteers.description': 'Meet the dedicated volunteers who make WAM Alliance\'s mission possible!',
+    'volunteers.subtitle': 'These compassionate individuals donate their time, skills, and hearts to help our community thrive.',
+    'volunteers.featuredVolunteer': 'Featured Volunteer',
+    'volunteers.projectCoordinator': 'Project Coordinator',
+    
+    // Board of Directors
+    'board.title': 'Board of Directors',
+    'board.description': 'Our certified Board of Directors are driven by the passion to make our world a better place.',
+    'board.joinTeam': 'Join Our Team',
+    'board.joinMessage': 'Join We All Matter Alliance Team by applying through email with your resume and biography.',
+    'board.ourValues': 'Our Values',
+    'board.welcomeMessage': 'We are a welcoming, loving, passionate, and innovative group who believes loving yourself is the beginning to a better world!',
+    'board.viewProfile': 'View Profile',
+    
+    // HomePage
+    'home.loading': 'Loading WAM Alliance...',
+    'home.error': 'Something went wrong',
+    'home.tryAgain': 'Try Again',
+    
+    // Contact & Donate
+    'contact.title': 'Contact Us',
+    'contact.getInTouch': 'Get In Touch',
+    'contact.reachOut': 'Reach Out to WAM Alliance',
+    
+    // Common UI
+    'ui.readMore': 'Read More',
+    'ui.showLess': 'Show Less',
+    'ui.loading': 'Loading...',
+    
+    // Donors Page (Services component)
+    'donors.title': 'DONORS',
+    'donors.intro1': 'WAM works with mainly personal donations, and company sponsors.',
+    'donors.intro2': 'WAM Alliance welcomes and accepts all donations with the utmost gratitude, and we are thankful to all those that contribute to our cause.',
+    'donors.weAreTheChange': 'WE ARE THE CHANGE!',
+    'donors.personalDonorsTitle': 'PERSONAL DONORS',
+    'donors.personalDonorsDesc': 'We have some personal donors that WAM could not exist without.',
+    'donors.partnersTitle': 'PARTNERS',
+    'donors.partnersDesc': 'Discover our valued sponsors who support WAM Alliance in making a difference in our communities.',
+    
+    // Donate Now Page (Contact component)
+    'donate.title': 'DONACIONES',
+    'donate.intro1': 'WAM da la bienvenida y acepta todas las donaciones. Somos una organización 501(c)(3) registrada con el IRS y todas las donaciones son deducibles de impuestos.',
+    'donate.promise': '¡El 100% de cada donación va directamente a aquellos a quienes ayudamos - Esta es nuestra promesa para ti!',
+    'donate.intro2': '¡WAM no tiene Directores de Junta pagados, servimos a otros sin condiciones y no pedimos nada a cambio excepto que te ames a ti mismo!',
+    'donate.cashDonations': 'DONACIONES EN EFECTIVO',
+    'donate.allOtherDonations': 'TODAS LAS DEMÁS DONACIONES',
+    'donate.donateNow': 'Donar Ahora',
+    
+    // Testimonials Page
+    'testimonials.title': 'Testimonials & Success Stories',
+    'testimonials.subtitle': 'These are just some of the people WAM has helped journey from barely surviving to thriving!',
+    'testimonials.description': 'We help by providing love, support, and resources to those in need, with real results and without',
+    'testimonials.client': 'WAM Alliance Client',
+    'testimonials.readMore': 'Reed More',
+    'testimonials.readLess': 'Reed  Less',
+    'testimonials.verified': 'Verified Impact Story',
+     // Testimonial Types
+    'testimonials.type.testimonial': 'testimonial',
+    'testimonials.type.successStory': 'success story',
+    
+    // Testimonial Stories (English)
+    'testimonials.stories.staciMike': "My name is Staci & my life partner Mike. We want to express a huge appreciation to the founder of WAM (Tonya). I first needed help obtaining my birth certificate from Mississippi which needed to be included with our Section 8 housing application. WAM was able to order it & have it delivered. I now had everything to qualify for housing. Which was in need considering we were homeless & living in a tent. Once qualified we received a Section 8 housing voucher, but application fees & deposits were not included. WAM was able to cover 3 application fees which one of those included the place we now live in, as of February 7 we signed our lease with Housing Connect and now have a home. While we had our struggles, we kept our heads up & stayed positive. Tonya was a great friend when I needed someone to just talk with about my emotions surrounding our situation. WAM was also able to help with a few food orders from Walmart pickup. She is currently helping me find a dental surgeon to do dental implants discounted or pro bono, (crossing my fingers), and continues to help us with food when needed. Staci & Mike are now thriving!",
+    'testimonials.stories.carter': "I'm blessed to have met Tonya , the founder of WAM, back in 2010. I was a scrappy kid traveling the states trying to deal with the hand life dealt - a diagnosis of PTSD at a young age. It was my first winter in Utah and I didn't know many folks. She took me in and helped me have a safe space to stay til I was able to continue on with my travels. Fast forward over a decade to recently. I found myself in a rough patch when life happened. Tonya reached out to me telling me about WAM. They have provided me with counseling, a solid mentorship, and inspiration to keep going. I was able to receive resume assistance through WAM, which led to a good job. They even helped me with gas when I exhausted my savings to make it to the new job in my truck. When I called Tonya after my first setback at the new job and she spent 3 hours talking to me on the phone with a variety of pointers, good conversation, and even philosophy. My employer was impressed with the results of having a solid mentor like Tonya and WAM. I have never been one to reach out to agencies or non-profits, but what WAM is doing is something unique, helpful, and basically a lifesaver. They say it takes a village to raise a child. I prefer to think it takes a village to heal a wounded inner child. WAM and her team are eager to help and not in a judgmental way. I can't say thanks enough and look forward to the bright future ahead between my drive to succeed and the solid assistance from WAM!",
+    'testimonials.stories.jameyFamily': "Jamey is a resident of SLC and a loyal advocate for the unhoused and underprivileged. Her and her family have endured trauma and hard times over the decades, however, continue to manage life and remain housed. Jamey is an individual who qualified for our WAM Cleaning/Sanitation Service, and our team was able to offer this to her twice in the past year. The WAM Team also provided Jamey with legal support services and worked with her to gather all necessary information and prepare final documents to file in court. Jamey has donated clothing along with other items to WAM, to show her appreciation, and we greatly appreciate it! Jamey also refers others, like Staci & Mike, to our organization. Helping people go from striving to thriving!",
+    'testimonials.stories.tyrell': "I am Ty, WAM found me during 2020, at 17 years old, on the streets, I was alone and scared. My family was broken, mother mentally ill and an addict, father in Iraq and I have never met, my brothers involved in gangs, or incarcerated. WAM helped me find a youth shelter in Ogden, where I stayed for about a month, while they had been supplying me with clothes and other necessities. The shelter was locking me out in 19-degree weather without a coat for punishment, keeping me outside in dead winter until 10:00 p.m. for touching a computer and not apologizing for it. This is when WAM took me in and housed me temporarily. They helped me obtain BC, SS Card, and ID so I was able to gain employment and go back to high school and get my GED. I had employment within a week and saved up to get my DL, needed to take driving school and pass. I successfully did and was granted a DL. I enrolled in school to finish my GED and got me a passport! I am now living on my own and have traveled to Florida and Colorado and have been THRIVING! I left WAM loving myself and ability to be self-sufficient and a contributing citizen! update: Ty has since connected with his father and is becoming familiar with his heritage, happy and living his life!",
+    'testimonials.stories.jay': "I am Jay, I am a recovering addict and suicide survivor. I am an amputee from the knees down and have many other debilitating medical issues. I have been homeless for over 20 years and am finally off the streets and into temporary shelter for medically vulnerable people, while I wait for permanent housing. WAM found me in Sandy with a sign asking for help. They gave me a card, and after looking at the card, it inspired me to call them, so I did. They were able to get me into the shelter the next day. They transported me from downtown and successfully got me admitted. They have provided me with food, clothes, other items to get along while in the shelter, as well as funded my renewal for my medical card and cost of the doctor appointment, as it is not covered by Medicaid. WAM saved me and has helped me in more ways than any other has. They mean what they say and come through. WAM Team is helping me get off the streets, and the help I need.",
+    'testimonials.stories.mercedes': "Mercedes was a young girl in a youth shelter being treated poorly. She was with Ty, another boy WAM helped and housed temporarily. Mercedes had come from a home where her mother was absent, father absent, and an abusive caretaker. WAM provided her with rides, safety, temporary shelter, food and guidance. We hope Mercedes is back in school and with people who love her.",
+    'testimonials.stories.seanFromOh': "WAM found me in a graveyard in OH one afternoon. I was not well, and the weather was heading for rain. I was robbed and just trying to figure out what I was going to do, feeling down and worthless. When Tonya and Rob approached me, I was tired and hungry, and they kindly provided me with a warm meal and drink. They later brought back a tent and other items to help me while I found housing. They gave me inspiration to go on and to keep moving forward, back to owning my own business and having my own home. I am thankful for all their support and for answering the phone when I called. I am finding my way back and they have given me guidance along the way.",
   },
   es: {
     // Header
@@ -199,7 +276,88 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
 
 ¡SOMOS EL CAMBIO!`,
     'vision.text': 'Imaginamos un mundo donde los sobrevivientes de trauma se sientan vistos, escuchados y equipados para sanarse a sí mismos. Defendemos la comprensión de los muchos caminos hacia la recuperación—desde círculos de apoyo entre pares y prácticas holísticas hasta terapias basadas en evidencia. Proporcionamos recursos, apoyo, habilidades y capacitación a sobrevivientes de pérdida por suicidio, sobrevivientes de trauma, individuos LGBTQa2s+ y aquellos acusados injustamente. Al ampliar la conciencia y el conocimiento, encendemos la esperanza, provocamos la transformación y nutrimos una cultura de resiliencia duradera, compromiso cívico y justicia para todos.',
+    
+    // About Page - Join the Movement
+    'aboutPage.joinMovement': 'ÚNETE AL MOVIMIENTO',
+    'aboutPage.movementDescription': 'Porque el silencio es complicidad. Síguenos, comparte tus pistas y ayuda a construir una nación donde cada persona—independientemente de su raza, estatus o antecedentes—disfruta de una justicia y dignidad verdaderas.',
+    'aboutPage.beTheChange': 'Sé El Cambio',
+    'aboutPage.boardOfDirectors': 'DIRECTORIO DE LA JUNTA',
+    
+    // Volunteers Page
+    'volunteers.title': 'Nuestros Increíbles Voluntarios',
+    'volunteers.description': 'Conoce a los voluntarios dedicados que hacen posible la misión de WAM Alliance!',
+    'volunteers.subtitle': 'Estos individuos compasivos donan su tiempo, habilidades y corazones para ayudar a nuestra comunidad a prosperar.',
+    'volunteers.featuredVolunteer': 'Voluntario Destacado',
+    'volunteers.projectCoordinator': 'Coordinador de Proyectos',
+    
+    // Board of Directors
+    'board.title': 'Directorio de la Junta',
+    'board.description': 'Nuestro directorio certificado de la junta está motivado por la pasión de hacer que nuestro mundo sea un lugar mejor.',
+    'board.joinTeam': 'Únete a Nuestro Equipo',
+    'board.joinMessage': 'Únete al equipo de We All Matter Alliance enviando un correo electrónico con tu currículum y biografía.',
+    'board.ourValues': 'Nuestros Valores',
+    'board.welcomeMessage': 'Somos un grupo acogedor, amoroso, apasionado e innovador que cree que amarte a ti mismo es el comienzo de un mundo mejor!',
+    'board.viewProfile': 'Ver Perfil',
+    
+    // HomePage
+    'home.loading': 'Cargando WAM Alliance...',
+    'home.error': 'Algo salió mal',
+    'home.tryAgain': 'Intenta de nuevo',
+    
+    // Contact & Donate
+    'contact.title': 'Contáctanos',
+    'contact.getInTouch': 'Ponte en Contacto',
+    'contact.reachOut': 'Contáctanos a WAM Alliance',
+    
+    // Common UI
+    'ui.readMore': 'Leer Más',
+    'ui.showLess': 'Mostrar Menos',
+    'ui.loading': 'Cargando...',
+    
+    // Donors Page (Services component)
+    'donors.title': 'DONANTES',
+    'donors.intro1': 'WAM trabaja principalmente con donaciones personales y patrocinadores de empresas.',
+    'donors.intro2': 'WAM Alliance da la bienvenida y acepta todas las donaciones con la máxima gratitud, y estamos agradecidos con todos aquellos que contribuyen a nuestra causa.',
+    'donors.weAreTheChange': '¡SOMOS EL CAMBIO!',
+    'donors.personalDonorsTitle': 'DONANTES PERSONALES',
+    'donors.personalDonorsDesc': 'Tenemos algunos donantes personales sin los cuales WAM no podría existir.',
+    'donors.partnersTitle': 'SOCIOS',
+    'donors.partnersDesc': 'Descubre nuestros valiosos patrocinadores que apoyan a WAM Alliance para hacer una diferencia en nuestras comunidades.',
+    
+    // Donate Now Page (Contact component)
+    'donate.title': 'DONACIONES',
+    'donate.intro1': 'WAM da la bienvenida y acepta todas las donaciones. Somos una organización 501(c)(3) registrada con el IRS y todas las donaciones son deducibles de impuestos.',
+    'donate.promise': '¡El 100% de cada donación va directamente a aquellos a quienes ayudamos - Esta es nuestra promesa para ti!',
+    'donate.intro2': '¡WAM no tiene Directores de Junta pagados, servimos a otros sin condiciones y no pedimos nada a cambio excepto que te ames a ti mismo!',
+    'donate.cashDonations': 'DONACIONES EN EFECTIVO',
+    'donate.allOtherDonations': 'TODAS LAS DEMÁS DONACIONES',
+    'donate.donateNow': 'Donar Ahora',
+
+    // TestimonialsPage
+    'testimonials.title': 'Testimonios e Historias de Éxito',
+    'testimonials.subtitle': '¡Estas son solo algunas de las personas a las que WAM ha ayudado a pasar de apenas sobrevivir a prosperar!',
+    'testimonials.description': 'Ayudamos brindando amor, apoyo y recursos a quienes lo necesitan, con resultados reales y sin abandono.',
+    'testimonials.client': 'Cliente de WAM Alliance',
+    'testimonials.readMore': 'Leer Más',
+    'testimonials.readLess': 'Leer Menos',
+    'testimonials.verified': 'Historia de Impacto Verificada',
+
+    // Testimonial Types
+    'testimonials.type.testimonial': 'testimonio',
+    'testimonials.type.successStory': 'historia de éxito',
+    
+    // Testimonial Stories (Spanish)
+    'testimonials.stories.staciMike': "Mi nombre es Staci y mi pareja de vida Mike. Queremos expresar un enorme agradecimiento a la fundadora de WAM (Tonya). Primero necesité ayuda para obtener mi certificado de nacimiento de Mississippi que necesitaba incluirse con nuestra solicitud de vivienda de la Sección 8. WAM pudo pedirlo y entregarlo. Ahora tenía todo para calificar para vivienda. Lo cual era necesario considerando que estábamos sin hogar y viviendo en una tienda de campaña. Una vez calificados, recibimos un cupón de vivienda de la Sección 8, pero las tarifas de solicitud y depósitos no estaban incluidos. WAM pudo cubrir 3 tarifas de solicitud, una de las cuales incluía el lugar donde ahora vivimos. El 7 de febrero firmamos nuestro contrato de arrendamiento con Housing Connect y ahora tenemos un hogar. Aunque tuvimos nuestras luchas, mantuvimos la cabeza en alto y nos mantuvimos positivos. Tonya fue una gran amiga cuando necesité a alguien con quien hablar sobre mis emociones en torno a nuestra situación. WAM también pudo ayudar con algunos pedidos de comida de la recogida de Walmart. Actualmente me está ayudando a encontrar un cirujano dental para hacer implantes dentales con descuento o pro bono (cruzo los dedos), y continúa ayudándonos con comida cuando es necesario. ¡Staci y Mike ahora están prosperando!",
+    'testimonials.stories.carter': "Tengo la bendición de haber conocido a Tonya, la fundadora de WAM, en 2010. Era un niño luchador que viajaba por los estados tratando de lidiar con lo que la vida me dio: un diagnóstico de TEPT a una edad temprana. Era mi primer invierno en Utah y no conocía a muchas personas. Ella me acogió y me ayudó a tener un espacio seguro para quedarme hasta que pude continuar con mis viajes. Avanzando más de una década hasta hace poco. Me encontré en un momento difícil cuando sucedió la vida. Tonya se acercó a mí para contarme sobre WAM. Me han proporcionado asesoramiento, una mentoría sólida e inspiración para seguir adelante. Pude recibir asistencia con el currículum a través de WAM, lo que me llevó a un buen trabajo. Incluso me ayudaron con gasolina cuando agote mis ahorros para llegar al nuevo trabajo en mi camión. Cuando llamé a Tonya después de mi primer revés en el nuevo trabajo, pasó 3 horas hablando conmigo por teléfono con una variedad de consejos, buenas conversaciones e incluso filosofía. Mi empleador quedó impresionado con los resultados de tener un mentor sólido como Tonya y WAM. Nunca he sido alguien que se acerque a agencias u organizaciones sin fines de lucro, pero lo que WAM está haciendo es algo único, útil y básicamente un salvavidas. Dicen que se necesita una aldea para criar a un niño. Prefiero pensar que se necesita una aldea para sanar a un niño interior herido. WAM y su equipo están ansiosos por ayudar y no de una manera crítica. No puedo agradecer lo suficiente y espero con ansias el futuro brillante que tengo por delante entre mi impulso para tener éxito y la sólida asistencia de WAM!",
+    'testimonials.stories.jameyFamily': "Jamey es residente de SLC y una defensora leal de las personas sin hogar y desfavorecidas. Ella y su familia han soportado trauma y tiempos difíciles durante décadas, sin embargo, continúan manejando la vida y permaneciendo alojados. Jamey es una persona que calificó para nuestro Servicio de Limpieza/Sanitización de WAM, y nuestro equipo pudo ofrecerle esto dos veces en el último año. El equipo de WAM también proporcionó a Jamey servicios de apoyo legal y trabajó con ella para recopilar toda la información necesaria y preparar los documentos finales para presentar en el tribunal. Jamey ha donado ropa junto con otros artículos a WAM, para mostrar su agradecimiento, ¡y lo agradecemos mucho! Jamey también refiere a otros, como Staci y Mike, a nuestra organización. ¡Ayudando a las personas a pasar de esforzarse a prosperar!",
+    'testimonials.stories.tyrell': "Soy Ty, WAM me encontró durante 2020, a los 17 años, en las calles, estaba solo y asustado. Mi familia estaba rota, madre mentalmente enferma y adicta, padre en Irak y nunca lo he conocido, mis hermanos involucrados en pandillas o encarcelados. WAM me ayudó a encontrar un refugio juvenil en Ogden, donde me quedé durante aproximadamente un mes, mientras me habían estado proporcionando ropa y otras necesidades. El refugio me estaba dejando afuera en un clima de 19 grados sin abrigo como castigo, manteniéndome afuera en pleno invierno hasta las 10:00 p.m. por tocar una computadora y no disculparme por ello. Fue entonces cuando WAM me acogió y me alojó temporalmente. Me ayudaron a obtener BC, tarjeta SS e identificación para poder obtener empleo y volver a la escuela secundaria y obtener mi GED. Tuve empleo en una semana y ahorré para obtener mi licencia de conducir, necesitaba tomar una escuela de manejo y aprobar. Lo hice con éxito y me otorgaron una licencia de conducir. ¡Me inscribí en la escuela para terminar mi GED y conseguí un pasaporte! ¡Ahora vivo solo y he viajado a Florida y Colorado y he estado PROSPERANDO! ¡Dejé WAM amándome a mí mismo y mi capacidad de ser autosuficiente y un ciudadano contribuyente! Actualización: Ty se ha conectado desde entonces con su padre y se está familiarizando con su herencia, ¡feliz y viviendo su vida!",
+    'testimonials.stories.jay': "Soy Jay, soy un adicto en recuperación y sobreviviente de suicidio. Soy amputado de las rodillas hacia abajo y tengo muchos otros problemas médicos debilitantes. He estado sin hogar durante más de 20 años y finalmente estoy fuera de las calles y en un refugio temporal para personas médicamente vulnerables, mientras espero una vivienda permanente. WAM me encontró en Sandy con un cartel pidiendo ayuda. Me dieron una tarjeta, y después de mirarla, me inspiró a llamarlos, así que lo hice. Pudieron conseguirme en el refugio al día siguiente. Me transportaron desde el centro y me admitieron con éxito. Me han proporcionado comida, ropa, otros artículos para sobrellevar mientras estoy en el refugio, además de financiar la renovación de mi tarjeta médica y el costo de la cita con el médico, ya que no está cubierto por Medicaid. WAM me salvó y me ha ayudado de más maneras que cualquier otro. Significan lo que dicen y cumplen. El equipo de WAM me está ayudando a salir de las calles y la ayuda que necesito.",
+    'testimonials.stories.mercedes': "Mercedes era una joven en un refugio juvenil siendo tratada mal. Estaba con Ty, otro niño que WAM ayudó y alojó temporalmente. Mercedes venía de un hogar donde su madre estaba ausente, el padre ausente y un cuidador abusivo. WAM le proporcionó transporte, seguridad, refugio temporal, comida y orientación. Esperamos que Mercedes esté de vuelta en la escuela y con personas que la aman.",
+    'testimonials.stories.seanFromOh': "WAM me encontró en un cementerio en OH una tarde. No me sentía bien y el clima se dirigía hacia la lluvia. Me robaron y solo estaba tratando de descubrir qué iba a hacer, sintiéndome deprimido e inútil. Cuando Tonya y Rob se acercaron a mí, estaba cansado y hambriento, y amablemente me proporcionaron una comida caliente y una bebida. Más tarde trajeron de vuelta una tienda de campaña y otros artículos para ayudarme mientras encontraba vivienda. Me dieron inspiración para seguir adelante y continuar avanzando, de vuelta a ser dueño de mi propio negocio y tener mi propia casa. Estoy agradecido por todo su apoyo y por contestar el teléfono cuando llamé. Estoy encontrando mi camino de regreso y me han dado orientación en el camino.",
   },
+  
+
+
 };
 
 // Empty translations object for backward compatibility

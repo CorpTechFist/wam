@@ -7,7 +7,7 @@ import { MapPin, Phone, Mail, Send, DollarSign, Gift } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
 export function DonateNow() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
 
   const handleCashDonationsClick = () => {
     const event = new CustomEvent('navigate', { detail: 'cash-donations' });
@@ -30,7 +30,7 @@ export function DonateNow() {
                   <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-                  DONATIONS
+                  {t('donate.title')}
                 </h3>
               </div>
               
@@ -43,7 +43,7 @@ export function DonateNow() {
               
               <div className="space-y-5 text-foreground">
                 <p className="text-base md:text-lg leading-relaxed">
-                  WAM welcomes and accepts all donations. We are a registered 501(c)(3) organization with the IRS and all donations are subject to tax write offs.
+                   {t('donate.intro1')}
                 </p>
                 
                 <div className="py-4">
@@ -52,13 +52,13 @@ export function DonateNow() {
                       ✓
                     </Badge>
                     <p className="text-lg md:text-xl" style={{ fontStyle: 'italic', color: '#4f46e5', fontWeight: '600' }}>
-                      100% of every donation goes directly to those we help - This is our promise to you!
+                    {t('donate.promise')}
                     </p>
                   </div>
                 </div>
                 
                 <p className="text-base md:text-lg leading-relaxed">
-                  WAM does not have paid Board of Directors, we serve others without strings attached, and ask for nothing in return except to love yourself!
+                 {t('donate.intro2')}
                 </p>
               </div>
             </div>
@@ -80,13 +80,13 @@ export function DonateNow() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl md:text-3xl" style={{ color: '#7c3aed' }}>
-                    CASH DONATIONS
+                    {t('donate.cashDonations')}
                   </h3>
                   <Button 
                     onClick={handleCashDonationsClick}
                     className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                   >
-                    Donate Now
+                  {t('donate.donateNow')}
                   </Button>
                 </div>
               </CardContent>
@@ -106,13 +106,13 @@ export function DonateNow() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl md:text-3xl" style={{ color: '#7c3aed' }}>
-                    ALL OTHER DONATIONS
+                   {t('donate.allOtherDonations')}
                   </h3>
                   <Button 
                     onClick={handleOtherDonationsClick}
                     className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                   >
-                    Donate Now
+                   {t('donate.donateNow')}
                   </Button>
                 </div>
               </CardContent>

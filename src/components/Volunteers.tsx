@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { useTranslation } from "./TranslationContext";
 import {
   Quote,
   ChevronDown,
@@ -19,7 +20,7 @@ import Anika from "../assets/icons/Anika.jpeg";
 
 export function Volunteers() {
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
-
+   const { t } = useTranslation();
   const toggleExpanded = (index: number) => {
     setExpandedCards((prev) =>
       prev.includes(index)
@@ -74,13 +75,13 @@ export function Volunteers() {
      <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-              Our Amazing Volunteers
+              {t('volunteers.title')}
             </h3>
             <p className="text-sm md:text-base text-black max-w-3xl mx-auto leading-relaxed">
-              Meet the dedicated volunteers who make WAM Alliance's mission possible!
+               {t('volunteers.description')}
               <br />
               <span className="text-indigo-600 font-semibold italic text-base">
-                These compassionate individuals donate their time, skills, and hearts to help our community thrive.
+              {t('volunteers.subtitle')}
               </span>
             </p>
           </div>

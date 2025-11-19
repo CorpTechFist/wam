@@ -13,7 +13,7 @@ interface BoardOfDirectorsPageProps {
 }
 
 export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
 
   const members = [
     {
@@ -56,7 +56,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
           <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-          Board of Directors
+        {t('board.title')}
         </h3>
 
         {/* Decorative dots */}
@@ -69,17 +69,15 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
         {/* Intro Text */}
         <div className="max-w-3xl mx-auto mb-12 text-justify text-lg text-gray-600 leading-relaxed space-y-6">
           <p>
-            Our certified Board of Directors are driven by the passion to make our world a better place.
+            {t('board.description')}
           </p>
           <p>
-            Join We All Matter Alliance Team by applying through email with your resume and biography.
+              {t('board.joinMessage')}</p>
+          <p>
+            {t('board.welcomeMessage')}
           </p>
           <p>
-            We are a welcoming, loving, passionate, and innovative group who believes loving yourself
-            is the beginning to a better world!
-          </p>
-          <p>
-            WE ARE THE CHANGE!
+            {t('mission.weAreTheChange')}
           </p>
         </div>
 

@@ -7,7 +7,7 @@ import donorImage from 'figma:asset/68c16c033605004c6e9b7b3532fbe93693d87955.png
 
 export function Donors() {
   const { translations } = useTranslation();
-
+  const { t } = useTranslation();
   return (
     <section id="services" className=" pb-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
       background: '#FFFFFF'
@@ -20,7 +20,7 @@ export function Donors() {
                <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-                DONORS
+               {t('donors.title')}
               </h3>
             </div>
             
@@ -32,13 +32,13 @@ export function Donors() {
             </div>
             
             <p className="text-base md:text-lg text-card-foreground max-w-3xl mx-auto leading-relaxed mb-4">
-              WAM works with mainly personal donations, and company sponsors.
+             {t('donors.intro1')}
             </p>
             <p className="text-base md:text-lg text-card-foreground max-w-3xl mx-auto leading-relaxed mb-6">
-              WAM Alliance welcomes and accepts all donations with the utmost gratitude, and we are thankful to all those that contribute to our cause.
+            {t('donors.intro2')}
             </p>
             <p className="text-lg md:text-xl font-bold" style={{ fontStyle: 'italic', color: '#4f46e5' }}>
-              WE ARE THE CHANGE!
+             {t('donors.weAreTheChange')}
             </p>
           </div>
         </div>
@@ -64,10 +64,10 @@ export function Donors() {
                     className="text-2xl md:text-3xl font-bold mb-4 underline cursor-pointer hover:text-purple-700 transition-colors"
                     style={{ color: '#7c3aed' }}
                   >
-                    {translations.donationPages?.personalDonorsTitle || "PERSONAL DONORS"}
+                      {t('donors.personalDonorsTitle')}
                   </button>
                   <p className="text-card-foreground leading-relaxed text-base md:text-lg">
-                    {translations.donationPages?.personalDonorsDesc || "We have some personal donors that WAM could not exist without."}
+                  {t('donors.personalDonorsDesc')}
                   </p>
                 </div>
               </div>
@@ -93,10 +93,10 @@ export function Donors() {
                     className="text-2xl md:text-3xl font-bold mb-4 underline cursor-pointer hover:text-purple-700 transition-colors"
                     style={{ color: '#7c3aed' }}
                   >
-                    {translations.donationPages?.sponsorsTitle || "PARTNERS"}
+                      {t('donors.partnersTitle')}
                   </button>
                   <p className="text-card-foreground leading-relaxed text-base md:text-lg">
-                    {translations.donationPages?.sponsorsDescription || "Discover our valued sponsors who support WAM Alliance in making a difference in our communities."}
+                    {t('donors.partnersDesc')}
                   </p>
                 </div>
               </div>

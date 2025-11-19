@@ -1,247 +1,145 @@
-
 import { useState } from "react";
 import { useTranslation } from "./TranslationContext";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Sparkles } from "lucide-react";
 
 export function MissionVisionSection() {
-  const { language, t } = useTranslation();
+  const { t } = useTranslation();
 
   const [showFullMission, setShowFullMission] = useState(false);
   const [showFullVision, setShowFullVision] = useState(false);
 
-  const missionText = t('mission.text');
-  const visionText = t('vision.text');
+  const missionText = t("mission.text");
+  const visionText = t("vision.text");
 
   const paragraphStyle = {
-    fontFamily: "'Inter', 'system-ui', 'sans-serif'",
-    fontWeight: 500,
-    letterSpacing: "0.3px",
-    fontSize: "1rem",
-    lineHeight: 1.8,
-    color: "#111827",
-    textAlign: "justify" as const,
-    hyphens: "auto" as const,
-    marginBottom: "1rem",
-  };
-
-  const gradientButtonStyle = {
-    background:
-      "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 40%, #6366F1 80%, #A78BFA 100%)",
-    color: "white",
-    border: "none",
-    borderRadius: "9999px",
-    padding: "8px 16px",
-    fontSize: "0.9rem",
-    fontWeight: 600,
-    letterSpacing: "0.5px",
-    cursor: "pointer",
-    boxShadow:
-      "0 4px 15px rgba(139, 92, 246, 0.25), 0 2px 6px rgba(99, 102, 241, 0.2)",
-    transition: "all 0.3s ease",
-  };
-
-  const hoverStyle = {
-    transform: "translateY(-2px)",
-    boxShadow:
-      "0 6px 20px rgba(139, 92, 246, 0.35), 0 3px 8px rgba(99, 102, 241, 0.25)",
+    fontFamily: "'Inter', sans-serif",
+    fontSize: "1.05rem",
+    lineHeight: 1.9,
+    color: "#374151",
+    textAlign: "justify",
   };
 
   return (
-    <div className="w-full">
-      <div className="text-center">
-        <div
-          className=" w-full py-16 px-6 md:px-16"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 255, 0.92) 100%)",
-            backdropFilter: "blur(20px)",
-            borderRadius: "12px",
-            boxShadow:
-              "0 20px 60px rgba(241, 239, 244, 0.25), 0 8px 25px rgba(244, 246, 251, 0.2)",
-          }}
-        >
-          {/* Header */}
-          <div
-            className="text-center mb-15 pb-16"
+    <section className="w-full py-20 px-6 md:px-20 space-y-32 bg-white">
+
+      {/* ==============================
+          GLOBAL HEADER (Sparkles, Title, Tagline)
+      =============================== */}
+      <div className="text-center max-w-3xl mx-auto mb-10">
+        
+
+        <h1
+  className="text-6xl md:text-xl mt-6 mb-4 bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 bg-clip-text text-transparent font-extrabold"
+>
+  {t("mission.weAreTheChange")}
+</h1>
+
+
+        <p className="text-gray-600 text-xl bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 bg-clip-text text-transparent font-extrabold">
+          {t("mission.tagline")}
+        </p>
+      </div>
+
+      {/* ==============================
+          MISSION SECTION
+      =============================== */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-50 p-12 shadow-md rounded-xl">
+
+        {/* TEXT LEFT */}
+        <div className="pr-8 md:pr-12">
+          <h2
+            className="text-3xl md:text-4xl font-extrabold mt-3 mb-6"
+            style={{ color: "#7c3aed" }}
+          >
+            {t("mission.ourMission")}
+          </h2>
+
+          <p
             style={{
-              borderBottom:
-                "1px solid rgba(246, 245, 248, 0.35)",
+              ...paragraphStyle,
+              maxHeight: showFullMission ? "100%" : "10rem",
+              overflow: "hidden",
             }}
           >
-            <div className="flex flex-col md:flex-row items-center justify-center gap-3">
-              <h2
-                className="text-xl mb-0 px-3 bold font-semibold"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  letterSpacing: "0.8px",
-                  fontWeight: "700",
-                }}
-              >
-                {t('mission.weAreTheChange')}
-              </h2>
-              <div
-                className="hidden md:block"
-                style={{
-                  width: "2px",
-                  height: "30px",
-                  background:
-                    "linear-gradient(180deg, #8B5CF6 0%, #A78BFA 100%)",
-                  opacity: "0.7",
-                }}
-              ></div>
-              <h2
-                className="text-lg mb-0 px-3"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 30%, #6366F1 70%, #818CF8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  letterSpacing: "0.8px",
-                  fontWeight: "700",
-                }}
-              >
-                {t('mission.tagline')}
-              </h2>
-            </div>
-          </div>
+            {missionText}
+          </p>
 
-          {/* Mission and Vision */}
-          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
-            {/* Mission */}
-            <div className="flex flex-col relative md:pr-8">
-              <h2
-                className="text-2xl mb-8 text-center"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6366F1 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontFamily: "'Lora', 'Georgia', 'serif'",
-                  fontWeight: "700",
-                }}
-              >
-                {t('mission.ourMission')}
-              </h2>
+          <button
+            onClick={() => setShowFullMission(!showFullMission)}
+            className="mt-6 flex items-center gap-2 text-indigo-600 font-semibold hover:text-indigo-800 transition"
+          >
+            {showFullMission ? (
+              <>
+                {t("mission.showLess")} <ChevronUp size={18} />
+              </>
+            ) : (
+              <>
+                {t("mission.readMore")} <ChevronDown size={18} />
+              </>
+            )}
+          </button>
+        </div>
 
-              <p
-                style={{
-                  ...paragraphStyle,
-                  maxHeight: showFullMission ? "100%" : "12rem",
-                  overflow: "hidden",
-                  transition: "max-height 0.5s ease",
-                }}
-              >
-                {missionText}
-              </p>
+        {/* IMAGE RIGHT */}
+        <div className="w-full flex justify-center items-center">
+          <img
+            src="https://images.unsplash.com/photo-1521316730702-829a8e30dfd0?w=900&auto=format&fit=crop&q=60"
+            alt="Mission"
+            className="w-full max-h-[420px] object-cover rounded-2xl shadow-lg"
+          />
+        </div>
+   
 
-              <button
-                onClick={() =>
-                  setShowFullMission(!showFullMission)
-                }
-                onMouseEnter={(e) =>
-                  Object.assign(
-                    e.currentTarget.style,
-                    hoverStyle,
-                  )
-                }
-                onMouseLeave={(e) =>
-                  Object.assign(
-                    e.currentTarget.style,
-                    gradientButtonStyle,
-                  )
-                }
-                style={gradientButtonStyle}
-                className="mx-auto flex items-center gap-2 mt-2"
-              >
-                {showFullMission ? (
-                  <>
-                    {t('mission.showLess')} <ChevronUp size={18} />
-                  </>
-                ) : (
-                  <>
-                    {t('mission.readMore')} <ChevronDown size={18} />
-                  </>
-                )}
-              </button>
-            </div>
+      {/* ==============================
+          VISION SECTION
+      =============================== */}
+      
 
-            {/* Divider */}
-            <div
-              className="hidden md:block absolute left-1/2"
-              style={{
-                transform: "translateX(-50%)",
-                width: "3px",
-                top: "15%",
-                bottom: "15%",
-                background:
-                  "linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 215, 0, 0.5) 50%, rgba(139, 92, 246, 0.3) 100%)",
-                borderRadius: "2px",
-              }}
-            ></div>
+        {/* IMAGE LEFT */}
+        <div className="w-full flex justify-center items-center">
+          <img
+            src="https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?w=900&auto=format&fit=crop&q=60"
+            alt="Vision"
+            className="w-full max-h-[420px] object-cover rounded-2xl shadow-lg"
+          />
+        </div>
 
-            {/* Vision */}
-            <div className="flex flex-col relative md:pl-8">
-              <h2
-                className="text-2xl mb-8 text-center"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6366F1 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontFamily: "'Lora', 'Georgia', 'serif'",
-                  fontWeight: "700",
-                }}
-              >
-                {t('mission.ourVision')}
-              </h2>
+        {/* TEXT RIGHT */}
+        <div className="pl-8 md:pl-12">
+          <h2
+            className="text-3xl md:text-4xl font-extrabold mt-3 mb-6"
+            style={{ color: "#7c3aed" }}
+          >
+            {t("mission.ourVision")}
+          </h2>
 
-              <p
-                style={{
-                  ...paragraphStyle,
-                  maxHeight: showFullVision ? "100%" : "12rem",
-                  overflow: "hidden",
-                  transition: "max-height 0.5s ease",
-                }}
-              >
-                {visionText}
-              </p>
+          <p
+            style={{
+              ...paragraphStyle,
+              maxHeight: showFullVision ? "100%" : "10rem",
+              overflow: "hidden",
+            }}
+          >
+            {visionText}
+          </p>
 
-              <button
-                onClick={() =>
-                  setShowFullVision(!showFullVision)
-                }
-                onMouseEnter={(e) =>
-                  Object.assign(
-                    e.currentTarget.style,
-                    hoverStyle,
-                  )
-                }
-                onMouseLeave={(e) =>
-                  Object.assign(
-                    e.currentTarget.style,
-                    gradientButtonStyle,
-                  )
-                }
-                style={gradientButtonStyle}
-                className="mx-auto flex items-center gap-2 mt-2"
-              >
-                {showFullVision ? (
-                  <>
-                    {t('mission.showLess')} <ChevronUp size={18} />
-                  </>
-                ) : (
-                  <>
-                    {t('mission.readMore')} <ChevronDown size={18} />
-                  </>
-                )}
-              </button>
-            </div>
-          </div>
+          <button
+            onClick={() => setShowFullVision(!showFullVision)}
+            className="mt-6 flex items-center gap-2 text-indigo-600 font-semibold hover:text-indigo-800 transition"
+          >
+            {showFullVision ? (
+              <>
+                {t("mission.showLess")} <ChevronUp size={18} />
+              </>
+            ) : (
+              <>
+                {t("mission.readMore")} <ChevronDown size={18} />
+              </>
+            )}
+          </button>
         </div>
       </div>
-    </div>
+
+    </section>
   );
 }

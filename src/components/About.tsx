@@ -3,7 +3,7 @@ import { Users, Shield, Heart, TrendingUp, Crown, Scale } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
 export function About() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
   
   return (
     <section id="about" className="py-5 position-relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
@@ -16,7 +16,7 @@ export function About() {
 style={{ WebkitTextFillColor: "#7c3aed" }}
 >
             
-                {translations.about?.coreValues || "OUR CORE VALUES"}
+                {t('about.coreValues')}
               </h3>
             </div>
             
@@ -45,10 +45,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.communityTitle || "Community"}
+                  {t('about.communityTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.communityDescription || "We cultivate inclusive circles where every voice is heard, every story honored, and collective strength lifts us all"}
+                  {t('about.communityDescription')}
                 </p>
               </CardContent>
             </Card>
@@ -69,10 +69,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.empowermentTitle || "Independence"}
+                  {t('about.empowermentTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.empowermentDescription || "We equip you with the skills and confidence to navigate challenges on your own terms, fostering resilience and self-reliance."}
+                  {t('about.empowermentDescription')}
                 </p>
               </CardContent>
             </Card>
@@ -93,10 +93,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.inclusionTitle || "Compassion"}
+                  {t('about.inclusionTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.inclusionDescription || "We meet you with empathy and respect, recognizing the courage it takes to confront pain and the power of shared humanity."}
+                  {t('about.inclusionDescription')}
                 </p>
               </CardContent>
             </Card>
@@ -117,10 +117,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.missionTitle || "Growth Mindset"}
+                  {t('about.missionTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.missionDescription || "We believe in continuous learning and unlearning—embracing curiosity, adaptability, and the freedom to rewrite your narrative."}
+                  {t('about.missionDescription')}
                 </p>
               </CardContent>
             </Card>
@@ -141,10 +141,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.visionTitle || "Worthiness"}
+                  {t('about.visionTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.visionDescription || "We remind you daily that you are already worthy of love, belonging, and joy, just as you are."}
+                  {t('about.visionDescription')}
                 </p>
               </CardContent>
             </Card>
@@ -165,10 +165,10 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
-                  {translations.about?.integrityTitle || "Advocacy"}
+                  {t('about.integrityTitle')}
                 </h4>
                 <p className="text-gray-700 leading-relaxed text-center">
-                  {translations.about?.integrityDescription || "Justice & Democracy We champion constitutional rights, due process, and democratic freedoms, advocating for systemic change and equal protection under the law for every survivor."}
+                  {t('about.integrityDescription')}
                 </p>
               </CardContent>
             </Card>
