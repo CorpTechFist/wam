@@ -25,25 +25,50 @@ export function MissionVisionSection() {
       {/* ==============================
           GLOBAL HEADER (Sparkles, Title, Tagline)
       =============================== */}
-      <div className="text-center max-w-3xl mx-auto mb-10">
-        
+<div className="text-center max-w-4xl mx-auto mb-14 px-4">
 
-        <h1
-  className="text-6xl md:text-xl mt-6 mb-4 bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 bg-clip-text text-transparent font-extrabold"
->
-  {t("mission.weAreTheChange")}
-</h1>
+  {/* MAIN TITLE */}
+  <h1
+    className="
+      text-4xl 
+      md:text-6xl 
+      font-extrabold 
+      leading-tight 
+      bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 
+      bg-clip-text 
+      text-transparent 
+      drop-shadow-sm
+    "
+    style={{ letterSpacing: "-0.5px" }}
+  >
+    {t("mission.weAreTheChange")}
+  </h1>
 
+  {/* TAGLINE */}
+  <p
+    className="
+      mt-4 
+      text-lg 
+      md:text-2xl 
+      font-semibold 
+      tracking-wide 
+      bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-500 
+      bg-clip-text 
+      text-transparent 
+      drop-shadow 
+    "
+    style={{ letterSpacing: "0.3px" }}
+  >
+    {t("mission.tagline")}
+  </p>
 
-        <p className="text-gray-600 text-xl bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 bg-clip-text text-transparent font-extrabold">
-          {t("mission.tagline")}
-        </p>
-      </div>
+</div>
+
 
       {/* ==============================
           MISSION SECTION
       =============================== */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-50 p-12 shadow-md rounded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-10 p-12 shadow-md rounded-xl">
 
         {/* TEXT LEFT */}
         <div className="pr-8 md:pr-12">
@@ -59,6 +84,8 @@ export function MissionVisionSection() {
               ...paragraphStyle,
               maxHeight: showFullMission ? "100%" : "10rem",
               overflow: "hidden",
+
+                fontFamily: "Inter, system-ui, sans-serif", textAlign: "justify"
             }}
           >
             {missionText}
@@ -89,7 +116,7 @@ export function MissionVisionSection() {
           />
         </div>
    </div>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-50 p-12 shadow-md rounded-xl"
+<div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center bg-gray-10 p-12 shadow-md rounded-xl"
 
  style={{ marginTop: "20px" }}>
 
@@ -122,6 +149,8 @@ export function MissionVisionSection() {
               ...paragraphStyle,
               maxHeight: showFullVision ? "100%" : "10rem",
               overflow: "hidden",
+
+              fontFamily: "Inter, system-ui, sans-serif", textAlign: "justify"
             }}
           >
             {visionText}
