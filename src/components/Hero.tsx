@@ -86,22 +86,7 @@ export function Hero() {
                   {/* Professional Header with Icon */}
                   <div className="text-center mb-8">
                     <div className="flex justify-center items-center gap-3 mb-5">
-                      <div
-                        style={{
-                          background:
-                            "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
-                          borderRadius: "12px",
-                          padding: "10px",
-                          boxShadow:
-                            "0 8px 20px rgba(139, 92, 246, 0.3)",
-                          display: "inline-flex",
-                        }}
-                      >
-                        <Heart
-                          className="w-6 h-6 text-white"
-                          fill="white"
-                        />
-                      </div>
+                   
                       <h2
                         className="text-3xl mb-0"
                         style={{
