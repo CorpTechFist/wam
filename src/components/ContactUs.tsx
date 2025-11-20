@@ -7,7 +7,7 @@ import { useTranslation } from "./TranslationContext";
 import emailjs from "@emailjs/browser";
 
 export function ContactUs() {
-  const { translations } = useTranslation();
+ const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -59,27 +59,28 @@ export function ContactUs() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 via-indigo-900/50 to-purple-800/60"></div>
                 <div className="relative h-full flex flex-col justify-center p-8 md:p-12 text-white">
                   <h2 className="text-4xl md:text-5xl mb-6 font-serif">
-                    {translations.contactUsPage?.title || "CONTACT US"}
+                   {t('contactUs.title')}
                   </h2>
                   <div className="space-y-4 text-white/90 leading-relaxed">
-                    <p>{translations.contactUsPage?.generalInquiries || "For general inquiries, and resumes/bios for Board Member consideration."}</p>
+                    <p>{t('contactUs.generalInquiries')}</p>
                     <p>
-                      {translations.contactUsPage?.volunteerInfo || "For Volunteering, please go to"}{" "}
+                     {t('contactUs.volunteerInfo')}{" "}
                       <button
                         onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "volunteer" }))}
                         className="text-yellow-300 hover:text-yellow-100 underline"
                       >
-                        {translations.contactUsPage?.volunteerLink || "Volunteer"}
+                        
+                        {t('contactUs.volunteerLink')}
                       </button>{" "}
-                      page for more info.
+                    {t('contactUs.pageForMoreInfo')}
                     </p>
                     <p>
-                      {translations.contactUsPage?.needHelpInfo || "For those suffering and needing help now, please go to"}{" "}
+                      {t('contactUs.needHelpLink')} {" "}
                       <button
                         onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "need-help-now" }))}
                         className="text-yellow-300 hover:text-yellow-100 underline"
                       >
-                        {translations.contactUsPage?.needHelpLink || "Need Help Now"}
+                        {t.contactUsPage?.needHelpLink || "Need Help Now"}
                       </button>.
                     </p>
                   </div>
@@ -92,33 +93,33 @@ export function ContactUs() {
                   <input type="hidden" name="formSource" value="Contact Us Page" />
 
                   <div className="space-y-2">
-                    <Label htmlFor="fullName">{translations.contactUsPage?.fullName || "Full Name *"}</Label>
-                    <Input name="fullName" required placeholder="Enter your full name" />
+                    <Label htmlFor="fullName"> {t('contactUs.fullName')}</Label>
+                    <Input name="fullName" required placeholder={t('contactUs.fullNamePlaceholder')} />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email">{translations.contactUsPage?.yourEmail || "Your email *"}</Label>
-                    <Input type="email" name="email" required placeholder="Enter your email" />
+                    <Label htmlFor="email">  {t('contactUs.yourEmail')}</Label>
+                    <Input type="email" name="email" required placeholder={t('contactUs.emailPlaceholder')} />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">{translations.contactUsPage?.yourPhone || "Your phone"}</Label>
-                    <Input name="phone" placeholder="Enter your phone number" />
+                    <Label htmlFor="phone"> {t('contactUs.yourPhone')}</Label>
+                    <Input name="phone" placeholder={t('contactUs.phonePlaceholder')} />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="cityState">{translations.contactUsPage?.cityState || "City and State"}</Label>
-                    <Input name="cityState" placeholder="Enter your city and state" />
+                    <Label htmlFor="cityState"> {t('contactUs.cityState')}</Label>
+                    <Input name="cityState" placeholder={t('contactUs.cityStatePlaceholder')} />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="regarding">{translations.contactUsPage?.regarding || "Regarding"}</Label>
-                    <Input name="regarding" placeholder="Subject of your inquiry" />
+                    <Label htmlFor="regarding">{t('contactUs.regarding')}</Label>
+                    <Input name="regarding" placeholder={t('contactUs.regardingPlaceholder')} />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">{translations.contactUsPage?.yourMessage || "Your Message *"}</Label>
-                    <Textarea name="message" rows={6} required placeholder="Tell us how we can help you..." />
+                    <Label htmlFor="message">{t('contactUs.yourMessage')}</Label>
+                    <Textarea name="message" rows={6} required placeholder={t('contactUs.messagePlaceholder')}/>
                   </div>
 
                   {/* Status messages */}
@@ -132,7 +133,7 @@ export function ContactUs() {
                       disabled={isSending}
                       className="bg-purple-600 hover:bg-purple-700 text-white px-10 py-3 rounded-full shadow-lg hover:-translate-y-1 transition"
                     >
-                      {isSending ? "Sending..." : translations.contactUsPage?.sendMessage || "Send Message"}
+                      {isSending ? "Sending..." : t.contactUsPage?.sendMessage || "Send Message"}
                     </Button>
                   </div>
                 </form>

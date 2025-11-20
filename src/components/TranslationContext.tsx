@@ -320,6 +320,30 @@ WE ARE THE CHANGE!`,
     'bio.diane.skill4': 'Western Medicine Navigation',
     'bio.diane.skill5': 'Self-Healing and Empowerment',
     'bio.diane.skill6': 'Corporate/Academic Skills (Demonstrated Motivation)',
+
+      // Contact Us Page
+    'contactUs.title': 'CONTACT US',
+    'contactUs.generalInquiries': 'For general inquiries, and resumes/bios for Board Member consideration.',
+    'contactUs.volunteerInfo': 'For Volunteering, please go to',
+    'contactUs.volunteerLink': 'Volunteer',
+    'contactUs.pageForMoreInfo': 'page for more info.',
+    'contactUs.needHelpInfo': 'For those suffering and needing help now, please go to',
+    'contactUs.needHelpLink': 'Need Help Now',
+    'contactUs.fullName': 'Full Name *',
+    'contactUs.fullNamePlaceholder': 'Enter your full name',
+    'contactUs.yourEmail': 'Your email *',
+    'contactUs.emailPlaceholder': 'Enter your email address',
+    'contactUs.yourPhone': 'Your phone',
+    'contactUs.phonePlaceholder': 'Enter your phone number',
+    'contactUs.cityState': 'City and State',
+    'contactUs.cityStatePlaceholder': 'Enter your city and state',
+    'contactUs.regarding': 'Regarding',
+    'contactUs.regardingPlaceholder': 'Subject of your inquiry',
+    'contactUs.yourMessage': 'Your Message *',
+    'contactUs.messagePlaceholder': 'Tell us how we can help you...',
+    'contactUs.permission': 'By checking this box and submitting your information, you are granting us permission to email you. *',
+    'contactUs.notARobot': "I'm not a robot",
+    'contactUs.sendMessage': 'Send Message',
   
   },
   es: {
@@ -633,6 +657,35 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
     'bio.diane.skill4': 'Navegación de Medicina Occidental',
     'bio.diane.skill5': 'Auto-Sanación y Empoderamiento',
     'bio.diane.skill6': 'Habilidades Corporativas/Académicas (Motivación Demostrada)',
+
+      
+    
+    // Contact Us Page
+    'contactUs.title': 'CONTÁCTENOS',
+    'contactUs.generalInquiries': 'Para consultas generales y currículums/biografías para consideración de Miembros de la Junta.',
+    'contactUs.volunteerInfo': 'Para Voluntariado, por favor ve a',
+    'contactUs.volunteerLink': 'Voluntario',
+    'contactUs.pageForMoreInfo': 'página para más información.',
+    'contactUs.needHelpInfo': 'Para aquellos que sufren y necesitan ayuda ahora, por favor ve a',
+    'contactUs.needHelpLink': 'Necesito Ayuda Ahora',
+    'contactUs.fullName': 'Nombre Completo *',
+    'contactUs.fullNamePlaceholder': 'Ingresa tu nombre completo',
+    'contactUs.yourEmail': 'Tu correo electrónico *',
+    'contactUs.emailPlaceholder': 'Ingresa tu dirección de correo electrónico',
+    'contactUs.yourPhone': 'Tu teléfono',
+    'contactUs.phonePlaceholder': 'Ingresa tu número de teléfono',
+    'contactUs.cityState': 'Ciudad y Estado',
+    'contactUs.cityStatePlaceholder': 'Ingresa tu ciudad y estado',
+    'contactUs.regarding': 'Asunto',
+    'contactUs.regardingPlaceholder': 'Tema de tu consulta',
+    'contactUs.yourMessage': 'Tu Mensaje *',
+    'contactUs.messagePlaceholder': 'Dinos cómo podemos ayudarte...',
+    'contactUs.permission': 'Al marcar esta casilla y enviar tu información, nos estás otorgando permiso para enviarte correos electrónicos. *',
+    'contactUs.notARobot': 'No soy un robot',
+  
+    'contactUs.sendMessage': 'Enviar Mensaje',
+    
+    
   },
   
 
