@@ -156,13 +156,13 @@ WE ARE THE CHANGE!`,
     'donors.partnersDesc': 'Discover our valued sponsors who support WAM Alliance in making a difference in our communities.',
     
     // Donate Now Page (Contact component)
-    'donate.title': 'DONACIONES',
-    'donate.intro1': 'WAM da la bienvenida y acepta todas las donaciones. Somos una organización 501(c)(3) registrada con el IRS y todas las donaciones son deducibles de impuestos.',
-    'donate.promise': '¡El 100% de cada donación va directamente a aquellos a quienes ayudamos - Esta es nuestra promesa para ti!',
-    'donate.intro2': '¡WAM no tiene Directores de Junta pagados, servimos a otros sin condiciones y no pedimos nada a cambio excepto que te ames a ti mismo!',
-    'donate.cashDonations': 'DONACIONES EN EFECTIVO',
-    'donate.allOtherDonations': 'TODAS LAS DEMÁS DONACIONES',
-    'donate.donateNow': 'Donar Ahora',
+    'donate.title': 'DONATIONS',
+    'donate.intro1': 'WAM welcomes and accepts all donations. We are a 501(c)(3) organization registered with the IRS and all donations are tax deductible.',
+    'donate.promise': '100% of every donation goes directly to those we help - This is our promise to you!',
+    'donate.intro2': 'WAM does not have paid Board Directors, we serve others unconditionally and ask nothing in return except that you love yourself!',
+    'donate.cashDonations': 'CASH DONATIONS',
+    'donate.allOtherDonations': 'ALL OTHER DONATIONS',
+    'donate.donateNow': 'Donate Now',
     
     // Testimonials Page
     'testimonials.title': 'Testimonials & Success Stories',
@@ -184,6 +184,45 @@ WE ARE THE CHANGE!`,
     'testimonials.stories.jay': "I am Jay, I am a recovering addict and suicide survivor. I am an amputee from the knees down and have many other debilitating medical issues. I have been homeless for over 20 years and am finally off the streets and into temporary shelter for medically vulnerable people, while I wait for permanent housing. WAM found me in Sandy with a sign asking for help. They gave me a card, and after looking at the card, it inspired me to call them, so I did. They were able to get me into the shelter the next day. They transported me from downtown and successfully got me admitted. They have provided me with food, clothes, other items to get along while in the shelter, as well as funded my renewal for my medical card and cost of the doctor appointment, as it is not covered by Medicaid. WAM saved me and has helped me in more ways than any other has. They mean what they say and come through. WAM Team is helping me get off the streets, and the help I need.",
     'testimonials.stories.mercedes': "Mercedes was a young girl in a youth shelter being treated poorly. She was with Ty, another boy WAM helped and housed temporarily. Mercedes had come from a home where her mother was absent, father absent, and an abusive caretaker. WAM provided her with rides, safety, temporary shelter, food and guidance. We hope Mercedes is back in school and with people who love her.",
     'testimonials.stories.seanFromOh': "WAM found me in a graveyard in OH one afternoon. I was not well, and the weather was heading for rain. I was robbed and just trying to figure out what I was going to do, feeling down and worthless. When Tonya and Rob approached me, I was tired and hungry, and they kindly provided me with a warm meal and drink. They later brought back a tent and other items to help me while I found housing. They gave me inspiration to go on and to keep moving forward, back to owning my own business and having my own home. I am thankful for all their support and for answering the phone when I called. I am finding my way back and they have given me guidance along the way.",
+  
+   // Programs and Projects Page (OurProgress)
+   'ourProgress.title': 'Programs and Future Projects',
+    'ourProgress.disclaimer': 'Each program is subject to changes. Each qualified person must be accepted into the program before they receive funds and/or services.',
+    'ourProgress.established': 'FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS',
+    'ourProgress.year2023': '2023',
+    'ourProgress.year2024': '2024',
+    'ourProgress.establishedDesc': 'WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization.',
+    'ourProgress.talentRecruitment': 'TALENT RECRUITMENT',
+    'ourProgress.talentRecruitmentPeriod': '2024 - Present',
+    'ourProgress.talentRecruitmentDesc': 'WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning.',
+    'ourProgress.noStringsProgram': 'NO STRINGS ATTACHED PROGRAM',
+    'ourProgress.noStringsProgramDesc': 'This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients.',
+    'ourProgress.techfistTitle': 'Techfist Global Inc - A Proud Sponsor of WAM Alliance',
+    'ourProgress.techfistDesc': 'Techfist Global stands as a proud sponsor and technological partner of WAM Alliance. Providing advanced digital solutions, strategic design, and scalable systems to amplify impact across global networks — bridging innovation with purpose to inspire sustainability, inclusion, and growth. Together, we empower communities to build a smarter, more connected future.',
+    'ourProgress.cswTitle' : 'Community Safety Watch - CSW',
+    'ourProgress.cswDesc':'The Community Safety Watch (CSW) is a neighborhood-led, non-confrontational initiative designed to increase safety, awareness, and community resilience in neighborhoods experiencing suspicious activity by masked individuals. CSW focuses on observation, reporting, prevention, and community support—working in partnership with local law enforcement and service providers while prioritizing de-escalation, legal compliance, and the dignity of all residents.',
+    
+    'ourProgress.adenRootsTitle': "Aden's Roots Program",
+    'ourProgress.adenRootsFull': "Aden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war. Born from lived experience and a survivor's heart, Aden's Roots provides direct aid to those in crisis, including food, clean water, shelter, clothing, medical treatment, and educational support. Over the past two years, Sireen has helped coordinate the evacuation of injured children from Gaza to Egypt and the United States, working with organizations like PCRF and Heal Palestine to secure visas, transportation, and life-saving care. Through Aden's Roots, Sireen has helped deliver tents, parcels, and safe housing to families who fled with nothing. She's personally assisted in the evacuation and treatment of her cousins Sara and Ahd—both severely injured—ensuring they received urgent medical attention in New York, South Carolina, and Colorado. This project is more than aid—it's advocacy. Aden's Roots calls for ceasefire, healing, and global solidarity. It mobilizes volunteers, amplifies survivor stories, and builds bridges between communities in Utah, Egypt, and Gaza. At its core, Aden's Roots is a mother's mission to protect, uplift, and never forget. It's a lifeline for those who remain and a beacon for those who've fled.",
+    
+    'ourProgress.readMore': 'Read More ↓',
+    'ourProgress.readLess': 'Read Less ↑',
+    'ourProgress.year2025': '2025',
+    
+  'partners.title': 'Trusted Partners',
+    'partners.communityResources': 'COMMUNITY RESOURCES',
+    'partners.intro1': 'This is a page where you can find additional resources in the local SLC, Utah area. These are resources we feel are truly helping and serving others, with success and love.',
+    'partners.intro2': 'We do not want to send those in need to a place where they go unheard and are poorly treated by the staff.',
+    'partners.resourceSpace': 'WAM is currently working on building a Resource Space privately funded, to help those get off the street and into a safe environment, without the Federal Government regulating where funds are spent.',
+    'partners.values': 'We value and believe everyone has the right to love, shelter & food, alternative mental health care to aid in personal growth, and a pursuit of one\'s own happiness.',
+    'partners.support': 'Here at WAM we support and guide those in need, from barely surviving to thriving.',
+    'partners.lovingYourself': 'Loving yourself is the first step in recovering from any event.',
+    'partners.ourTrustedPartners': 'Our Trusted Partners',
+    'partners.secondSecondDesc': 'Nonprofit Helping those in the SLC Area.',
+    'partners.restorativeHealthDesc': 'World class health care with options for our LGBTQ+ community and those looking to improve quality of life.',
+    'partners.techfist':'In partnership with TechFist Global, We All Matter drives the power of technology to amplify change, empower people, and build a better tomorrow.'
+    
+  
   },
   es: {
     // Header
@@ -354,6 +393,44 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
     'testimonials.stories.jay': "Soy Jay, soy un adicto en recuperación y sobreviviente de suicidio. Soy amputado de las rodillas hacia abajo y tengo muchos otros problemas médicos debilitantes. He estado sin hogar durante más de 20 años y finalmente estoy fuera de las calles y en un refugio temporal para personas médicamente vulnerables, mientras espero una vivienda permanente. WAM me encontró en Sandy con un cartel pidiendo ayuda. Me dieron una tarjeta, y después de mirarla, me inspiró a llamarlos, así que lo hice. Pudieron conseguirme en el refugio al día siguiente. Me transportaron desde el centro y me admitieron con éxito. Me han proporcionado comida, ropa, otros artículos para sobrellevar mientras estoy en el refugio, además de financiar la renovación de mi tarjeta médica y el costo de la cita con el médico, ya que no está cubierto por Medicaid. WAM me salvó y me ha ayudado de más maneras que cualquier otro. Significan lo que dicen y cumplen. El equipo de WAM me está ayudando a salir de las calles y la ayuda que necesito.",
     'testimonials.stories.mercedes': "Mercedes era una joven en un refugio juvenil siendo tratada mal. Estaba con Ty, otro niño que WAM ayudó y alojó temporalmente. Mercedes venía de un hogar donde su madre estaba ausente, el padre ausente y un cuidador abusivo. WAM le proporcionó transporte, seguridad, refugio temporal, comida y orientación. Esperamos que Mercedes esté de vuelta en la escuela y con personas que la aman.",
     'testimonials.stories.seanFromOh': "WAM me encontró en un cementerio en OH una tarde. No me sentía bien y el clima se dirigía hacia la lluvia. Me robaron y solo estaba tratando de descubrir qué iba a hacer, sintiéndome deprimido e inútil. Cuando Tonya y Rob se acercaron a mí, estaba cansado y hambriento, y amablemente me proporcionaron una comida caliente y una bebida. Más tarde trajeron de vuelta una tienda de campaña y otros artículos para ayudarme mientras encontraba vivienda. Me dieron inspiración para seguir adelante y continuar avanzando, de vuelta a ser dueño de mi propio negocio y tener mi propia casa. Estoy agradecido por todo su apoyo y por contestar el teléfono cuando llamé. Estoy encontrando mi camino de regreso y me han dado orientación en el camino.",
+  
+     // Programs and Projects Page (OurProgress)
+    'ourProgress.title': 'Programas y Proyectos Futuros',
+    'ourProgress.disclaimer': 'Cada programa está sujeto a cambios. Cada persona calificada debe ser aceptada en el programa antes de recibir fondos y/o servicios.',
+    'ourProgress.established': 'ORGANIZACIÓN FORMALMENTE ESTABLECIDA Y JUNTA DIRECTIVA',
+    'ourProgress.year2023': '2023',
+    'ourProgress.year2024': '2024',
+    'ourProgress.establishedDesc': 'WAM Alliance se estableció formalmente en el estado de Utah y con el IRS como una organización 501(c)(3).',
+    'ourProgress.talentRecruitment': 'RECLUTAMIENTO DE TALENTO',
+    'ourProgress.talentRecruitmentPeriod': '2024 - Presente',
+    'ourProgress.talentRecruitmentDesc': 'WAM reclutará talento para ayudar con el marketing en redes sociales, así como con campañas de donantes/patrocinadores.',
+    'ourProgress.noStringsProgram': 'PROGRAMA SIN CONDICIONES',
+    'ourProgress.noStringsProgramDesc': 'Este programa se financia únicamente mediante donaciones y subvenciones, y proporciona Artículos Esenciales de Emergencia —incluida asistencia para servicios públicos, tarjetas de gasolina y pases de tren/autobús—, además de ayuda financiera directa para documentación legal, costos médicos calificados, tarifas de solicitud y otros gastos necesarios asociados con la obtención de documentos requeridos, evaluaciones médicas, vivienda y acceso a beneficios estatales; toda la asistencia se ofrece con dignidad y sin ninguna obligación para los beneficiarios.',
+    'ourProgress.techfistTitle': 'Techfist Global Inc - Un Orgulloso Patrocinador de WAM Alliance',
+    'ourProgress.techfistDesc': 'Techfist Global se destaca como un orgulloso patrocinador y socio tecnológico de WAM Alliance. Brinda soluciones digitales avanzadas, diseño estratégico y sistemas escalables para amplificar el impacto en redes globales, uniendo innovación con propósito para inspirar sostenibilidad, inclusión y crecimiento. Juntos, empoderamos a las comunidades para construir un futuro más inteligente y mejor conectado.',
+     'ourProgress.cswTitle': 'Vigilancia de Seguridad Comunitaria - CSW',
+    'ourProgress.cswDesc': 'La Vigilancia de Seguridad Comunitaria (CSW) es una iniciativa liderada por vecindarios, no confrontativa, diseñada para aumentar la seguridad, la conciencia y la resiliencia comunitaria en vecindarios que experimentan actividad sospechosa por individuos enmascarados. CSW se enfoca en la observación, informes, prevención y apoyo comunitario—trabajando en asociación con las fuerzas del orden locales y proveedores de servicios mientras prioriza la desescalada, el cumplimiento legal y la dignidad de todos los residentes.',
+    'ourProgress.adenRootsTitle': 'Programa Raíces de Aden',
+    'ourProgress.adenRootsFull': 'Raíces de Aden es una iniciativa humanitaria liderada por la defensora palestino-estadounidense Sireen Hamdi Beseiso, bajo el paraguas de WAM Alliance. Nombrado en honor a su hijo Aden, este proyecto está arraigado en la compasión, la resiliencia y el llamado urgente a apoyar a palestinos desplazados y heridos, especialmente niños y familias afectados por la guerra. Nacido de la experiencia vivida y el corazón de un sobreviviente, Raíces de Aden proporciona ayuda directa a aquellos en crisis, incluyendo alimentos, agua potable, refugio, ropa, tratamiento médico y apoyo educativo. En los últimos dos años, Sireen ha ayudado a coordinar la evacuación de niños heridos de Gaza a Egipto y Estados Unidos, trabajando con organizaciones como PCRF y Heal Palestine para asegurar visas, transporte y atención que salva vidas. A través de Raíces de Aden, Sireen ha ayudado a entregar tiendas de campaña, paquetes y viviendas seguras a familias que huyeron sin nada. Ha asistido personalmente en la evacuación y tratamiento de sus primas Sara y Ahd—ambas gravemente heridas—asegurando que reciban atención médica urgente en Nueva York, Carolina del Sur y Colorado. Este proyecto es más que ayuda, es defensa. Raíces de Aden llama al alto el fuego, la sanación y la solidaridad global. Moviliza voluntarios, amplifica las historias de sobrevivientes y construye puentes entre comunidades en Utah, Egipto y Gaza. En su núcleo, Raíces de Aden es la misión de una madre para proteger, elevar y nunca olvidar. Es un salvavidas para aquellos que permanecen y un faro para aquellos que han huido.',
+    'ourProgress.year2025': '2025',
+    'ourProgress.aidensRootsTitle': "Raíces de Aiden - Un Proyecto de WAM Alliance",
+    'ourProgress.readMore': 'Leer Más ↓',
+    'ourProgress.readLess': 'Leer Menos ↑',
+
+      // Trusted Partners Page
+    'partners.title': 'Socios de Confianza',
+    'partners.communityResources': 'RECURSOS COMUNITARIOS',
+    'partners.intro1': 'Esta es una página donde puede encontrar recursos adicionales en el área local de SLC, Utah. Estos son recursos que sentimos que realmente ayudan y sirven a otros, con éxito y amor.',
+    'partners.intro2': 'No queremos enviar a los necesitados a un lugar donde no sean escuchados y sean maltratados por el personal.',
+    'partners.resourceSpace': 'WAM está trabajando actualmente en la construcción de un Espacio de Recursos financiado de forma privada, para ayudar a las personas a salir de la calle y entrar en un entorno seguro, sin que el Gobierno Federal regule dónde se gastan los fondos.',
+    'partners.values': 'Valoramos y creemos que todos tienen derecho al amor, refugio y comida, atención de salud mental alternativa para ayudar en el crecimiento personal y la búsqueda de la propia felicidad.',
+    'partners.support': 'Aquí en WAM apoyamos y guiamos a quienes lo necesitan, de apenas sobrevivir a prosperar.',
+    'partners.lovingYourself': 'Amarte a ti mismo es el primer paso para recuperarte de cualquier evento.',
+    'partners.ourTrustedPartners': 'Nuestros Socios de Confianza',
+    'partners.secondSecondDesc': 'Organización sin fines de lucro que ayuda a las personas en el área de SLC.',
+    'partners.restorativeHealthDesc': 'Atención médica de clase mundial con opciones para nuestra comunidad LGBTQ+ y aquellos que buscan mejorar la calidad de vida.',
+    'partners.techfist':'En colaboración con TechFist Global, We All Matter impulsa el poder de la tecnología para amplificar el cambio, empoderar a las personas y construir un futuro mejor.',
+  
   },
   
 

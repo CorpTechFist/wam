@@ -3,7 +3,7 @@ import { Info } from "lucide-react";
 import { useTranslation } from "./TranslationContext";
 
 export function ProgramsandProjects() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
   const [showFullAden, setShowFullAden] = useState(false);
 
   const AdenFullText =
@@ -26,7 +26,7 @@ export function ProgramsandProjects() {
                 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
                 style={{ WebkitTextFillColor: "#7c3aed" }}
               >
-                Programs and Projects
+                 {t('ourProgress.title')}
               </h2>
             </div>
 
@@ -46,7 +46,7 @@ export function ProgramsandProjects() {
                     <Info className="w-5 h-5 text-white" />
                   </div>
                   <p className="text-base text-gray-700 leading-relaxed font-normal flex-1 pt-1 text-justify">
-                    {translations.ourProgress?.disclaimer ||
+                    {t("ourProgress.disclaimer") ||
                       "Each program is subject to changes. Each qualified person must be accepted into the program before they receive funds and/or services."}
                   </p>
                 </div>
@@ -57,39 +57,31 @@ export function ProgramsandProjects() {
           {/* ✅ Program Cards Grid - Fixed Height Isolation */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <Card
-              title="FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS"
-              year="2023"
-              desc="WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization."
+              title= { t("ourProgress.established") ||"FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS"}
+              year= {t("ourProgress.year2023") ||"2023"}
+              desc={  t("ourProgress.establishedDesc") ||"WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization."}
             />
             <Card
-              title="TALENT RECRUITMENT"
-              year="2024 - Present"
-              desc="WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning."
+              title={ t("ourProgress.talentRecruitment") ||"TALENT RECRUITMENT"}
+              year= { t("ourProgress.talentRecruitmentPeriod") || "2024 - Present"}
+              desc={ t("ourProgress.talentRecruitmentDesc") || "WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning."}
             />
             <Card
-              title="NO STRINGS ATTACHED PROGRAM"
-              year="2024"
-              desc="This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."
+              title={ t("ourProgress.noStringsProgram") ||"NO STRINGS ATTACHED PROGRAM"}
+              year={t("ourProgress.year2024") || "2024"}
+              desc= {t("ourProgress.noStringsProgramDesc") ||"This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."}
             />
             <Card
-              title="Techfist Global Inc - A Proud Sponsor of WAM Alliance"
-              year="2025"
-              desc="Techfist Global stands as a proud sponsor
-and technological partner of WAM Alliance.
-Providing advanced digital solutions,
-strategic design, and scalable systems
-to amplify impact across global networks —
-bridging innovation with purpose
-to inspire sustainability, inclusion, and growth.
-Together, we empower communities
-to build a smarter, more connected future."
+              title={t('ourProgress.techfistTitle')}
+              year={t('ourProgress.year2025')}
+              desc={t('ourProgress.techfistDesc')}
             />
             {/* Left Card - CSW */}
             <div className="self-start">
               <Card
-                title="Community Safety Watch - CSW"
-                year="2025"
-                desc="The Community Safety Watch (CSW) is a neighborhood-led, non-confrontational initiative designed to increase safety, awareness, and community resilience in neighborhoods experiencing suspicious activity by masked individuals. CSW focuses on observation, reporting, prevention, and community support—working in partnership with local law enforcement and service providers while prioritizing de-escalation, legal compliance, and the dignity of all residents."
+                  title={t('ourProgress.cswTitle')}
+                year={t('ourProgress.year2025')}
+                desc={t('ourProgress.cswDesc')}
               />
             </div>
 
@@ -100,7 +92,7 @@ to build a smarter, more connected future."
                 <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl p-8 border border-purple-200/50 shadow-lg hover:shadow-2xl transition-all duration-300">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                     <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug">
-                      Aden's Roots Program
+                      {t('ourProgress.adenRootsTitle')}
                     </h3>
                     <span
                       className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium"
@@ -111,7 +103,7 @@ to build a smarter, more connected future."
                         boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
                       }}
                     >
-                      2025
+                      {t('ourProgress.year2025')}
                     </span>
                   </div>
 
@@ -123,7 +115,7 @@ to build a smarter, more connected future."
                     }}
                   >
                     <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
-                      {AdenFullText}
+                     {t('ourProgress.adenRootsFull')}
                     </p>
                   </div>
 
@@ -131,7 +123,8 @@ to build a smarter, more connected future."
                     onClick={() => setShowFullAden(!showFullAden)}
                     className="mt-4 text-purple-600 font-medium hover:text-purple-800 transition-all duration-300"
                   >
-                    {showFullAden ? "Read Less ↑" : "Read More ↓"}
+                    {showFullAden ? t('ourProgress.readLess')
+                      : t('ourProgress.readMore')}
                   </button>
                 </div>
               </div>

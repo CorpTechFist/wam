@@ -7,7 +7,7 @@ import secondSecondCoalitionLogo from '../../assets/testimonials/3dedd5dd8d7d270
 import restorativeHealthLogo from '../../assets/testimonials/405f03c1c531c3311c5195fab0ee137f0a463a0e.png';
 import techfistLogo from '../../assets/logo/tfglogo.png'
 export function TrustedPartnersPage() {
-  const { translations } = useTranslation();
+   const { t } = useTranslation();
 
   const agencies = [
     {
@@ -82,7 +82,7 @@ export function TrustedPartnersPage() {
             <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-              Resources & Partnering Agencies
+             {t('partners.title')}
             </h3>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-yellow-500 mx-auto"></div>
           </div>
@@ -92,30 +92,30 @@ export function TrustedPartnersPage() {
             <div className="bg-gradient-to-br from-purple-50 via-white to-yellow-50 border-2 border-purple-200 p-8 md:p-12 shadow-xl">
               <div className="space-y-6 text-gray-800 leading-relaxed">
                 <p className="text-lg">
-                  This is a page where you can find additional resources in the local SLC, Utah area. These are resources we feel are truly helping and serving others, with success and love.
+                  {t('partners.intro1')}
                 </p>
                 
                 <p>
-                  We do not want to send those in need to a place where they go unheard and are poorly treated by the staff.
+                 {t('partners.intro2')}
                 </p>
                 
                 <div className="bg-white border-l-4 border-purple-600 p-6 my-8 shadow-md">
                   <p className="text-purple-900">
-                    WAM is currently working on building a Resource Space privately funded, to help those get off the street and into a safe environment, without the Federal Government regulating where funds are spent.
+                     {t('partners.resourceSpace')}
                   </p>
                 </div>
                 
                 <p>
-                  We value and believe everyone has the right to love, shelter & food, alternative mental health care to aid in personal growth, and a pursuit of one's own happiness.
+                   {t('partners.values')}
                 </p>
                 
                 <p>
-                  Here at WAM we support and guide those in need, from barely surviving to thriving.
+                  {t('partners.support')}
                 </p>
                 
                 <div className="text-center py-6 mt-8">
                   <p className="text-xl italic text-purple-700 border-t-2 border-b-2 border-yellow-500 py-4 inline-block px-8">
-                    Loving yourself is the first step in recovering from any event.
+                   {t('partners.lovingYourself')}
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export function TrustedPartnersPage() {
           {/* Resource Cards Section */}
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl text-center text-purple-900 mb-8 tracking-wide">
-              Our Trusted Partners
+               {t('partners.ourTrustedPartners')}
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -156,7 +156,7 @@ export function TrustedPartnersPage() {
                           2ND % 2ND Coalition
                         </a>
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Nonprofit Helping those in the SLC Area.</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{t('partners.secondSecondDesc')}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -189,7 +189,7 @@ export function TrustedPartnersPage() {
                           Restorative Health
                         </a>
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">World class health care with options for our LGBTQ+ community and those looking to improve quality of life.</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{t('partners.restorativeHealthDesc')}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -225,7 +225,7 @@ export function TrustedPartnersPage() {
                           Techfisht Global Inc
                         </a>
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">In partnership with TechFist Global, We All Matter drives the power of technology to amplify change, empower people, and build a better tomorrow.</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{t('partners.techfist')}</p>
                     </div>
                   </div>
                 </CardContent>

@@ -92,16 +92,8 @@ export function Testimonials() {
         <div className="text-center mb-16">
           <div className="p-8 max-w-4xl mx-auto text-center">
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl mb-10"
-              style={{
-                background:
-                  "linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                fontWeight: "700",
-                letterSpacing: "-0.02em",
-              }}
+              className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+             style={{ WebkitTextFillColor: "#7c3aed" }}
             >
               {t('testimonials.title')}
             </h2>
