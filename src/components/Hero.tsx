@@ -829,7 +829,7 @@ export function Hero() {
                         }}
                         onClick={() =>
                           handleNavigation(
-                            "resources-partnering-agencies",
+                            "trusted-partners",
                           )
                         }
                         onMouseOver={(e) => {
