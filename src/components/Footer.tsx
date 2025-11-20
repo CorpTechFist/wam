@@ -237,9 +237,9 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
               <li className="flex items-center gap-2">
                 <div className="w-1 h-1 bg-primary"></div>
                 <button 
-                  onClick={() => handleNavigation('testmonials')}
+                  onClick={() => handleNavigation('testimonials')}
                   className={`text-sm text-muted-foreground hover:text-indigo-600 transition-colors duration-300 text-left ${
-                    currentPage === 'testmonials' ? 'text-primary' : ''
+                    currentPage === 'testimonials' ? 'text-primary' : ''
                   }`}
                 >
                   Testimonials
