@@ -5,7 +5,7 @@ import { useTranslation } from "../TranslationContext";
 import donorsImage from 'asset/0ac45be3ff4699bae26fbda27fa3b09f73de9747.png';
 
 export function PersonalDonorsPage() {
-  const { translations } = useTranslation();
+const { t } = useTranslation();
 
   const donors = [
     {
@@ -61,20 +61,19 @@ export function PersonalDonorsPage() {
                      <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
   style={{ WebkitTextFillColor: "#7c3aed" }}
 >
-              OUR VALUED DONORS
+               {t("volunteerApp.joinOurTeam")}
             </h3>
           </div>
           
           <div className="max-w-3xl mx-auto space-y-5 mb-8">
             <p className="text-gray-700 text-lg leading-relaxed">
-              We here at WAM are utterly grateful for each and every donor!
+              {t("We here at WAM are utterly grateful for each and every donor!")}
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Whether it is cash or items, it all helps in large amounts.
+              {t("Whether it is cash or items, it all helps in large amounts.")}
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              If we each donated what it costs for a cup of coffee each day,
-              the results would be greater quality of life for individuals and their families that are less fortunate.
+              {t("If we each donated what it costs for a cup of coffee each day, the results would be greater quality of life for individuals and their families that are less fortunate.")}
             </p>
           </div>
          
@@ -86,7 +85,7 @@ export function PersonalDonorsPage() {
             borderRadius: '12px',
            
           }}>
-            WE ARE THE CHANGE!
+           {t("WE ARE THE CHANGE!")} 
           </p>
         
           {/* Decorative Dots */}
@@ -115,11 +114,10 @@ export function PersonalDonorsPage() {
                 backgroundClip: 'text',
                 fontWeight: '700'
               }}>
-                ALL OUR ONLINE DONORS
+                {t("ALL OUR ONLINE DONORS")}
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
-                Too all those who have donated through our FB Fundraising site, WAM site, Venmo, and PayPal. The people and WAM are grateful beyond words. We are indebted to each and every one of you.
-              </p>
+                {t("Too all those who have donated through our FB Fundraising site, WAM site, Venmo, and PayPal. The people and WAM are grateful beyond words. We are indebted to each and every one of you.")}          </p>
             </CardContent>
           </Card>
 
@@ -139,10 +137,10 @@ export function PersonalDonorsPage() {
                 backgroundClip: 'text',
                 fontWeight: '700'
               }}>
-                ANONYMOUS DONORS
+                {t("ANONYMOUS DONORS")}
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
-                To all the anonymous donors - THANK YOU! We are grateful for your support and wish many blessings to all of you who gave a little that equated to A LOT!
+                {t("To all the anonymous donors - THANK YOU! We are grateful for your support and wish many blessings to all of you who gave a little that equated to A LOT!")}
               </p>
             </CardContent>
           </Card>
@@ -164,10 +162,10 @@ export function PersonalDonorsPage() {
                 backgroundClip: 'text',
                 fontWeight: '700'
               }}>
-                GERRY - REPEATED DONOR
+               {t(" GERRY - REPEATED DONOR")}
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
-                Thank you to Gerry, she has been donating to our cause for a couple years now, bringing hope and warmth to many of those in need. We here at WAM are utterly grateful for Gerry and her warm heart!
+                {t("Thank you to Gerry, she has been donating to our cause for a couple years now, bringing hope and warmth to many of those in need. We here at WAM are utterly grateful for Gerry and her warm heart!")}
               </p>
             </CardContent>
           </Card>
@@ -191,7 +189,7 @@ export function PersonalDonorsPage() {
                 KATHERINE
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
-                Katherine is another donor who gave a new start to a life that needed it! We all can be angels like Katherine - for just dollars we are saving lives.
+                {t("Katherine is another donor who gave a new start to a life that needed it! We all can be angels like Katherine - for just dollars we are saving lives.")}
               </p>
             </CardContent>
           </Card>
@@ -220,10 +218,11 @@ export function PersonalDonorsPage() {
                 fontWeight: '700'
               }}
             >
-              KATHLEEN McGOWAN
+              {t("KATHLEEN McGOWAN")}
             </a>
             <p className="text-gray-700 leading-relaxed text-center text-lg max-w-3xl mx-auto">
-              Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.
+            {t("Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.")}
+
             </p>
           </CardContent>
         </Card>

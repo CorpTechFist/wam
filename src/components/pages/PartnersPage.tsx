@@ -5,7 +5,7 @@ import { useTranslation } from "../TranslationContext";
 import { unsplash_tool } from "../../tools";
 
 export function PartnersPage() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
 
   const sponsors = [
     {
@@ -83,7 +83,7 @@ export function PartnersPage() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Purple/Gold Accent Border Top */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
+      
       
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
@@ -97,10 +97,10 @@ export function PartnersPage() {
           <div className="text-center space-y-4">
             <div className="inline-flex items-center gap-3 px-6 py-2 bg-yellow-50 border-2 border-yellow-400 rounded-none mb-6">
               <Award className="w-5 h-5 text-yellow-600" />
-              <span className="text-sm tracking-wider text-yellow-800">VALUED PARTNERSHIPS</span>
+              <span className="text-sm tracking-wider text-yellow-800">{t("valuedPartnerships")}</span>
             </div>
             <h1 className="text-3xl md:text-5xl tracking-tight text-purple-900 mb-4">
-              {translations.donationPages?.sponsorsTitle || "Our Partners"}
+              {t("sponsorsTitle")}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-yellow-500 mx-auto"></div>
           </div>
@@ -110,14 +110,14 @@ export function PartnersPage() {
             <div className="bg-gradient-to-br from-purple-50 via-white to-yellow-50 border-2 border-purple-200 p-8 md:p-12 shadow-xl">
               <div className="space-y-6 text-center">
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  {translations.donationPages?.sponsorsDescription || "Discover our valued partners who support WAM Alliance in making a difference in our communities."}
+                  {t("sponsorsDescription")}
                 </p>
                 <p className="text-gray-800 leading-relaxed">
                   They are essential partners in creating inclusive communities where everyone matters.
                 </p>
                 <div className="pt-4">
                   <p className="text-2xl text-purple-700 tracking-wide">
-                    {translations.donationPages?.weAreTheChange || "WE ARE THE CHANGE!"}
+                    {t ("WE ARE THE CHANGE!")}
                   </p>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export function PartnersPage() {
           {/* Featured Partners Section */}
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl text-center text-purple-900 mb-8 tracking-wide">
-              Featured Partners
+              {t("featuredPartners")}
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -142,7 +142,7 @@ export function PartnersPage() {
                     <div>
                       <Badge className="mb-3 bg-purple-100 text-purple-800 border border-purple-300 hover:bg-purple-200">
                         <Star className="w-3 h-3 mr-1" />
-                        HOLISTIC WELLNESS
+                        {t("holisticWellness")}
                       </Badge>
                       <h3 className="text-xl mb-3">
                         <a 
@@ -155,7 +155,7 @@ export function PartnersPage() {
                         </a>
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Love Me Tea is a proud sponsor of WAM Alliance. Holistic products that help those suffering from trauma ailments & more.
+                       {t("loveMeTea.description")}
                       </p>
                     </div>
                   </div>
@@ -173,7 +173,7 @@ export function PartnersPage() {
                     <div>
                       <Badge className="mb-3 bg-yellow-100 text-yellow-800 border border-yellow-300 hover:bg-yellow-200">
                         <Target className="w-3 h-3 mr-1" />
-                        TECHNOLOGY PARTNER
+                       {t("technologyPartner")}
                       </Badge>
                       <h3 className="text-xl mb-3">
                         <a 
@@ -186,7 +186,7 @@ export function PartnersPage() {
                         </a>
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Techfist Global is a proud sponsor of WAM Alliance. Empowering communities through innovative technology solutions and digital transformation.
+                        {t("techfist.description")}
                       </p>
                     </div>
                   </div>
@@ -204,10 +204,10 @@ export function PartnersPage() {
                 </div>
                 <div>
                   <h3 className="text-xl text-purple-900 mb-3">
-                    Partnership Impact
+                    {t("partnershipImpactTitle")}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Our partners play a crucial role in supporting WAM Alliance's mission to create inclusive communities. Through their generous support and collaboration, we're able to expand our reach and make a meaningful difference in the lives of those we serve.
+                   {t("partnershipImpactDescription")}
                   </p>
                 </div>
               </div>
@@ -217,24 +217,24 @@ export function PartnersPage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 border-2 border-purple-300 mb-3">
                     <Heart className="w-8 h-8 text-purple-600" />
                   </div>
-                  <h4 className="text-purple-900 mb-2">Community Impact</h4>
-                  <p className="text-sm text-gray-600">Supporting inclusive communities</p>
+                  <h4 className="text-purple-900 mb-2">{t("communityImpact")}</h4>
+                  <p className="text-sm text-gray-600">{t("communityImpactDesc")}</p>
                 </div>
                 
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 border-2 border-yellow-400 mb-3">
                     <Star className="w-8 h-8 text-yellow-600" />
                   </div>
-                  <h4 className="text-purple-900 mb-2">Shared Values</h4>
-                  <p className="text-sm text-gray-600">Committed to positive change</p>
+                  <h4 className="text-purple-900 mb-2"> {t("sharedValues")}</h4>
+                  <p className="text-sm text-gray-600">  {t("sharedValuesDesc")}</p>
                 </div>
                 
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 border-2 border-purple-300 mb-3">
                     <Award className="w-8 h-8 text-purple-600" />
                   </div>
-                  <h4 className="text-purple-900 mb-2">Lasting Partnership</h4>
-                  <p className="text-sm text-gray-600">Building a better tomorrow</p>
+                  <h4 className="text-purple-900 mb-2">{t("lastingPartnership")}</h4>
+                  <p className="text-sm text-gray-600"> {t("lastingPartnershipDesc")}</p>
                 </div>
               </div>
             </div>
@@ -243,9 +243,9 @@ export function PartnersPage() {
           {/* Call to Action */}
          <div className="text-center max-w-3xl mx-auto">
   <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-8 md:p-10 text-white shadow-2xl">
-    <h3 className="text-2xl mb-4">Become a Partner</h3>
+    <h3 className="text-2xl mb-4">{t("becomePartner")}</h3>
     <p className="mb-6 text-purple-100 leading-relaxed">
-      Interested in partnering with WAM Alliance? Join us in making a difference in our communities and supporting those who need it most.
+      {t("ctaDescription")}
     </p>
     <button
       onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact-us' }))}
@@ -259,7 +259,7 @@ export function PartnersPage() {
         </div>
       </div>
       
-      {/* Purple/Gold Accent Border Bottom */}
+  
     
     </div>
   );

@@ -6,7 +6,7 @@ export function AboutPage() {
   
   try {
     return (
-      <main className="py-8 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
+      <main className="py-2 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
         <div>
           <About />
         </div>
@@ -16,9 +16,9 @@ export function AboutPage() {
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-10/12 xl:w-8/12">
               <div className="relative">
-                <div className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-2xl shadow-purple-200/60 overflow-hidden relative group hover:shadow-3xl hover:shadow-purple-300/70 transition-all duration-300 p-12 md:p-16">
+                <div className="bg-white border-2 border-purple-200/60 rounded-3xl  overflow-hidden relative group hover:shadow-3xl hover:shadow-purple-300/70 transition-all duration-300 p-12 md:p-16">
                   {/* Top gradient accent line */}
-                  <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-purple-500 via-yellow-400 to-purple-500"></div>
+                
                   
                   {/* Decorative corner elements */}
                   <div className="absolute top-8 left-8 w-20 h-20 bg-gradient-to-br from-purple-400/10 to-yellow-400/10 rounded-full blur-2xl"></div>
@@ -36,9 +36,9 @@ export function AboutPage() {
                     
                     {/* Main heading with gradient */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl mb-8" style={{ 
-                      background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 25%, #FFD700 50%, #8b5cf6 75%, #7c3aed 100%)',
+                     
                       WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
+                      WebkitTextFillColor: '#7c3aed',
                       backgroundClip: 'text',
                       fontWeight: '700',
                       letterSpacing: '0.02em'
@@ -72,7 +72,7 @@ export function AboutPage() {
                   </div>
                   
                   {/* Bottom gradient accent line */}
-                  <div className="absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r from-purple-500 via-yellow-400 to-purple-500"></div>
+                 
                 </div>
               </div>
             </div>

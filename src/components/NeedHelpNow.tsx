@@ -8,8 +8,11 @@ import { Checkbox } from "./ui/checkbox";
 import { Label } from "./ui/label";
 import { Phone, Clock, AlertTriangle, Heart, Shield, Users } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "./TranslationContext";
 
 export function NeedHelpNow() {
+  const { t } = useTranslation();
+
   const formRef = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
@@ -24,22 +27,22 @@ export function NeedHelpNow() {
 
     emailjs
       .sendForm(
-        "service_u6abwjq", // ⚡ your EmailJS service ID
-        "template_jgqip1u", // ⚡ your EmailJS template ID
+        "service_u6abwjq",
+        "template_jgqip1u",
         formRef.current!,
-        "OFD7Qlv7yYlrGs42z" // ⚡ your EmailJS public key
+        "OFD7Qlv7yYlrGs42z"
       )
       .then(
         () => {
           setIsSending(false);
-          setSuccessMessage("✅ Your message has been sent successfully!");
+          setSuccessMessage(t("needHelp.success"));
           formRef.current?.reset();
           setConsentChecked(false);
         },
         (err) => {
           console.error(err);
           setIsSending(false);
-          setErrorMessage("❌ Failed to send message. Please try again later.");
+          setErrorMessage(t("needHelp.error"));
         }
       );
   };
@@ -47,8 +50,7 @@ export function NeedHelpNow() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Accent Border Top */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
-
+    
       {/* Subtle Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.02]"
@@ -66,13 +68,16 @@ export function NeedHelpNow() {
             <div className="text-center space-y-6">
               <div className="inline-flex items-center gap-3 px-6 py-2 bg-red-50 border-2 border-red-400 rounded-none mb-4">
                 <AlertTriangle className="w-5 h-5 text-red-600" />
-                <span className="text-sm tracking-wider text-red-800">CRISIS SUPPORT</span>
+                <span className="text-sm tracking-wider text-red-800">
+                  {t("needHelp.crisisSupport")}
+                </span>
               </div>
 
-                <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
-  style={{ WebkitTextFillColor: "#7c3aed" }}
->
-                Need Help Now?
+              <h3
+                className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
+                style={{ WebkitTextFillColor: "#7c3aed" }}
+              >
+                {t("needHelp.heading")}
               </h3>
 
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-yellow-500 mx-auto mb-6"></div>
@@ -81,21 +86,26 @@ export function NeedHelpNow() {
               <div className="max-w-3xl mx-auto bg-gradient-to-br from-purple-50 via-white to-yellow-50 border-2 border-purple-300 p-8 shadow-lg">
                 <div className="flex items-center justify-center gap-3 mb-6">
                   <Phone className="w-6 h-6 text-purple-700" />
-                  <h2 className="text-2xl text-purple-800">Call 385-414-4144</h2>
+                  <h2 className="text-2xl text-purple-800">
+                    {t("needHelp.call")}
+                  </h2>
                 </div>
 
                 <div className="space-y-4 text-gray-800">
                   <div className="flex items-start gap-3 justify-center">
                     <Clock className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <p className="text-base leading-relaxed">
-                      A WAM team member will reply within 24–48 hours. Please stay safe and
-                      we’ll be in touch shortly.
+                      {t("needHelp.replyTime")}
                     </p>
                   </div>
 
                   <div className="border-t-2 border-purple-200 pt-4 mt-4">
-                    <p className="text-sm text-gray-700 mb-2">Love and strength to you —</p>
-                    <p className="text-purple-700 font-medium">The WAM Team</p>
+                    <p className="text-sm text-gray-700 mb-2">
+                      {t("needHelp.loveStrength")}
+                    </p>
+                    <p className="text-purple-700 font-medium">
+                      {t("needHelp.team")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -109,12 +119,11 @@ export function NeedHelpNow() {
                         <Shield className="w-6 h-6 text-red-600" />
                       </div>
                       <div className="text-left">
-                        <h3 className="text-lg text-red-900 mb-2">Emergency Services</h3>
+                        <h3 className="text-lg text-red-900 mb-2">
+                          {t("needHelp.emergencyTitle")}
+                        </h3>
                         <p className="text-sm text-gray-700 leading-relaxed">
-                          If you are in immediate danger, please call{" "}
-                          <span className="font-bold text-red-700">911</span> or go to your
-                          nearest emergency room. For the National Suicide Prevention Lifeline,
-                          call <span className="font-bold text-red-700">988</span>.
+                          {t("needHelp.emergencyMessage")}
                         </p>
                       </div>
                     </div>
@@ -128,7 +137,9 @@ export function NeedHelpNow() {
               <div className="bg-white border-2 border-purple-300 shadow-2xl p-8 md:p-10 rounded-lg">
                 <div className="flex items-center gap-3 mb-8 pb-6 border-b-2 border-purple-200">
                   <Heart className="w-6 h-6 text-purple-600" />
-                  <h3 className="text-2xl text-purple-900">Reach Out to Us</h3>
+                  <h3 className="text-2xl text-purple-900">
+                    {t("needHelp.formHeader")}
+                  </h3>
                 </div>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-8">
@@ -136,68 +147,85 @@ export function NeedHelpNow() {
                     {/* Left Column */}
                     <div className="space-y-5">
                       <div>
-                        <Label className="block font-semibold text-gray-700" htmlFor="name" >Name *</Label>
+                        <Label
+                          className="block font-semibold text-gray-700"
+                          htmlFor="name"
+                        >
+                          {t("needHelp.name")}
+                        </Label>
                         <Input
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
                           id="name"
                           name="name"
                           required
-                          placeholder="Your full name"
+                          placeholder={t("needHelp.namePlaceholder")}
                         />
                       </div>
 
                       <div>
-                        <Label htmlFor="age">Age</Label>
-                        <Input 
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"id="age" name="age" type="number" placeholder="Your age" />
+                        <Label htmlFor="age">{t("needHelp.age")}</Label>
+                        <Input
+                          className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          id="age"
+                          name="age"
+                          type="number"
+                          placeholder={t("needHelp.agePlaceholder")}
+                        />
                       </div>
 
                       <div>
-                        <Label htmlFor="email">Your Email *</Label>
+                        <Label htmlFor="email">{t("needHelp.email")}</Label>
                         <Input
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
                           id="email"
                           name="email"
                           type="email"
                           required
-                          placeholder="your@email.com"
+                          placeholder={t("needHelp.emailPlaceholder")}
                         />
                       </div>
 
                       <div>
-                        <Label htmlFor="regarding">Regarding</Label>
+                        <Label htmlFor="regarding">{t("needHelp.regarding")}</Label>
                         <Input
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          className="w-full border border-purple-300 bg-purple--50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
                           id="regarding"
                           name="regarding"
-                          placeholder="Subject of your message"
+                          placeholder={t("needHelp.regardingPlaceholder")}
                         />
                       </div>
 
                       <div>
-                        <Label htmlFor="phone">Your Phone</Label>
-                        <Input 
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"id="phone" name="phone" placeholder="(123) 456-7890" />
+                        <Label htmlFor="phone">{t("needHelp.phone")}</Label>
+                        <Input
+                          className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          id="phone"
+                          name="phone"
+                          placeholder={t("needHelp.phonePlaceholder")}
+                        />
                       </div>
 
                       <div>
-                        <Label htmlFor="location">Current Location</Label>
-                        <Input 
-                         className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"id="location" name="location" placeholder="City, State" />
+                        <Label htmlFor="location">{t("needHelp.location")}</Label>
+                        <Input
+                          className="w-full border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
+                          id="location"
+                          name="location"
+                          placeholder={t("needHelp.locationPlaceholder")}
+                        />
                       </div>
                     </div>
 
                     {/* Right Column */}
                     <div className="space-y-5">
                       <div>
-                        <Label htmlFor="needs">What are your needs? *</Label>
+                        <Label htmlFor="needs">{t("needHelp.needs")}</Label>
                         <Textarea
-                       
                           id="needs"
                           name="needs"
                           required
-                          placeholder="Describe how we can help you..."
-                          className="  border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 min-h-[280px] lg:min-h-[360px]"
+                          placeholder={t("needHelp.needsPlaceholder")}
+                          className="border border-purple-300 bg-purple-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 min-h-[280px] lg:min-h-[360px]"
                         />
                       </div>
 
@@ -206,11 +234,12 @@ export function NeedHelpNow() {
                           <Checkbox
                             id="consent"
                             checked={consentChecked}
-                            onCheckedChange={(checked) => setConsentChecked(!!checked)}
+                            onCheckedChange={(checked) =>
+                              setConsentChecked(!!checked)
+                            }
                           />
                           <Label htmlFor="consent" className="text-sm text-gray-800">
-                            By checking this box, you grant us permission to email you. You may
-                            unsubscribe anytime.
+                            {t("needHelp.consent")}
                           </Label>
                         </div>
                       </div>
@@ -236,7 +265,7 @@ export function NeedHelpNow() {
                       disabled={!consentChecked || isSending}
                       className="px-10 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white border-2 border-purple-400 rounded-none shadow-lg hover:-translate-y-1 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      {isSending ? "Sending..." : "Send Message"}
+                      {isSending ? t("needHelp.sending") : t("needHelp.sendButton")}
                     </Button>
                   </div>
                 </form>
@@ -248,12 +277,10 @@ export function NeedHelpNow() {
               <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-8 text-white shadow-xl text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Users className="w-6 h-6" />
-                  <h3 className="text-2xl">You're Not Alone</h3>
+                  <h3 className="text-2xl">{t("needHelp.notAloneTitle")}</h3>
                 </div>
                 <p className="text-purple-100 leading-relaxed">
-                  WAM Alliance is here to support you through difficult times. Our team is
-                  dedicated to providing compassionate care and connecting you with the resources
-                  you need. Your message matters, and we're here to listen.
+                  {t("needHelp.notAloneMessage")}
                 </p>
               </div>
             </div>
@@ -262,7 +289,7 @@ export function NeedHelpNow() {
       </section>
 
       {/* Accent Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 via-yellow-500 to-purple-600"></div>
+      
     </div>
   );
 }

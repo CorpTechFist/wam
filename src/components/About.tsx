@@ -6,7 +6,7 @@ export function About() {
   const { t } = useTranslation();
   
   return (
-    <section id="about" className="py-5 position-relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
+    <section id="about" className="py-5 position-relative overflow-hidden bg-white" style={{ backgroundColor: 'white' }}>
       <div className="container-fluid px-4 position-relative" style={{ zIndex: 10 }}>
         {/* Core Values */}
         <div className="pt-20 pb-16 px-4 md:px-8">
@@ -22,26 +22,26 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             
             {/* Decorative Dots */}
             <div className="flex justify-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 shadow-lg shadow-purple-300"></div>
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-300"></div>
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500 shadow-lg shadow-purple-300"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600  shadow-purple-300"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500  shadow-yellow-300"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-500  shadow-purple-300"></div>
             </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Community Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
+            <Card className="bg-white border-2  rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 "></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
                     <Users className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                  
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                 WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
@@ -54,18 +54,18 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             </Card>
 
             {/* Independence Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+            <Card className="bg-white border-2  rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 "></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center shadow-lg">
-                    <Shield className="w-8 h-8 text-yellow-600" />
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
+                    <Shield className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                 
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                  WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
@@ -78,18 +78,18 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             </Card>
 
             {/* Compassion Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
+            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 "></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
                     <Heart className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                  
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                 WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
@@ -102,18 +102,18 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             </Card>
 
             {/* Growth Mindset Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 "></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center shadow-lg">
-                    <TrendingUp className="w-8 h-8 text-yellow-600" />
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
+                    <TrendingUp className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                  
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                 WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
@@ -126,18 +126,18 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             </Card>
 
             {/* Worthiness Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
+            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 "></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
                     <Crown className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                  
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                 WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>
@@ -150,18 +150,18 @@ style={{ WebkitTextFillColor: "#7c3aed" }}
             </Card>
 
             {/* Advocacy Card */}
-            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl shadow-xl shadow-purple-100/50 overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+            <Card className="bg-white border-2 border-purple-200/60 rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:shadow-purple-200/60 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1"></div>
               <CardContent className="p-8">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center shadow-lg">
-                    <Scale className="w-8 h-8 text-yellow-600" />
+                  <div className="w-16 h-16 rounded-full  flex items-center justify-center ">
+                    <Scale className="w-8 h-8 text-purple-600" />
                   </div>
                 </div>
                 <h4 className="text-center text-2xl mb-4" style={{ 
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #FFD700 100%)',
+                  
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                 WebkitTextFillColor: '#7c3aed',
                   backgroundClip: 'text',
                   fontWeight: '700'
                 }}>

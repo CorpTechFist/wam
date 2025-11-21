@@ -15,7 +15,7 @@ import venmoIcon from "../../assets/icons/venmoicon.png";
 import paypalIcon from "../../assets/icons/paypalicon.png";
 
 export function CashDonationsPage() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
   const [donationFrequency, setDonationFrequency] = useState("One-Time");
   const [selectedAmount, setSelectedAmount] = useState(0);
   const [customAmount, setCustomAmount] = useState("");
@@ -138,7 +138,7 @@ export function CashDonationsPage() {
   const totalAmount = amount + feeAmount;
 
   return (
-    <div className="min-h-screen pt-16 pb-8 relative overflow-hidden bg-white">
+    <div className="min-h-screen pt-1 pb-8 relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 max-w-6xl bg-white">
 
         {/* ---------------------------------------------
@@ -160,11 +160,11 @@ export function CashDonationsPage() {
               </div>
 
               <h1 className="text-3xl md:text-4xl mb-2 font-bold text-purple-700">
-                Make a Donation
+                {t("cashDonations.makeDonation")}
               </h1>
 
               <p className="text-gray-600 text-sm mb-2">
-                Support WAM Alliance — Together We Are The Change
+                {t("cashDonations.supportMission")}
               </p>
             </div>
 
@@ -173,7 +173,7 @@ export function CashDonationsPage() {
             --------------------------------------------- */}
             <div className="text-center mt-2">
               <Label className="text-base text-gray-800 mb-3 block font-medium">
-                Choose Your Preferred Payment Method
+               {t("cashDonations.choosePayment")}
               </Label>
 
               <div className="grid md:grid-cols-2 gap-8 mt-6">
@@ -189,25 +189,25 @@ export function CashDonationsPage() {
                 </div>
 
                 {/* ---------- VENMO BUTTON (unchanged) ---------- */}
-                <div className="flex flex-col items-center gap-4">
-  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow-md">
-    <img src={venmoIcon} alt="Venmo" className="w-12 h-12 object-contain" />
-  </div>
+             <div className="flex flex-col items-center gap-4">
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow-md">
+              <img src={venmoIcon} alt="Venmo" className="w-12 h-12 object-contain" />
+            </div>
 
-  <Button
-    type="button"
-    className="bg-yellow-400 text-yellow-900 font-semibold shadow-md hover:bg-yellow-900 transition-all"
-    onClick={() =>
-      window.open(
-        "https://venmo.com/u/Tonya-Jones-Smith",
-        "_blank",
-        "noopener,noreferrer"
-      )
-    }
-  >
-    Pay with Venmo
-  </Button>
-</div>
+          <Button
+            type="button"
+            className="bg-yellow-400 text-yellow-900 font-semibold shadow-md hover:bg-yellow-900 transition-all"
+            onClick={() =>
+              window.open(
+                "https://venmo.com/u/Tonya-Jones-Smith",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            {t("cashDonations.venmo")}
+          </Button>
+        </div>
 
 
               </div>

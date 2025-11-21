@@ -344,7 +344,261 @@ WE ARE THE CHANGE!`,
     'contactUs.permission': 'By checking this box and submitting your information, you are granting us permission to email you. *',
     'contactUs.notARobot': "I'm not a robot",
     'contactUs.sendMessage': 'Send Message',
+
+       // Volunteer Page
+    'volunteer.makeADifference': 'MAKE A DIFFERENCE',
+    'volunteer.title': 'Volunteering',
+    'volunteer.subtitle': 'Do Something Great & Volunteer!',
+    'volunteer.whyVolunteer': 'Why Volunteer With Us?',
+    'volunteer.requirement1': 'We can fulfill community service hours with our volunteer program.',
+    'volunteer.requirement2': 'Volunteers are required to provide time, love, & smiles to all those they encounter!',
+    'volunteer.opportunities': 'Volunteer Opportunities',
+    'volunteer.advocacyGroup': 'Advocacy Group',
+    'volunteer.advocacyGroupDesc': 'Be a voice for those who need support. Help advocate for community members and promote positive change.',
+    'volunteer.fundraisingEvents': 'Fundraising/Events',
+    'volunteer.fundraisingEventsDesc': 'Help organize and run community events and fundraising activities to support our mission.',
+    'volunteer.mealPrepDelivery': 'Meal Prep & Delivery',
+    'volunteer.mealPrepDeliveryDesc': 'Prepare and deliver nutritious meals to community members in need. Make a direct impact on lives.',
+    'volunteer.socialMediaAssociate': 'Social Media Associate',
+    'volunteer.socialMediaAssociateDesc': 'Help spread our message online. Create content and engage with our community on social media.',
+    'volunteer.volunteerButton': 'Volunteer',
+    'volunteer.ctaTitle': 'Ready to Make a Difference?',
+    'volunteer.ctaDescription': 'Join our team of dedicated volunteers and help us create positive change in our community. Every contribution matters, and together we can make a real impact.',
+    'volunteer.ctaButton': 'Apply to Volunteer Today',
+
+    
+        // Volunteer Application Page
+    'volunteerApp.joinOurTeam': 'JOIN OUR TEAM',
+    'volunteerApp.title': 'Volunteer Sign Up',
+    'volunteerApp.doSomethingGreat': 'Do Something Great!',
+    'volunteerApp.lookingForIdeas': 'We are always looking for innovative ideas that serve our mission!',
+    'volunteerApp.everythingCounts': 'Everything Counts in Large Amounts!',
+    'volunteerApp.screeningNotice': 'All volunteers are screened and subject to approval.',
+    'volunteerApp.benefits': 'Volunteer Benefits',
+    'volunteerApp.benefit1': 'Fulfill community service hours',
+    'volunteerApp.benefit2': 'Make a real difference in people\'s lives',
+    'volunteerApp.benefit3': 'Join a supportive community of changemakers',
+    'volunteerApp.benefit4': 'Develop new skills and experiences',
+    'volunteerApp.formTitle': 'Application Form',
+    'volunteerApp.formSubtitle': 'Fill out the form below to join our volunteer team',
+    'volunteerApp.fullName': 'Full Name *',
+    'volunteerApp.fullNamePlaceholder': 'Enter your full name',
+    'volunteerApp.email': 'Email *',
+    'volunteerApp.emailPlaceholder': 'your.email@example.com',
+    'volunteerApp.phone': 'Phone Number',
+    'volunteerApp.phonePlaceholder': '(123) 456-7890',
+    'volunteerApp.volunteerFor': 'What do you want to volunteer for?',
+    'volunteerApp.volunteerForPlaceholder': 'e.g., Advocacy, Events, Meal Prep',
+    'volunteerApp.dateAvailable': 'Date Available',
+    'volunteerApp.selectDate': 'Select a date',
+    'volunteerApp.transportation': 'Do you have transportation?',
+    'volunteerApp.transportationPlaceholder': 'Yes/No',
+    'volunteerApp.skills': 'What are your skills?',
+    'volunteerApp.skillsPlaceholder': 'Tell us about your skills and experience...',
+    'volunteerApp.agreement': 'You are submitting your information so our Volunteer Unit may contact you via the information provided. We All Matter thanks you for your love and support!',
+    'volunteerApp.notARobot': 'I\'m not a robot',
+    'volunteerApp.recaptcha': 'reCAPTCHA',
+    'volunteerApp.privacyTerms': 'Privacy - Terms',
+    'volunteerApp.submitButton': 'Submit Application',
+//Need help Now
+    "needHelp.crisisSupport": "CRISIS SUPPORT",
+  "needHelp.heading": "Need Help Now?",
+
+  "needHelp.call": "Call 385-414-4144",
+  "needHelp.replyTime": "A WAM team member will reply within 24–48 hours. Please stay safe and we’ll be in touch shortly.",
+  "needHelp.loveStrength": "Love and strength to you —",
+  "needHelp.team": "The WAM Team",
+
+  "needHelp.emergencyTitle": "Emergency Services",
+  "needHelp.emergencyMessage": "If you are in immediate danger, please call 911 or go to your nearest emergency room. For the National Suicide Prevention Lifeline, call 988.",
+
+  "needHelp.formHeader": "Reach Out to Us",
+
+  "needHelp.name": "Name *",
+  "needHelp.namePlaceholder": "Your full name",
+
+  "needHelp.age": "Age",
+  "needHelp.agePlaceholder": "Your age",
+
+  "needHelp.email": "Your Email *",
+  "needHelp.emailPlaceholder": "your@email.com",
+
+  "needHelp.regarding": "Regarding",
+  "needHelp.regardingPlaceholder": "Subject of your message",
+
+  "needHelp.phone": "Your Phone",
+  "needHelp.phonePlaceholder": "(123) 456-7890",
+
+  "needHelp.location": "Current Location",
+  "needHelp.locationPlaceholder": "City, State",
+
+  "needHelp.needs": "What are your needs? *",
+  "needHelp.needsPlaceholder": "Describe how we can help you...",
+
+  "needHelp.consent": "By checking this box, you grant us permission to email you. You may unsubscribe anytime.",
+
+  "needHelp.success": "Your message has been sent successfully!",
+  "needHelp.error": "Failed to send message. Please try again later.",
+
+  "needHelp.sendButton": "Send Message",
+  "needHelp.sending": "Sending...",
+
+  "needHelp.notAloneTitle": "You're Not Alone",
+  "needHelp.notAloneMessage": "WAM Alliance is here to support you through difficult times. Our team is dedicated to providing compassionate care and connecting you with the resources you need. Your message matters, and we're here to listen.",
   
+//Personal Donors
+  "OUR VALUED DONORS": "OUR VALUED DONORS",
+  
+  "We here at WAM are utterly grateful for each and every donor!": "Here at WAM we are deeply grateful for each and every one of our donors!",
+  
+  "Whether it is cash or items, it all helps in large amounts.": "Whether it is money or items, everything helps in a big way.",
+  
+  "If we each donated what it costs for a cup of coffee each day, the results would be greater quality of life for individuals and their families that are less fortunate.": "If each of us donated what a cup of coffee costs per day, the results would be a better quality of life for individuals and their less fortunate families.",
+  
+  "WE ARE THE CHANGE!": "WE ARE THE CHANGE!",
+  
+  "ALL OUR ONLINE DONORS": "ALL OUR ONLINE DONORS",
+  
+  "Too all those who have donated through our FB Fundraising site, WAM site, Venmo, and PayPal. The people and WAM are grateful beyond words. We are indebted to each and every one of you.": "To all those who have donated through our Facebook fundraising page, the WAM site, Venmo, and PayPal. The people and WAM are grateful beyond words. We are indebted to each and every one of you.",
+  
+  "ANONYMOUS DONORS": "ANONYMOUS DONORS",
+  
+  "To all the anonymous donors - THANK YOU! We are grateful for your support and wish many blessings to all of you who gave a little that equated to A LOT!": "To all the anonymous donors — THANK YOU! We are grateful for your support and wish many blessings to all of you who gave a little that meant A LOT.",
+  
+  "GERRY - REPEATED DONOR": "GERRY - REPEATED DONOR",
+  
+  "Thank you to Gerry, she has been donating to our cause for a couple years now, bringing hope and warmth to many of those in need. We here at WAM are utterly grateful for Gerry and her warm heart!": "Thank you to Gerry; she has been donating to our cause for a couple of years now, bringing hope and warmth to many in need. Here at WAM, we are deeply grateful for Gerry and her warm heart!",
+  
+  "KATHERINE": "KATHERINE",
+  
+  "Katherine is another donor who gave a new start to a life that needed it! We all can be angels like Katherine - for just dollars we are saving lives.": "Katherine is another donor who gave a new beginning to a life that needed it! We can all be angels like Katherine — with just a few dollars, we are saving lives.",
+  
+  "KATHLEEN McGOWAN": "KATHLEEN McGOWAN",
+  
+  "Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.": "Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.",
+  
+  "Monthly Supporter": "Monthly Supporter",
+  "Major Donor": "Major Donor",
+  "Community Champion": "Community Champion",
+  "Annual Supporter": "Annual Supporter",
+  "Regular Contributor": "Regular Contributor",
+  "Impact Investor": "Impact Investor",
+  
+  "Proud to support WAM Alliance's mission of creating inclusive communities.": "Proud to support WAM Alliance’s mission of creating inclusive communities.",
+  
+  "Education and advocacy are key to building a better world for everyone.": "Education and advocacy are key to building a better world for everyone.",
+  
+  "Every small contribution matters. We all matter, and together we make a difference.": "Every small contribution matters. We all matter, and together we make a difference.",
+  
+  "Supporting WAM Alliance because inclusion and equality should not be privileges.": "Supporting WAM Alliance because inclusion and equality should not be privileges.",
+  
+  "Grateful to be part of a movement that truly believes we all matter.": "Grateful to be part of a movement that truly believes we all matter.",
+  
+  "Investing in social impact and community well-being is investing in our future.": "Investing in social impact and community well-being is investing in our future.",
+
+//PartnerPage
+    "valuedPartnerships": "VALUED PARTNERSHIPS",
+    "ourPartners": "Our Partners",
+    "sponsorsTitle": "Our Partners",
+    "sponsorsDescription": "Discover our valued partners who support WAM Alliance in making a difference in our communities.",
+    "theyAreEssential": "They are essential partners in creating inclusive communities where everyone matters.",
+    "weAreTheChange": "WE ARE THE CHANGE!",
+
+    "featuredPartners": "Featured Partners",
+
+    "loveMeTea.description": "Love Me Tea is a proud sponsor of WAM Alliance. Holistic products that help those suffering from trauma and more.",
+    "techfist.description": "Techfist Global is a proud sponsor of WAM Alliance. Empowering communities through innovative technology solutions and digital transformation.",
+
+    "holisticWellness": "HOLISTIC WELLNESS",
+    "technologyPartner": "TECHNOLOGY PARTNER",
+
+    "partnershipImpactTitle": "Partnership Impact",
+    "partnershipImpactDescription": "Our partners play a crucial role in supporting WAM Alliance’s mission to create inclusive communities. Through their support and collaboration, we can expand our reach and make a meaningful difference in the lives of those we serve.",
+
+    "communityImpact": "Community Impact",
+    "communityImpactDesc": "Supporting inclusive communities",
+
+    "sharedValues": "Shared Values",
+    "sharedValuesDesc": "Committed to positive change",
+
+    "lastingPartnership": "Lasting Partnership",
+    "lastingPartnershipDesc": "Building a better tomorrow",
+
+    "becomePartner": "Become a Partner",
+    "ctaDescription": "Interested in partnering with WAM Alliance? Join us in making a difference in our communities and supporting those who need it most.",
+    "contactUs": "Contact Us",
+
+    //Cash Donations
+    "cashDonations.makeDonation": "Make a Donation",
+  "cashDonations.supportMission": "Support WAM Alliance — Together We Are the Change",
+  "cashDonations.choosePayment": "Choose your preferred payment method",
+
+  "cashDonations.paypal": "Donate with PayPal",
+  "cashDonations.venmo": "Pay with Venmo",
+
+  "cashDonations.firstNameRequired": "First name is required",
+  "cashDonations.lastNameRequired": "Last name is required",
+  "cashDonations.emailRequired": "Email is required",
+  "cashDonations.phoneRequired": "Phone number is required",
+  "cashDonations.addressRequired": "Address is required",
+  "cashDonations.cityRequired": "City is required",
+  "cashDonations.stateRequired": "State is required",
+  "cashDonations.zipRequired": "ZIP code is required",
+  "cashDonations.amountRequired": "Please select or enter a valid amount",
+
+  "cashDonations.success": "Donation completed successfully!",
+  "cashDonations.error": "Please complete all required fields correctly.",
+
+  "cashDonations.donationOf": "Donation of",
+  "cashDonations.coverFees": "Cover fees",
+  "cashDonations.total": "Total",
+
+  "cashDonations.firstName": "First Name",
+  "cashDonations.lastName": "Last Name",
+  "cashDonations.email": "Email",
+  "cashDonations.phone": "Phone Number",
+  "cashDonations.message": "Message",
+  "cashDonations.address": "Address",
+  "cashDonations.city": "City",
+  "cashDonations.state": "State",
+  "cashDonations.zip": "ZIP Code",
+  "cashDonations.country": "Country",
+
+  "cashDonations.cardNumber": "Card Number",
+  "cashDonations.expiryMonth": "Expiry Month",
+  "cashDonations.expiryYear": "Expiry Year",
+  "cashDonations.cvv": "CVV",
+  "cashDonations.cardholderName": "Cardholder Name",
+
+  "cashDonations.submitDonation": "Submit Donation",
+  "cashDonations.oneTime": "One Time",
+  "cashDonations.monthly": "Monthly",
+
+  "cashDonations.coverFeesLabel": "Would you like to cover the transaction fees?",
+
+  //other donations
+
+  "titleMain": "WE ALL MATTER ALLIANCE",
+  "titleSub": "DONATIONS",
+
+  "descriptionIntro": "We are accepting",
+  "descriptionItems": "Food, Clothing, Hygiene Products, Tarps/Tents, Ponchos, Blankets",
+  "descriptionThanks": "Thank you for your kindness and generosity.",
+
+  "everythingCounts": "EVERYTHING COUNTS IN LARGE AMOUNTS!",
+
+  "ctaButton": "Schedule Drop-off / Pick-up",
+
+  "foodClothingHygiene": "We are accepting Food, Clothing, Hygiene Products, Tarps/Tents, Ponchos, Blankets, and more.",
+  
+  "scheduleDropOff": "Schedule Drop-off / Pick-up",
+
+  "sectionWeAccept": "We are accepting",
+  "itemsList": "Food, Clothing, Hygiene Products, Tarps/Tents, Ponchos, Blankets",
+
+  "thankYou": "Thank you for your kindness and generosity.",
+
+  "everythingCountsAmounts": "EVERYTHING COUNTS IN LARGE AMOUNTS!",
   },
   es: {
     // Header
@@ -685,11 +939,268 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
   
     'contactUs.sendMessage': 'Enviar Mensaje',
     
-    
-  },
+      // Volunteer Page
+    'volunteer.makeADifference': 'HAZ LA DIFERENCIA',
+    'volunteer.title': 'Voluntariado',
+    'volunteer.subtitle': '¡Haz Algo Grandioso y Sé Voluntario!',
+    'volunteer.whyVolunteer': '¿Por Qué Ser Voluntario Con Nosotros?',
+    'volunteer.requirement1': 'Podemos cumplir con las horas de servicio comunitario con nuestro programa de voluntariado.',
+    'volunteer.requirement2': '¡Los voluntarios deben proporcionar tiempo, amor y sonrisas a todos los que encuentren!',
+    'volunteer.opportunities': 'Oportunidades de Voluntariado',
+    'volunteer.advocacyGroup': 'Grupo de Defensa',
+    'volunteer.advocacyGroupDesc': 'Sé una voz para aquellos que necesitan apoyo. Ayuda a defender a los miembros de la comunidad y promueve un cambio positivo.',
+    'volunteer.fundraisingEvents': 'Recaudación de Fondos/Eventos',
+    'volunteer.fundraisingEventsDesc': 'Ayuda a organizar y realizar eventos comunitarios y actividades de recaudación de fondos para apoyar nuestra misión.',
+    'volunteer.mealPrepDelivery': 'Preparación y Entrega de Comidas',
+    'volunteer.mealPrepDeliveryDesc': 'Prepara y entrega comidas nutritivas a miembros de la comunidad que lo necesitan. Haz un impacto directo en las vidas.',
+    'volunteer.socialMediaAssociate': 'Asociado de Redes Sociales',
+    'volunteer.socialMediaAssociateDesc': 'Ayuda a difundir nuestro mensaje en línea. Crea contenido e interactúa con nuestra comunidad en las redes sociales.',
+    'volunteer.volunteerButton': 'Ser Voluntario',
+    'volunteer.ctaTitle': '¿Listo para Hacer la Diferencia?',
+    'volunteer.ctaDescription': 'Únete a nuestro equipo de voluntarios dedicados y ayúdanos a crear un cambio positivo en nuestra comunidad. Cada contribución importa, y juntos podemos hacer un impacto real.',
+    'volunteer.ctaButton': 'Solicita Ser Voluntario Hoy',
   
 
+  
 
+  
+
+       // Volunteer Application Page
+    'volunteerApp.joinOurTeam': 'ÚNETE A NUESTRO EQUIPO',
+    'volunteerApp.title': 'Registro de Voluntarios',
+    'volunteerApp.doSomethingGreat': '¡Haz Algo Grandioso!',
+    'volunteerApp.lookingForIdeas': '¡Siempre estamos buscando ideas innovadoras que sirvan a nuestra misión!',
+    'volunteerApp.everythingCounts': '¡Todo Cuenta en Grandes Cantidades!',
+    'volunteerApp.screeningNotice': 'Todos los voluntarios son evaluados y sujetos a aprobación.',
+    'volunteerApp.benefits': 'Beneficios del Voluntariado',
+    'volunteerApp.benefit1': 'Cumplir con las horas de servicio comunitario',
+    'volunteerApp.benefit2': 'Hacer una diferencia real en la vida de las personas',
+    'volunteerApp.benefit3': 'Unirse a una comunidad de apoyo de agentes de cambio',
+    'volunteerApp.benefit4': 'Desarrollar nuevas habilidades y experiencias',
+    'volunteerApp.formTitle': 'Formulario de Solicitud',
+    'volunteerApp.formSubtitle': 'Completa el formulario a continuación para unirte a nuestro equipo de voluntarios',
+    'volunteerApp.fullName': 'Nombre Completo *',
+    'volunteerApp.fullNamePlaceholder': 'Ingresa tu nombre completo',
+    'volunteerApp.email': 'Correo Electrónico *',
+    'volunteerApp.emailPlaceholder': 'tu.correo@ejemplo.com',
+    'volunteerApp.phone': 'Número de Teléfono',
+    'volunteerApp.phonePlaceholder': '(123) 456-7890',
+    'volunteerApp.volunteerFor': '¿Para qué quieres ser voluntario?',
+    'volunteerApp.volunteerForPlaceholder': 'ej., Defensa, Eventos, Preparación de Comidas',
+    'volunteerApp.dateAvailable': 'Fecha Disponible',
+    'volunteerApp.selectDate': 'Selecciona una fecha',
+    'volunteerApp.transportation': '¿Tienes transporte?',
+    'volunteerApp.transportationPlaceholder': 'Sí/No',
+    'volunteerApp.skills': '¿Cuáles son tus habilidades?',
+    'volunteerApp.skillsPlaceholder': 'Cuéntanos sobre tus habilidades y experiencia...',
+    'volunteerApp.agreement': 'Estás enviando tu información para que nuestra Unidad de Voluntarios pueda contactarte a través de la información proporcionada. ¡We All Matter te agradece por tu amor y apoyo!',
+    'volunteerApp.notARobot': 'No soy un robot',
+    'volunteerApp.recaptcha': 'reCAPTCHA',
+    'volunteerApp.privacyTerms': 'Privacidad - Términos',
+    'volunteerApp.submitButton': 'Enviar Solicitud',
+
+    //Need Help Now
+    
+  "needHelp.crisisSupport": "APOYO EN CRISIS",
+  "needHelp.heading": "¿Necesitas Ayuda Ahora?",
+
+  "needHelp.call": "Llama al 385-414-4144",
+  "needHelp.replyTime": "Un miembro del equipo de WAM responderá dentro de 24 a 48 horas. Por favor, mantente a salvo y nos pondremos en contacto contigo pronto.",
+  "needHelp.loveStrength": "Con amor y fortaleza para ti —",
+  "needHelp.team": "El Equipo de WAM",
+
+  "needHelp.emergencyTitle": "Servicios de Emergencia",
+  "needHelp.emergencyMessage": "Si estás en peligro inmediato, por favor llama al 911 o acude a la sala de emergencias más cercana. Para la Línea Nacional de Prevención del Suicidio, llama al 988.",
+
+  "needHelp.formHeader": "Comunícate con Nosotros",
+
+  "needHelp.name": "Nombre *",
+  "needHelp.namePlaceholder": "Tu nombre completo",
+
+  "needHelp.age": "Edad",
+  "needHelp.agePlaceholder": "Tu edad",
+
+  "needHelp.email": "Tu Correo Electrónico *",
+  "needHelp.emailPlaceholder": "tu@email.com",
+
+  "needHelp.regarding": "Asunto",
+  "needHelp.regardingPlaceholder": "Tema de tu mensaje",
+
+  "needHelp.phone": "Tu Teléfono",
+  "needHelp.phonePlaceholder": "(123) 456-7890",
+
+  "needHelp.location": "Ubicación Actual",
+  "needHelp.locationPlaceholder": "Ciudad, Estado",
+
+  "needHelp.needs": "¿Cuáles son tus necesidades? *",
+  "needHelp.needsPlaceholder": "Describe cómo podemos ayudarte...",
+
+  "needHelp.consent": "Al marcar esta casilla, nos otorgas permiso para enviarte correos electrónicos. Puedes darte de baja en cualquier momento.",
+
+  "needHelp.success": "¡Tu mensaje ha sido enviado exitosamente!",
+  "needHelp.error": "No se pudo enviar el mensaje. Por favor, inténtalo nuevamente más tarde.",
+
+  "needHelp.sendButton": "Enviar Mensaje",
+  "needHelp.sending": "Enviando...",
+
+  "needHelp.notAloneTitle": "No Estás Solo(a)",
+  "needHelp.notAloneMessage": "WAM Alliance está aquí para apoyarte en los momentos difíciles. Nuestro equipo se dedica a brindar un cuidado compasivo y conectarte con los recursos que necesitas. Tu mensaje es importante, y estamos aquí para escucharte.",
+
+  //Personal Donors
+  
+  "OUR VALUED DONORS": "NUESTROS DONANTES VALIOSOS",
+  
+  "We here at WAM are utterly grateful for each and every donor!": "¡Aquí en WAM estamos profundamente agradecidos por cada uno de nuestros donantes!",
+  
+  "Whether it is cash or items, it all helps in large amounts.": "Ya sea dinero o artículos, todo ayuda en gran medida.",
+  
+  "If we each donated what it costs for a cup of coffee each day, the results would be greater quality of life for individuals and their families that are less fortunate.": "Si cada uno donara lo que cuesta una taza de café al día, los resultados serían una mejor calidad de vida para las personas y sus familias menos afortunadas.",
+  
+  "WE ARE THE CHANGE!": "¡NOSOTROS SOMOS EL CAMBIO!",
+  
+  "ALL OUR ONLINE DONORS": "TODOS NUESTROS DONANTES EN LÍNEA",
+  
+  "Too all those who have donated through our FB Fundraising site, WAM site, Venmo, and PayPal. The people and WAM are grateful beyond words. We are indebted to each and every one of you.": "Para todos los que han donado a través de nuestra página de recaudación en Facebook, el sitio de WAM, Venmo y PayPal. Las personas y WAM están agradecidos más allá de las palabras. Estamos en deuda con cada uno de ustedes.",
+  
+  "ANONYMOUS DONORS": "DONANTES ANÓNIMOS",
+  
+  "To all the anonymous donors - THANK YOU! We are grateful for your support and wish many blessings to all of you who gave a little that equated to A LOT!": "A todos los donantes anónimos: ¡GRACIAS! Agradecemos su apoyo y deseamos muchas bendiciones a todos los que dieron un poco que significó MUCHO.",
+  
+  "GERRY - REPEATED DONOR": "GERRY - DONANTE RECURRENTE",
+  
+  "Thank you to Gerry, she has been donating to our cause for a couple years now, bringing hope and warmth to many of those in need. We here at WAM are utterly grateful for Gerry and her warm heart!": "Gracias a Gerry; ha estado donando a nuestra causa durante un par de años, llevando esperanza y calidez a muchos necesitados. Aquí en WAM estamos profundamente agradecidos por Gerry y por su cálido corazón.",
+  
+  "KATHERINE": "KATHERINE",
+  
+  "Katherine is another donor who gave a new start to a life that needed it! We all can be angels like Katherine - for just dollars we are saving lives.": "Katherine es otra donante que dio un nuevo comienzo a una vida que lo necesitaba. Todos podemos ser ángeles como Katherine; con solo unos dólares estamos salvando vidas.",
+  
+  "KATHLEEN McGOWAN": "KATHLEEN McGOWAN",
+  
+  "Thank you to Kathleen and her group for showing their love by donating to our mission. WAM is grateful to have such powerfully divine supporters.": "Gracias a Kathleen y a su grupo por mostrar su amor donando a nuestra misión. WAM está agradecido de tener seguidores tan poderosamente divinos.",
+  
+  "Monthly Supporter": "Colaborador Mensual",
+  "Major Donor": "Donante Principal",
+  "Community Champion": "Campeón Comunitario",
+  "Annual Supporter": "Colaborador Anual",
+  "Regular Contributor": "Colaborador Regular",
+  "Impact Investor": "Inversionista de Impacto",
+  
+  "Proud to support WAM Alliance's mission of creating inclusive communities.": "Orgullosa de apoyar la misión de WAM Alliance de crear comunidades inclusivas.",
+  
+  "Education and advocacy are key to building a better world for everyone.": "La educación y la defensa son clave para construir un mundo mejor para todos.",
+  
+  "Every small contribution matters. We all matter, and together we make a difference.": "Cada pequeña contribución importa. Todos importamos y juntos hacemos la diferencia.",
+  
+  "Supporting WAM Alliance because inclusion and equality should not be privileges.": "Apoyando a WAM Alliance porque la inclusión y la igualdad no deberían ser privilegios.",
+  
+  "Grateful to be part of a movement that truly believes we all matter.": "Agradecida de ser parte de un movimiento que realmente cree que todos importamos.",
+  
+  "Investing in social impact and community well-being is investing in our future.": "Invertir en impacto social y bienestar comunitario es invertir en nuestro futuro.",
+  
+//Partner Page
+
+    "valuedPartnerships": "ALIANZAS VALIOSAS",
+    "ourPartners": "Nuestros Socios",
+    "sponsorsTitle": "Nuestros Socios",
+    "sponsorsDescription": "Descubre a nuestros valiosos socios que apoyan a WAM Alliance para marcar una diferencia en nuestras comunidades.",
+    "theyAreEssential": "Son socios esenciales en la creación de comunidades inclusivas donde todos importan.",
+    "weAreTheChange": "¡SOMOS EL CAMBIO!",
+
+    "featuredPartners": "Socios Destacados",
+
+    "loveMeTea.description": "Love Me Tea es un orgulloso patrocinador de WAM Alliance. Productos holísticos que ayudan a quienes sufren de traumas y más.",
+    "techfist.description": "Techfist Global es un orgulloso patrocinador de WAM Alliance. Empoderando comunidades a través de soluciones tecnológicas innovadoras y transformación digital.",
+
+    "holisticWellness": "BIENESTAR HOLÍSTICO",
+    "technologyPartner": "SOCIO TECNOLÓGICO",
+
+    "partnershipImpactTitle": "Impacto de la Alianza",
+    "partnershipImpactDescription": "Nuestros socios desempeñan un papel crucial en apoyar la misión de WAM Alliance para crear comunidades inclusivas. A través de su apoyo y colaboración, podemos ampliar nuestro alcance y generar un impacto significativo en las vidas de quienes servimos.",
+
+    "communityImpact": "Impacto Comunitario",
+    "communityImpactDesc": "Apoyando comunidades inclusivas",
+
+    "sharedValues": "Valores Compartidos",
+    "sharedValuesDesc": "Comprometidos con el cambio positivo",
+
+    "lastingPartnership": "Alianza Duradera",
+    "lastingPartnershipDesc": "Construyendo un mejor mañana",
+
+    "becomePartner": "Conviértete en Socio",
+    "ctaDescription": "¿Interesado en asociarte con WAM Alliance? Únete a nosotros para marcar una diferencia en nuestras comunidades y apoyar a quienes más lo necesitan.",
+    "contactUs": "Contáctanos",
+
+
+    //Cash Donation
+    "cashDonations.makeDonation": "Realizar una Donación",
+  "cashDonations.supportMission": "Apoya a WAM Alliance — Juntos Somos el Cambio",
+  "cashDonations.choosePayment": "Elige tu método de pago preferido",
+
+  "cashDonations.paypal": "Donar con PayPal",
+  "cashDonations.venmo": "Pagar con Venmo",
+
+  "cashDonations.firstNameRequired": "El nombre es obligatorio",
+  "cashDonations.lastNameRequired": "El apellido es obligatorio",
+  "cashDonations.emailRequired": "El correo electrónico es obligatorio",
+  "cashDonations.phoneRequired": "El número de teléfono es obligatorio",
+  "cashDonations.addressRequired": "La dirección es obligatoria",
+  "cashDonations.cityRequired": "La ciudad es obligatoria",
+  "cashDonations.stateRequired": "El estado es obligatorio",
+  "cashDonations.zipRequired": "El código postal es obligatorio",
+  "cashDonations.amountRequired": "Por favor selecciona o ingresa una cantidad válida",
+
+  "cashDonations.success": "¡Donación realizada con éxito!",
+  "cashDonations.error": "Por favor completa todos los campos obligatorios correctamente.",
+
+  "cashDonations.donationOf": "Donación de",
+  "cashDonations.coverFees": "Cubrir tarifas",
+  "cashDonations.total": "Total",
+
+  "cashDonations.firstName": "Nombre",
+  "cashDonations.lastName": "Apellido",
+  "cashDonations.email": "Correo Electrónico",
+  "cashDonations.phone": "Número de Teléfono",
+  "cashDonations.message": "Mensaje",
+  "cashDonations.address": "Dirección",
+  "cashDonations.city": "Ciudad",
+  "cashDonations.state": "Estado",
+  "cashDonations.zip": "Código Postal",
+  "cashDonations.country": "País",
+
+  "cashDonations.cardNumber": "Número de Tarjeta",
+  "cashDonations.expiryMonth": "Mes de Vencimiento",
+  "cashDonations.expiryYear": "Año de Vencimiento",
+  "cashDonations.cvv": "CVV",
+  "cashDonations.cardholderName": "Nombre del Titular",
+
+  "cashDonations.submitDonation": "Enviar Donación",
+  "cashDonations.oneTime": "Única",
+  "cashDonations.monthly": "Mensual",
+
+  "cashDonations.coverFeesLabel": "¿Deseas cubrir las tarifas de la transacción?",
+
+  //OtherDonations
+    "titleSub": "DONACIONES",
+
+    "descriptionIntro": "Estamos aceptando",
+    "descriptionItems": "Alimentos, Ropa, Productos de Higiene, Lonas/Tiendas, Ponchos, Mantas",
+    "descriptionThanks": "Gracias por tu amabilidad y generosidad.",
+
+    "everythingCounts": "¡TODO CUENTA EN GRANDES CANTIDADES!",
+
+    "ctaButton": "Programar Entrega / Recolección",
+
+    "foodClothingHygiene": "Estamos aceptando Alimentos, Ropa, Productos de Higiene, Lonas/Tiendas, Ponchos, Mantas y más.",
+    
+    "scheduleDropOff": "Programar Entrega / Recolección",
+
+    "sectionWeAccept": "Estamos aceptando",
+    "itemsList": "Alimentos, Ropa, Productos de Higiene, Lonas/Tiendas, Ponchos, Mantas",
+
+    "thankYou": "Gracias por tu amabilidad y generosidad.",
+
+    "everythingCountsAmounts": "¡TODO CUENTA EN GRANDES CANTIDADES!",
+  },
 };
 
 // Empty translations object for backward compatibility

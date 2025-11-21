@@ -4,7 +4,7 @@ import { Gift, Car, Home, Shirt, Book, Heart, Calendar } from "lucide-react";
 import { useTranslation } from "../TranslationContext";
 
 export function OtherDonationsPage() {
-  const { translations } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen pt-20 pb-8 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
@@ -32,7 +32,7 @@ export function OtherDonationsPage() {
                   backgroundClip: 'text',
                   fontWeight: '600'
                 }}>
-                  DONATIONS
+                  {t("titleSub")}
                 </h3>
               </div>
               
@@ -45,7 +45,7 @@ export function OtherDonationsPage() {
                   <div className="flex items-start gap-3 mb-6">
                     <Gift className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
                     <p className="text-gray-800 leading-relaxed text-left text-lg">
-                      We are accepting <span className="text-purple-700" style={{ fontWeight: '600' }}>Food, Clothing, Hygiene Products, Tarps/Tents, Ponchos, Blankets</span>, and more. Thank you for your kindness and generosity.
+                     {t("descriptionIntro")} <span className="text-purple-700" style={{ fontWeight: '600' }}>{t("descriptionItems")}</span>,{t("descriptionThanks")}
                     </p>
                   </div>
                   
@@ -61,7 +61,7 @@ export function OtherDonationsPage() {
                       fontStyle: 'italic',
                       letterSpacing: '0.02em'
                     }}>
-                      EVERYTHING COUNTS IN LARGE AMOUNTS!
+                      {t("everythingCounts")}
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export function OtherDonationsPage() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="flex items-center gap-3 relative z-10">
                     <Calendar className="w-5 h-5" />
-                    <span className="text-lg" style={{ fontWeight: '600' }}>Schedule Drop Off / Pick Up</span>
+                    <span className="text-lg" style={{ fontWeight: '600' }}>{t("ctaButton")}</span>
                   </div>
                 </button>
                 
