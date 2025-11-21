@@ -61,9 +61,9 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
           top: 0,
           left: 0,
           right: 0,
-          height: '2px',
-          background: 'linear-gradient(90deg, #8B5CF6 0%, #6366F1 50%, #8B5CF6 100%)',
-          boxShadow: '0 2px 12px rgba(139, 92, 246, 0.5)'
+          height: '1px',
+          background: 'linear-gradient(90deg, #d4d3d5ff 0%, #f4f4f6ff 50%, #d4d3d5ff 100%)',
+          
         }}></div>
 
         {/* Newsletter Section */}
@@ -347,7 +347,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-  <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary"></div>
+ 
   <a 
     href="https://techfistglobal.com/" 
     target="_blank" 
