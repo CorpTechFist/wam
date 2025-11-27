@@ -199,7 +199,7 @@ export function CashDonationsPage() {
             className="bg-yellow-400 text-yellow-900 font-semibold shadow-md hover:bg-yellow-900 transition-all"
             onClick={() =>
               window.open(
-                "https://venmo.com/u/Tonya-Jones-Smith",
+                "https://venmo.com/u/wamallianceutah",
                 "_blank",
                 "noopener,noreferrer"
               )
