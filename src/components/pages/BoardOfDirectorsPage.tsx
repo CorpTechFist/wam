@@ -42,7 +42,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
     // },
     {
       name: "Wajid Bhat",
-      title: "Engineering IT Director",
+      title: "Engineering IT Director.",
       image: WajidImage,
       bioId: "wajid-bio",
     },
