@@ -5,6 +5,11 @@ import { useTranslation } from "./TranslationContext";
 export function ProgramsandProjects() {
   const { t } = useTranslation();
   const [showFullAden, setShowFullAden] = useState(false);
+  const donateLabel = t("ourProgress.donateButton");
+
+  const handleDonateClick = () => {
+    window.dispatchEvent(new CustomEvent("navigate", { detail: "cash-donations" }));
+  };
 
   const AdenFullText =
     "Aden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war. Born from lived experience and a survivor's heart, Aden's Roots provides direct aid to those in crisis, including food, clean water, shelter, clothing, medical treatment, and educational support. Over the past two years, Sireen has helped coordinate the evacuation of injured children from Gaza to Egypt and the United States, working with organizations like PCRF and Heal Palestine to secure visas, transportation, and life-saving care. Through Aden's Roots, Sireen has helped deliver tents, parcels, and safe housing to families who fled with nothing. She's personally assisted in the evacuation and treatment of her cousins Sara and Ahd—both severely injured—ensuring they received urgent medical attention in New York, South Carolina, and Colorado. This project is more than aid—it's advocacy. Aden's Roots calls for ceasefire, healing, and global solidarity. It mobilizes volunteers, amplifies survivor stories, and builds bridges between communities in Utah, Egypt, and Gaza. At its core, Aden's Roots is a mother's mission to protect, uplift, and never forget. It's a lifeline for those who remain and a beacon for those who've fled.";
@@ -65,16 +70,22 @@ export function ProgramsandProjects() {
               title={ t("ourProgress.talentRecruitment") ||"TALENT RECRUITMENT"}
               year= { t("ourProgress.talentRecruitmentPeriod") || "2024 - Present"}
               desc={ t("ourProgress.talentRecruitmentDesc") || "WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning."}
+              onDonate={handleDonateClick}
+              donateLabel={donateLabel}
             />
             <Card
               title={ t("ourProgress.noStringsProgram") ||"NO STRINGS ATTACHED PROGRAM"}
               year={t("ourProgress.year2024") || "2024"}
               desc= {t("ourProgress.noStringsProgramDesc") ||"This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."}
+              onDonate={handleDonateClick}
+              donateLabel={donateLabel}
             />
             <Card
               title={t('ourProgress.techfistTitle')}
               year={t('ourProgress.year2025')}
               desc={t('ourProgress.techfistDesc')}
+              onDonate={handleDonateClick}
+              donateLabel={donateLabel}
             />
             {/* Left Card - CSW */}
             <div className="self-start">
@@ -82,6 +93,8 @@ export function ProgramsandProjects() {
                   title={t('ourProgress.cswTitle')}
                 year={t('ourProgress.year2025')}
                 desc={t('ourProgress.cswDesc')}
+                onDonate={handleDonateClick}
+                donateLabel={donateLabel}
               />
             </div>
 
@@ -126,6 +139,19 @@ export function ProgramsandProjects() {
                     {showFullAden ? t('ourProgress.readLess')
                       : t('ourProgress.readMore')}
                   </button>
+
+                  <div className="mt-6">
+                    <button
+                      onClick={handleDonateClick}
+                      className="inline-flex items-center justify-center px-6 py-2 rounded-full text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+                      style={{
+                        background: "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
+                        border: "1px solid rgba(99, 102, 241, 0.3)",
+                      }}
+                    >
+                      {donateLabel}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,10 +167,14 @@ function Card({
   title,
   year,
   desc,
+  onDonate,
+  donateLabel,
 }: {
   title: string;
   year: string;
   desc: string;
+  onDonate?: () => void;
+  donateLabel?: string;
 }) {
   return (
     <div className="group relative transition-all duration-300">
@@ -168,6 +198,20 @@ function Card({
         <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
           {desc}
         </p>
+        {onDonate && donateLabel && (
+          <div className="mt-6">
+            <button
+              onClick={onDonate}
+              className="inline-flex items-center justify-center px-5 py-2 rounded-full text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              style={{
+                background: "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
+                border: "1px solid rgba(99, 102, 241, 0.3)",
+              }}
+            >
+              {donateLabel}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

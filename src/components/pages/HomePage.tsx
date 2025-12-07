@@ -1,6 +1,6 @@
+import { useState, useEffect } from "react";
 import { Hero } from "../Hero";
 import { Members } from "../Members";
-import { useState, useEffect } from "react";
 
 export function HomePage() {
   const [loading, setLoading] = useState(true);

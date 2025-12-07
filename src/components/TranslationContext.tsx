@@ -60,6 +60,8 @@ const translationDict = {
     'hero.compassionateCare': 'Compassionate Care',
     'hero.ourPromise': 'Our Promise — You Matter',
     'hero.promiseText': 'You do not have to walk this road alone. Together, we\'ll rewrite the narrative of your life — from surviving to thriving. You are good enough. You are loved. You are powerful beyond measure. Change the world, one soul at a time.',
+    'hero.spanishNoticeTitle': '¿Hablas español?',
+    'hero.spanishNoticeMessage': 'Selecciona "ES" en la parte superior para ver esta página en español.',
     
     // Hero Action Cards
     'hero.card.donate.title': 'Donate',
@@ -95,17 +97,13 @@ const translationDict = {
     'mission.ourVision': 'Our Vision',
     'mission.readMore': 'Read More',
     'mission.showLess': 'Show Less',
-    'mission.text': `At We All Matter Alliance, we believe that every soul—no matter their story—deserves dignity, healing, and a chance to thrive.
+    'mission.text': `At We All Matter Alliance, our mission is to affirm the dignity, healing, and potential of every individual, regardless of circumstance. Rooted in lived experience and guided by compassion, we walk alongside those impacted by suicide loss, trauma, domestic violence, injustice, and systemic marginalization.
 
-Born from lived experience and boundless compassion, our mission is to walk beside those navigating the shadows of suicide loss, trauma, domestic violence, injustice, and systemic marginalization. We serve individuals and families who are unhoused, low-income, court-ordered for community service, or silenced by circumstance—offering not just resources, but refuge.
+We serve individuals and families who are unhoused, low-income, court-ordered to community service, or silenced by circumstance—providing not only essential resources but also refuge and support. Through legal advocacy, trauma-informed care, and practical tools for rebuilding, we create pathways to empowerment and resilience.
 
-Through legal advocacy, trauma-informed support, and practical tools for rebuilding, we create pathways to empowerment. And in partnership with TechFistGlobal.com, we extend our reach through intelligent automation and accessible digital services—bridging the gap between need and opportunity with innovation and care.
+In partnership with TechFistGlobal.com, we extend our reach through innovative digital solutions, bridging the gap between need and opportunity with accessible technology and care.
 
-We are defenders of justice, champions of equity, and architects of change. From surviving to thriving, we walk with our community—one step, one story, one triumph at a time.
-
-Because at We All Matter Alliance, healing isn't just possible—it's sacred.
-
-WE ARE THE CHANGE!`,
+We are defenders of justice, champions of equity, and architects of change. From surviving to thriving, we stand with our community—one step, one story, one triumph at a time. At We All Matter Alliance, healing is not only possible—it is sacred.`,
     'vision.text': 'We envision a world where trauma survivors feel seen, heard, and equipped to heal themselves. We champion understanding of the many paths to recovery—from peer support circles and holistic practices to evidence-based therapies. We provide resources, support, skills, and training to suicide loss survivors, trauma survivors, LGBTQa2s+ individuals, and those wrongfully accused. By broadening awareness and knowledge, we ignite hope, spark transformation, and nurture a culture of enduring resilience, civic engagement, and justice for all.',
     
     // About Page - Join the Movement
@@ -188,18 +186,18 @@ WE ARE THE CHANGE!`,
    // Programs and Projects Page (OurProgress)
    'ourProgress.title': 'Programs and Future Projects',
     'ourProgress.disclaimer': 'Each program is subject to changes. Each qualified person must be accepted into the program before they receive funds and/or services.',
-    'ourProgress.established': 'FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS',
+    'ourProgress.established': 'FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS PROGRAM',
     'ourProgress.year2023': '2023',
     'ourProgress.year2024': '2024',
     'ourProgress.establishedDesc': 'WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization.',
-    'ourProgress.talentRecruitment': 'TALENT RECRUITMENT',
+    'ourProgress.talentRecruitment': 'TALENT RECRUITMENT PROGRAM',
     'ourProgress.talentRecruitmentPeriod': '2024 - Present',
     'ourProgress.talentRecruitmentDesc': 'WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning.',
     'ourProgress.noStringsProgram': 'NO STRINGS ATTACHED PROGRAM',
-    'ourProgress.noStringsProgramDesc': 'This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients.',
-    'ourProgress.techfistTitle': 'Techfist Global Inc - A Proud Sponsor of WAM Alliance',
-    'ourProgress.techfistDesc': 'Techfist Global stands as a proud sponsor and technological partner of WAM Alliance. Providing advanced digital solutions, strategic design, and scalable systems to amplify impact across global networks — bridging innovation with purpose to inspire sustainability, inclusion, and growth. Together, we empower communities to build a smarter, more connected future.',
-    'ourProgress.cswTitle' : 'Community Safety Watch - CSW',
+    'ourProgress.noStringsProgramDesc': 'This program is funded solely by private donations and company sponsorships and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients.',
+    'ourProgress.techfistTitle': 'Techfist Global Inc - Proud Sponsor Program of WAM Alliance',
+    'ourProgress.techfistDesc': 'Techfist Global proudly serves as the technology and innovation partner for the WAM Alliance STEM Program, leading the design and delivery of the program’s end-to-end digital ecosystem. From building the learning platforms and student engagement portals to powering data analytics, automation, and scalable cloud infrastructure, Techfist enables seamless program operations and real-time impact tracking. Through this collaboration, we are helping democratize access to STEM education, strengthen global youth participation, and accelerate inclusive, technology-driven growth across communities.',
+    'ourProgress.cswTitle' : 'Community Safety Watch Program - CSW',
     'ourProgress.cswDesc':'The Community Safety Watch (CSW) is a neighborhood-led, non-confrontational initiative designed to increase safety, awareness, and community resilience in neighborhoods experiencing suspicious activity by masked individuals. CSW focuses on observation, reporting, prevention, and community support—working in partnership with local law enforcement and service providers while prioritizing de-escalation, legal compliance, and the dignity of all residents.',
     
     'ourProgress.adenRootsTitle': "Aden's Roots Program",
@@ -208,6 +206,7 @@ WE ARE THE CHANGE!`,
     'ourProgress.readMore': 'Read More ↓',
     'ourProgress.readLess': 'Read Less ↑',
     'ourProgress.year2025': '2025',
+    'ourProgress.donateButton': 'Donate Now',
     
   'partners.title': 'Trusted Partners',
     'partners.communityResources': 'COMMUNITY RESOURCES',
@@ -530,7 +529,7 @@ WE ARE THE CHANGE!`,
 
     //Cash Donations
     "cashDonations.makeDonation": "Make a Donation",
-  "cashDonations.supportMission": "Support WAM Alliance — Together We Are the Change",
+  "cashDonations.supportMission": "Support WAM Alliance — We Are the Change",
   "cashDonations.choosePayment": "Choose your preferred payment method",
 
   "cashDonations.paypal": "Donate with PayPal",
@@ -644,6 +643,8 @@ WE ARE THE CHANGE!`,
     'hero.compassionateCare': 'Cuidado Compasivo',
     'hero.ourPromise': 'Nuestra Promesa — Tú Importas',
     'hero.promiseText': 'No tienes que caminar este camino solo. Juntos, reescribiremos la narrativa de tu vida — de sobrevivir a prosperar. Eres lo suficientemente bueno. Eres amado. Eres poderoso más allá de toda medida. Cambia el mundo, un alma a la vez.',
+    'hero.spanishNoticeTitle': '¿Hablas español?',
+    'hero.spanishNoticeMessage': 'Selecciona "ES" en la parte superior para ver esta página en español.',
     
     // Hero Action Cards
     'hero.card.donate.title': 'Donar',
@@ -773,18 +774,18 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
      // Programs and Projects Page (OurProgress)
     'ourProgress.title': 'Programas y Proyectos Futuros',
     'ourProgress.disclaimer': 'Cada programa está sujeto a cambios. Cada persona calificada debe ser aceptada en el programa antes de recibir fondos y/o servicios.',
-    'ourProgress.established': 'ORGANIZACIÓN FORMALMENTE ESTABLECIDA Y JUNTA DIRECTIVA',
+    'ourProgress.established': 'ORGANIZACIÓN FORMALMENTE ESTABLECIDA Y JUNTA DIRECTIVA - PROGRAMA',
     'ourProgress.year2023': '2023',
     'ourProgress.year2024': '2024',
     'ourProgress.establishedDesc': 'WAM Alliance se estableció formalmente en el estado de Utah y con el IRS como una organización 501(c)(3).',
-    'ourProgress.talentRecruitment': 'RECLUTAMIENTO DE TALENTO',
+    'ourProgress.talentRecruitment': 'PROGRAMA DE RECLUTAMIENTO DE TALENTO',
     'ourProgress.talentRecruitmentPeriod': '2024 - Presente',
     'ourProgress.talentRecruitmentDesc': 'WAM reclutará talento para ayudar con el marketing en redes sociales, así como con campañas de donantes/patrocinadores.',
     'ourProgress.noStringsProgram': 'PROGRAMA SIN CONDICIONES',
-    'ourProgress.noStringsProgramDesc': 'Este programa se financia únicamente mediante donaciones y subvenciones, y proporciona Artículos Esenciales de Emergencia —incluida asistencia para servicios públicos, tarjetas de gasolina y pases de tren/autobús—, además de ayuda financiera directa para documentación legal, costos médicos calificados, tarifas de solicitud y otros gastos necesarios asociados con la obtención de documentos requeridos, evaluaciones médicas, vivienda y acceso a beneficios estatales; toda la asistencia se ofrece con dignidad y sin ninguna obligación para los beneficiarios.',
-    'ourProgress.techfistTitle': 'Techfist Global Inc - Un Orgulloso Patrocinador de WAM Alliance',
-    'ourProgress.techfistDesc': 'Techfist Global se destaca como un orgulloso patrocinador y socio tecnológico de WAM Alliance. Brinda soluciones digitales avanzadas, diseño estratégico y sistemas escalables para amplificar el impacto en redes globales, uniendo innovación con propósito para inspirar sostenibilidad, inclusión y crecimiento. Juntos, empoderamos a las comunidades para construir un futuro más inteligente y mejor conectado.',
-     'ourProgress.cswTitle': 'Vigilancia de Seguridad Comunitaria - CSW',
+    'ourProgress.noStringsProgramDesc': 'Este programa se financia únicamente mediante donaciones privadas y patrocinios empresariales, y proporciona Artículos Esenciales de Emergencia —incluida asistencia para servicios públicos, tarjetas de gasolina y pases de tren/autobús—, además de ayuda financiera directa para documentación legal, costos médicos calificados, tarifas de solicitud y otros gastos necesarios asociados con la obtención de documentos requeridos, evaluaciones médicas, vivienda y acceso a beneficios estatales; toda la asistencia se ofrece con dignidad y sin ninguna obligación para los beneficiarios.',
+    'ourProgress.techfistTitle': 'Techfist Global Inc - Programa de Patrocinio Orgulloso de WAM Alliance',
+    'ourProgress.techfistDesc': 'Techfist Global se enorgullece de servir como socio de tecnología e innovación del Programa STEM de WAM Alliance, liderando el diseño y la entrega del ecosistema digital integral del programa. Desde construir las plataformas de aprendizaje y los portales de participación estudiantil hasta impulsar la analítica de datos, la automatización y la infraestructura en la nube escalable, Techfist permite operaciones fluidas y seguimiento de impacto en tiempo real. A través de esta colaboración, ayudamos a democratizar el acceso a la educación STEM, fortalecer la participación global de la juventud y acelerar un crecimiento inclusivo impulsado por la tecnología en todas las comunidades.',
+     'ourProgress.cswTitle': 'Programa de Vigilancia de Seguridad Comunitaria - CSW',
     'ourProgress.cswDesc': 'La Vigilancia de Seguridad Comunitaria (CSW) es una iniciativa liderada por vecindarios, no confrontativa, diseñada para aumentar la seguridad, la conciencia y la resiliencia comunitaria en vecindarios que experimentan actividad sospechosa por individuos enmascarados. CSW se enfoca en la observación, informes, prevención y apoyo comunitario—trabajando en asociación con las fuerzas del orden locales y proveedores de servicios mientras prioriza la desescalada, el cumplimiento legal y la dignidad de todos los residentes.',
     'ourProgress.adenRootsTitle': 'Programa Raíces de Aden',
     'ourProgress.adenRootsFull': 'Raíces de Aden es una iniciativa humanitaria liderada por la defensora palestino-estadounidense Sireen Hamdi Beseiso, bajo el paraguas de WAM Alliance. Nombrado en honor a su hijo Aden, este proyecto está arraigado en la compasión, la resiliencia y el llamado urgente a apoyar a palestinos desplazados y heridos, especialmente niños y familias afectados por la guerra. Nacido de la experiencia vivida y el corazón de un sobreviviente, Raíces de Aden proporciona ayuda directa a aquellos en crisis, incluyendo alimentos, agua potable, refugio, ropa, tratamiento médico y apoyo educativo. En los últimos dos años, Sireen ha ayudado a coordinar la evacuación de niños heridos de Gaza a Egipto y Estados Unidos, trabajando con organizaciones como PCRF y Heal Palestine para asegurar visas, transporte y atención que salva vidas. A través de Raíces de Aden, Sireen ha ayudado a entregar tiendas de campaña, paquetes y viviendas seguras a familias que huyeron sin nada. Ha asistido personalmente en la evacuación y tratamiento de sus primas Sara y Ahd—ambas gravemente heridas—asegurando que reciban atención médica urgente en Nueva York, Carolina del Sur y Colorado. Este proyecto es más que ayuda, es defensa. Raíces de Aden llama al alto el fuego, la sanación y la solidaridad global. Moviliza voluntarios, amplifica las historias de sobrevivientes y construye puentes entre comunidades en Utah, Egipto y Gaza. En su núcleo, Raíces de Aden es la misión de una madre para proteger, elevar y nunca olvidar. Es un salvavidas para aquellos que permanecen y un faro para aquellos que han huido.',
@@ -792,6 +793,7 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
     'ourProgress.aidensRootsTitle': "Raíces de Aiden - Un Proyecto de WAM Alliance",
     'ourProgress.readMore': 'Leer Más ↓',
     'ourProgress.readLess': 'Leer Menos ↑',
+    'ourProgress.donateButton': 'Donar Ahora',
 
       // Trusted Partners Page
     'partners.title': 'Socios de Confianza',
@@ -1133,7 +1135,7 @@ Porque en We All Matter Alliance, la sanación no solo es posible—es sagrada.
 
     //Cash Donation
     "cashDonations.makeDonation": "Realizar una Donación",
-  "cashDonations.supportMission": "Apoya a WAM Alliance — Juntos Somos el Cambio",
+  "cashDonations.supportMission": "Apoya a WAM Alliance — Somos el Cambio",
   "cashDonations.choosePayment": "Elige tu método de pago preferido",
 
   "cashDonations.paypal": "Donar con PayPal",

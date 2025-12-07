@@ -87,41 +87,6 @@ export function TrustedPartnersPage() {
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-yellow-500 mx-auto"></div>
           </div>
 
-          {/* Main Content */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-purple-50 via-white to-yellow-50 border-2 border-purple-200 p-8 md:p-12 shadow-xl">
-              <div className="space-y-6 text-gray-800 leading-relaxed">
-                <p className="text-lg">
-                  {t('partners.intro1')}
-                </p>
-                
-                <p>
-                 {t('partners.intro2')}
-                </p>
-                
-                <div className="bg-white border-l-4 border-purple-600 p-6 my-8 shadow-md">
-                  <p className="text-purple-900">
-                     {t('partners.resourceSpace')}
-                  </p>
-                </div>
-                
-                <p>
-                   {t('partners.values')}
-                </p>
-                
-                <p>
-                  {t('partners.support')}
-                </p>
-                
-                <div className="text-center py-6 mt-8">
-                  <p className="text-xl italic text-purple-700 border-t-2 border-b-2 border-yellow-500 py-4 inline-block px-8">
-                   {t('partners.lovingYourself')}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
           {/* Resource Cards Section */}
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl text-center text-purple-900 mb-8 tracking-wide">

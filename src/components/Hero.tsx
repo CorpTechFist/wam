@@ -23,6 +23,8 @@ import asianBusinessmanPayment from "../assets/testimonials/d81f7c6638e6dd3e1ff2
 
 export function Hero() {
   const { translations, t } = useTranslation();
+  const spanishNoticeTitle = t("hero.spanishNoticeTitle");
+  const spanishNoticeMessage = t("hero.spanishNoticeMessage");
 
   const handleNavigation = (route: string) => {
     window.dispatchEvent(
@@ -37,32 +39,50 @@ export function Hero() {
       style={{
         background:
           "linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 250, 255, 0.95) 100%)",
-        paddingTop: "0px",
-        paddingBottom: "0px",
+        paddingTop: "clamp(64px, 12vw, 120px)",
+        paddingBottom: "clamp(32px, 8vw, 80px)",
       }}
     >
       <div className="w-full">
         <div className="flex flex-wrap justify-center">
           <div className="w-full bg-[rgb(255,255,255)]">
-            {/* Combined Mission, Vision & Motivational Section */}
+            <div className="max-w-6xl mx-auto px-4 space-y-8">
+              {/* Combined Mission, Vision & Motivational Section */}
 
-            {/* Main Header - Integrated Banner */}
-            <div className="mb-12 bg-[rgb(255,255,255)]">
-              {/* WAM Alliance Professional Full-Width Banner */}
+              {/* Main Header - Integrated Banner */}
+              <div className="bg-[rgb(255,255,255)]">
+                <div className="max-w-4xl mx-auto mb-4 px-4">
+                  <div
+                    className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-indigo-900 px-4 py-3 rounded-2xl shadow-md border border-indigo-200"
+                    style={{
+                      background:
+                        "linear-gradient(120deg, rgba(224,231,255,0.85), rgba(248,250,252,0.95))",
+                    }}
+                  >
+                    <div className="text-indigo-700 font-semibold uppercase tracking-wide">
+                      {spanishNoticeTitle}
+                    </div>
+                    <div className="text-indigo-900">
+                      {spanishNoticeMessage}
+                    </div>
+                  </div>
+                </div>
+                {/* WAM Alliance Professional Full-Width Banner */}
 
-              {/* Three Card Grid - Mission & Vision Side by Side */}
-              <div className="w-full">
-                {/* Mission and Vision Cards - Side by Side */}
+                {/* Three Card Grid - Mission & Vision Side by Side */}
+                <div className="w-full">
+                  {/* Mission and Vision Cards - Side by Side */}
 
-                {/* Learn to Forgive & Love Yourself - No Card */}
-                <MissionVisionSection />
+                  {/* Learn to Forgive & Love Yourself - No Card */}
+                  <MissionVisionSection />
+                </div>
               </div>
 
               {/* Need Help Section with Side Buttons */}
-              <div className="flex justify-center mb-20">
+              <div className="flex justify-center pt-4">
                 {/* Professional Crisis Support Card */}
                 <div
-                  className=" py-10 px-10 w-full"
+                  className="py-6 px-6 md:px-8 w-full"
                   style={{
                     backdropFilter: "blur(25px)",
                     boxShadow:
@@ -126,7 +146,7 @@ export function Hero() {
                   </div>
 
                   {/* Inspirational Cards */}
-                  <div className="flex flex-wrap gap-6 justify-center mb-8 px-4">
+                  <div className="flex flex-wrap gap-4 justify-center mb-6 px-4">
                     {/* Don't Give Up Card */}
                     <div className="w-full md:w-[calc(33.333%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
                       <div
@@ -996,12 +1016,12 @@ export function Hero() {
                             >
                               {t('hero.card.donors.subtitle')}
                             </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+              </div>
+            </div>
+          </div>
               </div>
             </div>
           </div>
