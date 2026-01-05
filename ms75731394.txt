@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "wamalliance.org",
+  "Id": "42a35540-e394-4839-af33-86b55170f9d0"
+}
