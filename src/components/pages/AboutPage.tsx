@@ -6,7 +6,7 @@ export function AboutPage() {
   
   try {
     return (
-      <main className="py-2 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
+      <main className="py-5 relative overflow-hidden bg-white" style={{ backgroundColor: '#ffffff' }}>
         <div>
           <About />
         </div>

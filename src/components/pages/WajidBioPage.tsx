@@ -65,7 +65,7 @@ export function WajidBioPage() {
               </div>
               
               <div className="bg-gradient-to-br from-purple-50 to-purple-100/50 rounded-xl p-6 border border-purple-200 mt-6">
-                <h3 className="text-purple-700 mb-4">{t('bio.common.areasOfExpertise')}</h3>
+                <h3 className="text-purple-700 mb-4">Areas of Expertise</h3>
                 <ul className="text-gray-700 leading-relaxed space-y-2">
                   <li>• {t('bio.wajid.skill1')}</li>
                   <li>• {t('bio.wajid.skill2')}</li>

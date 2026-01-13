@@ -104,7 +104,8 @@ We serve individuals and families who are unhoused, low-income, court-ordered to
 In partnership with TechFistGlobal.com, we extend our reach through innovative digital solutions, bridging the gap between need and opportunity with accessible technology and care.
 
 We are defenders of justice, champions of equity, and architects of change. From surviving to thriving, we stand with our community—one step, one story, one triumph at a time. At We All Matter Alliance, healing is not only possible—it is sacred.`,
-    'vision.text': 'We envision a world where trauma survivors feel seen, heard, and equipped to heal themselves. We champion understanding of the many paths to recovery—from peer support circles and holistic practices to evidence-based therapies. We provide resources, support, skills, and training to suicide loss survivors, trauma survivors, LGBTQa2s+ individuals, and those wrongfully accused. By broadening awareness and knowledge, we ignite hope, spark transformation, and nurture a culture of enduring resilience, civic engagement, and justice for all.',
+    // CHANGED: updated Our Vision copy.
+    'vision.text': 'We envision a world where every person—no matter their story—has the dignity, safety, and opportunity to rise. A world where healing is honored, justice is accessible, and no one is left to navigate hardship alone. At WAM Alliance, we strive to transform pain into power, barriers into pathways, and isolation into community. Our vision is a future where every life is valued, every voice is heard, and every individual has the support they need to move from surviving to thriving.',
     
     // About Page - Join the Movement
     'aboutPage.joinMovement': 'JOIN THE MOVEMENT',
@@ -186,10 +187,11 @@ We are defenders of justice, champions of equity, and architects of change. From
    // Programs and Projects Page (OurProgress)
    'ourProgress.title': 'Programs and Future Projects',
     'ourProgress.disclaimer': 'Each program is subject to changes. Each qualified person must be accepted into the program before they receive funds and/or services.',
-    'ourProgress.established': 'FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS PROGRAM',
+    // CHANGED: updated program title and description.
+    'ourProgress.established': 'FORMALLY ESTABLISHED NON PROFIT ORGANIZATION',
     'ourProgress.year2023': '2023',
     'ourProgress.year2024': '2024',
-    'ourProgress.establishedDesc': 'WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization.',
+    'ourProgress.establishedDesc': 'We All Matter Alliance was formally established in the state of Utah and registered as a 501(c)(3) with the IRS.',
     'ourProgress.talentRecruitment': 'TALENT RECRUITMENT PROGRAM',
     'ourProgress.talentRecruitmentPeriod': '2024 - Present',
     'ourProgress.talentRecruitmentDesc': 'WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning.',

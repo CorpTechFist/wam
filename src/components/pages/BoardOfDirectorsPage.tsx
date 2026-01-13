@@ -6,7 +6,9 @@ import TonyaImage from "../../assets/board/Tonya.webp";
 import RobertImage from "../../assets/board/rob.png";
 import DianeImage from "../../assets/board/Diane.JPEG";
 import DanielleImage from "../../assets/testimonials/DanielleOrtega.jpeg";
-import WajidImage from "../../assets/board/wajid.jpeg";
+import WajidImage from "../../assets/board/Wajid_new.jpeg";
+import RomyImage from "../../assets/board/Romy.jpeg";
+import SireenImage from "../../assets/icons/sireen.jpg";
 
 interface BoardOfDirectorsPageProps {
   onNavigate?: (section: string) => void;
@@ -18,19 +20,22 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
   const members = [
     {
       name: "Tonya Jones Smith",
-      title: "President",
+      title: "PRESIDENT",
+      label: "Director",
       image: TonyaImage,
       bioId: "tonya-bio",
     },
     {
       name: "Robert Smith",
-      title: "Vice President / CFO",
+      title: "VICE PRESIDENT / CFO",
+      label: "Director",
       image: RobertImage,
       bioId: "rob-bio",
     },
     {
       name: "Diane Jones",
-      title: "Secretary",
+      title: "SECRETARY",
+      label: "Director",
       image: DianeImage,
       bioId: "diane-bio",
     },
@@ -42,15 +47,34 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
     // },
     {
       name: "Wajid Bhat",
-      title: "Engineering IT Director.",
+      title: "ENGINEERING IT DIRECTOR",
+      label: "Director",
       image: WajidImage,
+      alt: "Wajid Bhat – Engineering IT Director, Board Member",
       bioId: "wajid-bio",
+    },
+    {
+      name: "Romy Colvin",
+      title: "Photo/Video Journalist",
+      label: "Member",
+      image: RomyImage,
+      bioId: "romy-bio",
+    },
+    {
+      name: "SIREEN BESEISO",
+      title: "Project Coordinator",
+      label: "Member",
+      image: SireenImage,
+      alt: "Sireen – Project Coordinator, Board Member",
+      bioId: "sireen-bio",
     },
   ];
 
   return (
-    <div className="py-16 px-4 bg-white text-gray-800">
-      <div className="container mx-auto max-w-6xl text-center">
+    <main className="py-5 bg-white text-gray-800">
+      <section className="py-5">
+        <div className="pt-8 pb-16 px-4">
+          <div className="container mx-auto max-w-6xl text-center">
 
         {/* Title */}
           <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"
@@ -89,32 +113,32 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
           Be the Change!
         </div>
 
-        {/* Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-          {members.map((member, index) => (
-            <div
-              key={member.name}
-              className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center group cursor-pointer"
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => onNavigate?.(member.bioId)}
-            >
-              {/* Image */}
-              <div className="mb-4 relative">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-purple-400 transition-all duration-300 bg-gray-50">
-                  {member.image ? (
-                    <ImageWithFallback
-                      src={member.image}
-                      alt={`${member.name} professional headshot`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
-                      <ImageIcon className="w-14 h-14 text-gray-300" />
-                    </div>
-                  )}
+          {/* Members Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+            {members.map((member, index) => (
+              <div
+                key={member.name}
+                className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center group cursor-pointer"
+                style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => member.bioId && onNavigate?.(member.bioId)}
+              >
+                {/* Image */}
+                <div className="mb-4 relative">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-purple-400 transition-all duration-300 bg-gray-50">
+                    {member.image ? (
+                      <ImageWithFallback
+                        src={member.image}
+                        alt={member.alt ?? `${member.name} professional headshot`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+                        <ImageIcon className="w-14 h-14 text-gray-300" />
+                      </div>
+                    )}
+                  </div>
+                  <div className=""></div>
                 </div>
-                <div className=""></div>
-              </div>
 
               {/* Info */}
               <div className="text-center space-y-1">
@@ -122,6 +146,7 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   {member.name}
                 </h3>
                 <p className="text-sm text-gray-600 uppercase tracking-wide">{member.title}</p>
+                <p className="text-xs text-gray-500 uppercase tracking-wide">{member.label}</p>
 
                 {/* View Profile Link */}
                 <div className="pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -143,11 +168,12 @@ export function BoardOfDirectorsPage({ onNavigate }: BoardOfDirectorsPageProps) 
                   </span>
                 </div>
               </div>
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
-
-      </div>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }

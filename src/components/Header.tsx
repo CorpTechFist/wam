@@ -101,8 +101,7 @@ export function Header({
 >
 
           {/* Brand/Logo Section */}
-          <button
-            onClick={() => handleNavigation("home")}
+          <div
             className="flex items-center gap-3 group transition-all duration-300 hover:scale-105"
             style={{
               background: "transparent",
@@ -138,7 +137,7 @@ export function Header({
                 }}
               />
             </button>
-          </button>
+          </div>
 
           {/* Desktop Navigation - Always Visible */}
           <div className="hidden lg:flex items-center justify-between flex-1 ml-8">

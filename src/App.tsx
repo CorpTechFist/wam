@@ -25,6 +25,8 @@ import { WajidBioPage } from "./components/pages/WajidBioPage";
 import { DummyBioPage } from "./components/pages/DummyBioPage";
 import { DummyBio2Page } from "./components/pages/DummyBio2Page";
 import { BoardOfDirectorsPage } from "./components/pages/BoardOfDirectorsPage";
+import { RomyBioPage } from "./components/pages/RomyBioPage";
+import { SireenBioPage } from "./components/pages/SireenBioPage";
 import { PersonalDonorsPage } from "./components/pages/PersonalDonorsPage";
 import { CashDonationsPage } from "./components/pages/CashDonationsPage";
 import { OtherDonationsPage } from "./components/pages/OtherDonationsPage";
@@ -34,6 +36,7 @@ import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./components/pages/TermsOfServicePage";
 import { TrustedPartnersPage} from "./components/pages/TrustedPartnersPage";
 import { VolunteersPage } from "./components/pages/VolunteersPage";
+import { ChatbotWidget } from "./chatbot/ChatbotWidget";
 
 export default function App() {
   // ✅ Initialize from URL hash or default to "home"
@@ -109,6 +112,8 @@ export default function App() {
         {currentPage === "diane-bio" && <DianeBioPage />}
         {currentPage === "danielle-bio" && <DanielleBioPage />}
         {currentPage === "wajid-bio" && <WajidBioPage />}
+        {currentPage === "romy-bio" && <RomyBioPage />}
+        {currentPage === "sireen-bio" && <SireenBioPage />}
         {currentPage === "dummy-bio" && <DummyBioPage onNavigate={handleNavigation} />}
         {currentPage === "dummy-bio-2" && <DummyBio2Page onNavigate={handleNavigation} />}
         {currentPage === "personal-donors" && <PersonalDonorsPage />}
@@ -124,6 +129,7 @@ export default function App() {
         {currentPage === "volunteers" && <VolunteersPage />}
 
         <Footer currentPage={currentPage} onNavigate={handleNavigation} />
+        <ChatbotWidget />
       </div>
     </TranslationProvider>
   );

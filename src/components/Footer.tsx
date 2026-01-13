@@ -12,6 +12,7 @@ import {
   Phone, 
   MapPin, 
   Linkedin, 
+  Instagram,
   Youtube, 
   Facebook,
   ArrowUp,
@@ -41,6 +42,7 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/weallmatteralliance", label: "Facebook" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/wam-alliance/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/wamalliance", label: "Instagram" },
     { icon: Youtube, href: "#", label: "YouTube" }
   ];
 
@@ -297,6 +299,14 @@ export function Footer({ currentPage = "home", onNavigate }: FooterProps) {
                     <Linkedin className="w-4 h-4 text-white" />
                   </div>
                   <span className="text-sm text-muted-foreground group-hover:text-indigo-600 transition-colors">LinkedIn</span>
+                </a>
+              </li>
+              <li className="group">
+                <a href="https://www.instagram.com/wamalliance" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 hover:bg-indigo-100/60 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Instagram className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-sm text-muted-foreground group-hover:text-indigo-600 transition-colors">Instagram</span>
                 </a>
               </li>
              

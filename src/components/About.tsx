@@ -9,7 +9,7 @@ export function About() {
     <section id="about" className="py-5 position-relative overflow-hidden bg-white" style={{ backgroundColor: 'white' }}>
       <div className="container-fluid px-4 position-relative" style={{ zIndex: 10 }}>
         {/* Core Values */}
-        <div className="pt-20 pb-16 px-4 md:px-8">
+        <div className="pt-8 pb-16 px-4 md:px-8">
           <div className="text-center mb-16">
             <div className="relative mb-8">
                  <h3 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight pb-2 font-bold tracking-tight text-violet-700"

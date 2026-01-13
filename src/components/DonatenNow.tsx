@@ -20,8 +20,8 @@ export function DonateNow() {
   };
 
   return (
-    <section id="contact" className=" position-relative overflow-hidden border-top border-bottom border-light border-opacity-50 bg-white">
-      <div className="container mx-auto px-4 pb-16">
+    <section id="contact" className="position-relative overflow-hidden border-top border-bottom border-light border-opacity-50 bg-white">
+      <div className="container mx-auto px-4 pt-8 pb-16">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-20">

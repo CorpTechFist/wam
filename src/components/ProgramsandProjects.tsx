@@ -5,10 +5,17 @@ import { useTranslation } from "./TranslationContext";
 export function ProgramsandProjects() {
   const { t } = useTranslation();
   const [showFullAden, setShowFullAden] = useState(false);
+  const [showFullTechfist, setShowFullTechfist] = useState(false);
+  const [showFullCommunity, setShowFullCommunity] = useState(false);
   const donateLabel = t("ourProgress.donateButton");
+  const learnMoreLabel = "Learn More";
 
   const handleDonateClick = () => {
     window.dispatchEvent(new CustomEvent("navigate", { detail: "cash-donations" }));
+  };
+
+  const handleVolunteerClick = () => {
+    window.dispatchEvent(new CustomEvent("navigate", { detail: "volunteer-application" }));
   };
 
   const AdenFullText =
@@ -16,6 +23,11 @@ export function ProgramsandProjects() {
 
   const AdenShortText =
     "Aden's Roots is a humanitarian initiative led by Palestinian American advocate Sireen Hamdi Beseiso, under the umbrella of WAM Alliance. Named in honor of her son, Aden, this project is rooted in compassion, resilience, and the urgent call to support displaced and injured Palestinians—especially children and families affected by war.";
+  const techfistFullText = t("ourProgress.techfistDesc");
+  const techfistShortText = `${techfistFullText.split(". ")[0]}.`;
+  const communityFullText =
+    "This program is a lifeline for individuals and families who are unhoused, struggling, or simply trying to survive another day. Once a month in Salt Lake City, we open our arms—and our resources—to anyone in need of clothing, food, and basic essentials. What begins as a simple distribution becomes something far more powerful: connection, compassion, and the reminder that every person deserves dignity. This program is fueled entirely by the generosity of people who believe in humanity. Donors and sponsors make it possible for us to provide the items that matter most in moments of crisis: clean clothing, nourishing food, warm coats, sturdy shoes, sleeping bags, water, finger foods, and sanitary wipes. These essentials are more than supplies—they are hope, comfort, and survival. Your support helps us show up, month after month, for those who have been overlooked or forgotten. Together, we can ensure that no one in our community faces hardship alone.";
+  const communityShortText = `${communityFullText.split(". ")[0]}.`;
 
   return (
     <div className="relative overflow-hidden">
@@ -62,28 +74,32 @@ export function ProgramsandProjects() {
           {/* ✅ Program Cards Grid - Fixed Height Isolation */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <Card
-              title= { t("ourProgress.established") ||"FORMALLY ESTABLISHED ORGANIZATION & BOARD OF DIRECTORS"}
-              year= {t("ourProgress.year2023") ||"2023"}
-              desc={  t("ourProgress.establishedDesc") ||"WAM Alliance formally established in the state of Utah and with the IRS as a 501(c)(3) organization."}
-            />
-            <Card
-              title={ t("ourProgress.talentRecruitment") ||"TALENT RECRUITMENT"}
-              year= { t("ourProgress.talentRecruitmentPeriod") || "2024 - Present"}
-              desc={ t("ourProgress.talentRecruitmentDesc") || "WAM will be recruiting talent to assist with social media marketing, as well as donor/sponsorship campaigning."}
-              onDonate={handleDonateClick}
-              donateLabel={donateLabel}
-            />
-            <Card
-              title={ t("ourProgress.noStringsProgram") ||"NO STRINGS ATTACHED PROGRAM"}
-              year={t("ourProgress.year2024") || "2024"}
-              desc= {t("ourProgress.noStringsProgramDesc") ||"This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."}
-              onDonate={handleDonateClick}
-              donateLabel={donateLabel}
+              title= { t("ourProgress.established") ||"FORMALLY ESTABLISHED NON PROFIT ORGANIZATION"}
+              desc={  t("ourProgress.establishedDesc") ||"We All Matter Alliance was formally established in the state of Utah and registered as a 501(c)(3) with the IRS."}
+              onDonate={handleVolunteerClick}
+              donateLabel={learnMoreLabel}
             />
             <Card
               title={t('ourProgress.techfistTitle')}
-              year={t('ourProgress.year2025')}
-              desc={t('ourProgress.techfistDesc')}
+              desc={techfistFullText}
+              shortDesc={techfistShortText}
+              isExpandable
+              isExpanded={showFullTechfist}
+              onToggle={() => setShowFullTechfist(!showFullTechfist)}
+              onDonate={handleDonateClick}
+              donateLabel={donateLabel}
+            />
+            <Card
+              title="COMMUNITY DRIVE PROGRAM"
+              desc={communityFullText}
+              shortDesc={communityShortText}
+              isExpandable
+              isExpanded={showFullCommunity}
+              onToggle={() => setShowFullCommunity(!showFullCommunity)}
+            />
+            <Card
+              title={ t("ourProgress.noStringsProgram") ||"NO STRINGS ATTACHED PROGRAM"}
+              desc= {t("ourProgress.noStringsProgramDesc") ||"This program is funded solely by donations and grant support and provides Emergency Essentials — including utility assistance, gas cards, and train/bus passes — as well as direct financial help for legal documentation, qualified medical costs, application fees, and other necessary expenses associated with securing required documents, medical evaluations, housing, and access to state benefits; all assistance is delivered with dignity and no obligation to recipients."}
               onDonate={handleDonateClick}
               donateLabel={donateLabel}
             />
@@ -91,7 +107,6 @@ export function ProgramsandProjects() {
             <div className="self-start">
               <Card
                   title={t('ourProgress.cswTitle')}
-                year={t('ourProgress.year2025')}
                 desc={t('ourProgress.cswDesc')}
                 onDonate={handleDonateClick}
                 donateLabel={donateLabel}
@@ -107,17 +122,6 @@ export function ProgramsandProjects() {
                     <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug">
                       {t('ourProgress.adenRootsTitle')}
                     </h3>
-                    <span
-                      className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
-                        color: "white",
-                        boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
-                      }}
-                    >
-                      {t('ourProgress.year2025')}
-                    </span>
                   </div>
 
                   {/* ✅ Smooth Expand - Without Affecting Neighbor */}
@@ -167,15 +171,24 @@ function Card({
   title,
   year,
   desc,
+  shortDesc,
+  isExpandable,
+  isExpanded,
+  onToggle,
   onDonate,
   donateLabel,
 }: {
   title: string;
-  year: string;
+  year?: string;
   desc: string;
+  shortDesc?: string;
+  isExpandable?: boolean;
+  isExpanded?: boolean;
+  onToggle?: () => void;
   onDonate?: () => void;
   donateLabel?: string;
 }) {
+  const { t } = useTranslation();
   return (
     <div className="group relative transition-all duration-300">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-violet-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
@@ -184,20 +197,51 @@ function Card({
           <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wider text-purple-900 flex-1 leading-snug text-justify">
             {title}
           </h3>
-          <span
-            className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium shrink-0"
-            style={{
-              background: "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
-              color: "white",
-              boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
-            }}
-          >
-            {year}
-          </span>
+          {year ? (
+            <span
+              className="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-medium shrink-0"
+              style={{
+                background: "linear-gradient(135deg, #A855F7 0%, #6366F1 100%)",
+                color: "white",
+                boxShadow: "0 4px 12px rgba(168, 85, 247, 0.3)",
+              }}
+            >
+              {year}
+            </span>
+          ) : null}
         </div>
-        <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
-          {desc}
-        </p>
+        {isExpandable ? (
+          <>
+            <div
+              className="overflow-hidden transition-[max-height] duration-700 ease-in-out"
+              style={{
+                maxHeight: isExpanded ? "1200px" : "140px",
+              }}
+            >
+              <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
+                {isExpanded || !shortDesc ? desc : shortDesc}
+              </p>
+            </div>
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={onToggle}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  onToggle?.();
+                }
+              }}
+              className="mt-4 text-purple-600 font-medium hover:text-purple-800 transition-all duration-300"
+            >
+              {isExpanded ? t('ourProgress.readLess') : t('ourProgress.readMore')}
+            </div>
+          </>
+        ) : (
+          <p className="text-base text-gray-700 leading-relaxed font-normal text-justify">
+            {desc}
+          </p>
+        )}
         {onDonate && donateLabel && (
           <div className="mt-6">
             <button

@@ -9,10 +9,10 @@ export function Donors() {
   const { translations } = useTranslation();
   const { t } = useTranslation();
   return (
-    <section id="services" className=" pb-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
+    <section id="services" className="pb-5 position-relative overflow-hidden border-top border-bottom border-light border-opacity-50" style={{
       background: '#FFFFFF'
     }}>
-      <div className="container mx-auto px-2 relative z-10 py-10">
+      <div className="container mx-auto px-2 relative z-10 pt-8 pb-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="max-w-4xl mx-auto">

@@ -30,7 +30,7 @@ export function RobBioPage() {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <div className="space-y-6">
               <div>
-                <h3 className="text-purple-700 mb-3">{t('bio.common.overview')}</h3>
+                <h3 className="text-purple-700 mb-3">Bio</h3>
                 <p className="text-gray-700 leading-relaxed">
                   {t('bio.rob.overview')}
                 </p>
@@ -68,7 +68,7 @@ export function RobBioPage() {
               </div>
               
               <div className="bg-gradient-to-br from-purple-50 to-purple-100/50 rounded-xl p-6 border border-purple-200 mt-6">
-                <h3 className="text-purple-700 mb-4">{t('bio.common.areasOfExpertise')}</h3>
+                <h3 className="text-purple-700 mb-4">Areas of Expertise</h3>
                 <ul className="text-gray-700 leading-relaxed space-y-2">
                   <li>• {t('bio.rob.skill1')}</li>
                   <li>• {t('bio.rob.skill2')}</li>

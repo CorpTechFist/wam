@@ -164,6 +164,10 @@
     opacity: 0.6;
   }
 
+  .page-heading-offset {
+    padding-top: 3.25rem;
+  }
+
   /* Beautiful purple and gold card styling with enhanced depth */
   .glass-morphism {
     background: linear-gradient(135deg, 
