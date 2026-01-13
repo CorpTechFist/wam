@@ -453,7 +453,7 @@ export function Header({
                     }
                   }}
                 >
-                  Board of Directors
+                  Our Directors
                   <ChevronDown
                     className={`transition-transform duration-300 ${showBoardDropdown ? "rotate-180" : ""}`}
                     size={14}
@@ -501,6 +501,14 @@ export function Header({
                           key: "wajid-bio",
                           label: "Wajid Bhat (Engineering)",
                         },
+                        {
+                          key: "romy-bio",
+                          label: "Romy Colvin (Member)",
+                        },
+                        {
+                          key: "sireen-bio",
+                          label: "Sireen Besieso (Member)",
+                        },
                       ].map((item) => (
                         <button
                           key={item.key}
@@ -535,47 +543,6 @@ export function Header({
                   </div>
                 )}
               </div>
-
-              {/* Volunteers */}
-              <button
-                className="border-0 px-4 py-1.5 rounded-full"
-                style={{
-                  background:
-                    currentPage === "volunteers"
-                      ? "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
-                      : "transparent",
-                  color:
-                    currentPage === "volunteers"
-                      ? "#FFFFFF"
-                      : "#6B7280",
-                  transition:
-                    "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                  fontSize: "0.875rem",
-                  fontWeight: "600",
-                  letterSpacing: "-0.01em",
-                  boxShadow:
-                    currentPage === "volunteers"
-                      ? "0 4px 12px rgba(139, 92, 246, 0.3)"
-                      : "none",
-                }}
-                onClick={() => handleNavigation("volunteers")}
-                onMouseOver={(e) => {
-                  if (currentPage !== "volunteers") {
-                    e.currentTarget.style.background =
-                      "rgba(243, 244, 246, 0.8)";
-                    e.currentTarget.style.color = "#111827";
-                  }
-                }}
-                onMouseOut={(e) => {
-                  if (currentPage !== "volunteers") {
-                    e.currentTarget.style.background =
-                      "transparent";
-                    e.currentTarget.style.color = "#6B7280";
-                  }
-                }}
-              >
-                Volunteers
-              </button>
 
               {/* Other Navigation Items */}
               {navigationItems.slice(1).map((item) => (
@@ -919,7 +886,7 @@ export function Header({
                     handleNavigation("board-of-directors")
                   }
                 >
-                  Board of Directors
+                  Our Directors
                 </button>
                 <div
                   className="pl-4 border-l-2"
@@ -946,6 +913,14 @@ export function Header({
                       key: "wajid-bio",
                       label: "Wajid Bhat (Engineering)",
                     },
+                    {
+                      key: "romy-bio",
+                      label: "Romy Colvin (Member)",
+                    },
+                    {
+                      key: "sireen-bio",
+                      label: "Sireen Besieso (Member)",
+                    },
                   ].map((item) => (
                     <button
                       key={item.key}
@@ -968,27 +943,6 @@ export function Header({
                     </button>
                   ))}
                 </div>
-              </div>
-
-              {/* Mobile Volunteers Section */}
-              <div className="mb-4">
-                <button
-                  className={`w-full text-left py-3 px-4 mb-2 rounded-lg ${
-                    currentPage === "volunteers"
-                      ? "text-white"
-                      : "text-gray-900"
-                  }`}
-                  style={{
-                    background:
-                      currentPage === "volunteers"
-                        ? "linear-gradient(45deg, #7c3aed, #d946ef)"
-                        : "rgba(124, 58, 237, 0.05)",
-                    border: "none",
-                  }}
-                  onClick={() => handleNavigation("volunteers")}
-                >
-                  Volunteers
-                </button>
               </div>
 
               {/* Mobile Action Buttons */}
