@@ -6,7 +6,7 @@ export function RomyBioPage() {
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto border border-gray-200">
             <div className="flex justify-center items-center gap-4 mb-2">
               <span className="text-purple-600 uppercase tracking-wider">
-                Board of Directors
+                Board Member
               </span>
               <span className="text-purple-600">•</span>
               <span className="text-purple-600 uppercase tracking-wider">
