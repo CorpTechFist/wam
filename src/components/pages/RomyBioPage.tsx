@@ -10,7 +10,7 @@ export function RomyBioPage() {
               </span>
               <span className="text-purple-600">•</span>
               <span className="text-purple-600 uppercase tracking-wider">
-                Owner, Colvining Photography
+                Media Journalist
               </span>
             </div>
             <h1 className="gradient-text mb-3">
