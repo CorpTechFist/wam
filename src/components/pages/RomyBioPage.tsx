@@ -6,11 +6,11 @@ export function RomyBioPage() {
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto border border-gray-200">
             <div className="flex justify-center items-center gap-4 mb-2">
               <span className="text-purple-600 uppercase tracking-wider">
-                Board Member
+                MEMBER
               </span>
               <span className="text-purple-600">•</span>
               <span className="text-purple-600 uppercase tracking-wider">
-                Media Journalist, Owner Colvining Photography
+                PHOTO JOURNALIST
               </span>
             </div>
             <h1 className="gradient-text mb-3">

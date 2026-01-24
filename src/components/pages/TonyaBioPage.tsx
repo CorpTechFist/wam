@@ -8,7 +8,7 @@ export function TonyaBioPage() {
         <div className="text-center mb-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto border border-gray-200">
             <span className="text-purple-600 uppercase tracking-wider mb-2 block">
-              {t('bio.tonya.role')}
+              BOARD OF DIRECTOR • PRESIDENT
             </span>
             <h1 className="gradient-text mb-3">
              {t('bio.tonya.name')}

@@ -453,7 +453,7 @@ export function Header({
                     }
                   }}
                 >
-                  Our Directors
+                  Our Board
                   <ChevronDown
                     className={`transition-transform duration-300 ${showBoardDropdown ? "rotate-180" : ""}`}
                     size={14}
@@ -886,7 +886,7 @@ export function Header({
                     handleNavigation("board-of-directors")
                   }
                 >
-                  Our Directors
+                  Our Board
                 </button>
                 <div
                   className="pl-4 border-l-2"
